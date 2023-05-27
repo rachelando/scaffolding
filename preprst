@@ -1,0 +1,330 @@
+#!/usr/bin/env python
+
+#
+#  preprst - pre-processsor for re-structured text markup
+#
+
+import sys
+
+if len(sys.argv) != 2:
+	print ("usage: %s file.erst\n"%(sys.argv[0]))
+	sys.exit(1)
+
+fname, fext = sys.argv[1].split(".")
+if fext != "erst":
+	print ("extension not erst: \n"%(sys.argv[1]))
+	sys.exit(1)
+
+def get_options(erstfile):
+	options = {}
+	while True:
+		optline = erstfile.readline()[:-1]
+		if optline == None:
+			print ("EOF while reading options")
+			return
+		if optline.strip() == "":
+			return options
+		opts = optline.split(":", 2)
+		if (len(opts) != 3) or (opts[0].strip() != ""):
+			print ("++bad options line: "+optline+"\n", opts)
+			return None
+		options[opts[1].strip()] = opts[2]
+	
+	
+
+####### youtube content ######
+#   .. youtube:: ulx5fkcgvx4
+#      :align: left
+
+def do_youtube(erstfile, line):
+	# at this point we have read the youtube command line
+	rstfile.write(".. raw:: html\n")
+	parts = line.split(":: ")
+	if len(parts) != 2:
+		print ("bad youtube line: "+line)
+		return
+	yid = line.split(":: ")[1].strip()
+	default_opts = dict(align="left", width="500", height="281")
+	options = get_options(erstfile)
+	if options == None:
+		options = default_opts
+	else:
+		options.update(default_opts)
+	#print (">>> options: ", options)
+
+	vformat = '''\n      <div>   <iframe align="%s" width="%s" height="%s" src="https://www.youtube.com/embed/%s" frameborder="0"  allowfullscreen></iframe>\n </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>\n\n'''
+	rstfile.write(vformat%(options["align"], options["width"], options["height"], yid))
+
+####### fill in the blank ######
+#   .. fillinthebalnk:compid: This is the question...
+#      correct:answer1: feedback for answer 1
+#      incorrect:z: Wrong answer.
+#      :x: Wrong answer.
+#
+
+def do_fitb(erstfile, line):
+	global qnum
+	rstfile.write (".. raw:: html\n")
+	compname = line.split(":",2)[1].strip()
+	if compname == '':
+		compname = "none"
+	question = line.split(":",2)[2].strip()
+	#print (">>> question: ", question)
+
+	qparts = question.split("|blank|")
+	if len(qparts) != 2:
+		print ("bad question line: "+line)
+		return
+		
+	answers = []
+	while True:
+		answerline = erstfile.readline()[:-1]
+		if answerline == None:
+			print ("EOF while reading answers")
+			return
+		if answerline.strip() == "":
+			break
+		answ = answerline.split(":", 2)
+		#print (">>> answer: ", answ)
+		if len(answ) != 3:
+			print ("++bad answer line: "+answerline+"\n", answ)
+			return None
+		answers.append((answ[1].strip(), answ[2], answ[0].strip()))
+	#print ("answers: ", answers)
+
+	qformat = '''\n
+          <div class="fitb">
+                <p>%(qpart0)s<input type="text" id="%(qid)s" data-component="%(compname)s">%(qpart1)s</p>
+                <button type="button" onclick="sendfitb('%(qid)s')">Check</button>
+		<script id="%(qid)s-answers" type="application/json">
+		[
+'''
+	ansformat = '''        { "regex": "%(regex)s", "feedback": "%(feedback)s", "result": "%(result)s"  } '''
+	qformat2 = '''        ]
+	</script>
+	<p id="%(qid)s-feedback"> <p>
+
+	</div>
+
+'''
+
+	qid = "Q"+str(qnum)
+	qnum += 1
+	rstfile.write (qformat%dict(qpart0=qparts[0], qpart1=qparts[1], compname=compname, qid=qid))
+
+	comma = ""
+	for answ in answers:
+		rstfile.write (comma+"\n")
+		rstfile.write(ansformat%dict(regex=answ[0], feedback=answ[1], result=answ[2]))
+		comma = ","
+
+	rstfile.write (qformat2%dict(qid=qid))
+
+####### multiple choice question ######
+#   .. mcq:compid: This is the question...
+#      correct:answer1: feedback for answer 1
+#      incorrect:z: Wrong answer.
+#      :x: Wrong answer.
+#
+
+def do_mcq(erstfile, line):
+	global qnum
+	rstfile.write (".. raw:: html\n")
+	compname = line.split(":",2)[1].strip()
+	if compname == '':
+		compname = "none"
+	question = line.split(":",2)[2].strip()
+	print (">>> question: ", question)
+
+	qid = "Q"+str(qnum)
+	qnum += 1
+	ansnum = 1
+	answers = []
+	while True:
+		answerline = erstfile.readline()[:-1]
+		if answerline == None:
+			print ("EOF while reading answers")
+			return
+		if answerline.strip() == "":
+			break
+		answ = answerline.split(":", 2)
+		print (">>> answer: ", answ)
+		if len(answ) != 3:
+			print ("++bad answer line: "+answerline+"\n", answ)
+			return None
+		ansid = "%sA%s"%(qid, str(ansnum))
+		ansnum += 1
+		
+		answers.append((ansid, answ[0].strip(), answ[1], answ[2].strip()))
+	#print ("answers: ", answers)
+
+	qformat = '''\n
+          <div class="mcq">
+                <p>%(question)s</p>
+		<form name=%(qid)s id="%(qid)s" data-component="%(compname)s">
+'''
+	ansformat = '''\t\t<input type="checkbox" id="%(ansid)s" value="%(correct)s"><label for="%(ansid)s">%(answer)s</label> <span id="%(ansid)s-feedback"> </span><br> '''
+	qformat2 = '''
+                <input type="button" value="Check" onclick="sendmcq('%(qid)s')"><br>
+		</form>
+		<script id="%(qid)s-answers" type="application/json"> 
+		[ '''
+	ansformat2 = '''\t{ "ansid":"%(ansid)s", "answer": "%(answer)s", "feedback": "%(feedback)s", "result": "%(correct)s"  } '''
+	qformat3 = '''
+	]
+	</script>
+
+	</div>
+
+'''
+
+	rstfile.write (qformat%dict(question=question, compname=compname, qid=qid))
+
+	for answ in answers:
+		rstfile.write(ansformat%dict(correct=answ[1], answer=answ[2], ansid=answ[0]))
+
+	rstfile.write (qformat2%dict(qid=qid))
+
+	comma = "" 
+	for answ in answers: 
+		rstfile.write(comma) 
+		comma = "," 
+		rstfile.write(ansformat2%dict(correct=answ[1], answer=answ[2], ansid=answ[0], feedback=answ[3])) 
+
+	rstfile.write (qformat3%dict(qid=qid))
+
+####### log metadata ######
+#   .. log::attribute: extra
+#    
+def do_log(erstfile, line):
+	# at this point we have read the command line
+	rstfile.write (".. raw:: html\n")
+	parts = line.split("::")
+	if len(parts) != 2:
+		print ("bad log line: "+line)
+		return
+	attribute = parts[1].split(":")[0].strip()
+	extras = parts[1].split(":")[1].strip()
+	#print ("log: ", attribute, extras)
+
+	logformat = '''
+	<script>
+	dolog("%(attribute)s", "%(extras)s")
+	</script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-V9N6DT60R7"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-V9N6DT60R7');
+	</script>
+'''
+	rstfile.write(logformat%dict(attribute=attribute, extras=extras))
+
+####### likert scale ######
+#   .. likert::attribute: question
+#	left desc:right desc
+#    
+def do_likert(erstfile, line):
+	global qnum
+	rstfile.write (".. raw:: html\n")
+	parts = line.split("::")
+	if len(parts) != 2:
+		print ("bad likert line: "+line)
+		return
+	attribute = parts[1].split(":")[0].strip()
+	likertq = parts[1].split(":")[1].strip()
+	likline = erstfile.readline()[:-1]
+	if likline == None:
+		print ("EOF while reading likert limits ")
+		return
+	if likline.strip() != "":
+		liklimits = likline.split(":", 2)
+		print (">>> likert limits: ", liklimits)
+		if len(liklimits) != 2:
+			print ("++bad likert limits line: "+likline+"\n", liklimits)
+			return None
+		lowlik, highlik = liklimits
+	else:
+		lowlik = "Not confident"
+		highlik = "Very confident"
+
+	cid = "C"+str(qnum)
+	qnum += 1
+	likertfmt = """
+   <div class="likert"><br>
+   %(likertq)s
+   <form id = "%(cid)s" data-component="%(attribute)s">
+   %(lowlik)s
+   <input type="radio" name="%(cid)s" id="%(cid)sA1">
+   <input type="radio" name="%(cid)s" id="%(cid)sA2">
+   <input type="radio" name="%(cid)s" id="%(cid)sA3">
+   <input type="radio" name="%(cid)s" id="%(cid)sA4">
+   <input type="radio" name="%(cid)s" id="%(cid)sA5">
+   %(highlik)s
+   <input type="button" value="Submit" onclick="sendlik('%(cid)s','%(attribute)s')"><br>
+   </form>
+   </div>
+
+"""
+	rstfile.write (likertfmt % dict(likertq=likertq, cid=cid, attribute=attribute, lowlik=lowlik, highlik=highlik))
+
+
+
+####### page metadata ######
+#   .. page::attribute: extras
+#    
+def do_page(erstfile, line):
+	rstfile.write (".. raw:: html\n")
+	parts = line.split("::")
+	if len(parts) != 2:
+		print ("bad page line: "+line)
+		return
+	attribute = parts[1].split(":")[0].strip()
+	extras = parts[1].split(":")[1].strip()
+
+	fmt = '''
+   <script id="pagemeta" type="application/json">
+     { "ebook": "%(attribute)s", "component": "%(extras)s" } 
+   </script>
+
+'''
+	rstfile.write (fmt%dict(attribute=attribute, extras=extras))
+	
+####### setup the OLM ######
+#   .. OLM::context path
+#    
+def do_OLM(erstfile, line):
+# TODO
+	return
+
+erstfile = open(sys.argv[1])
+rstfile = open(fname+".rst", "w")
+
+qnum = 1
+
+while True:
+	line = erstfile.readline()
+	if not line:
+		sys.exit(0)
+	line = line.rstrip()
+	if line.startswith('.. youtube'):
+		do_youtube(erstfile, line)
+	elif line.startswith('.. fillintheblank'):
+		do_fitb(erstfile, line)
+	elif line.startswith('.. mcq'):
+		do_mcq(erstfile, line)
+	elif line.startswith('.. log'):
+		do_log(erstfile, line)
+	elif line.startswith('.. page'):
+		do_page(erstfile, line)
+	elif line.startswith('.. likert'):
+		do_likert(erstfile, line)
+	elif line.startswith('.. OLM'):
+		do_OLM(erstfile, line)
+	else:
+		rstfile.write (line+"\n")
+
