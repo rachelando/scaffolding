@@ -10,6 +10,8 @@ Welcome to Accessibility Scaffolding's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   0-intro.rst
+
 
 
 Indices and tables
