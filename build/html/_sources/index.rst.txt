@@ -8,9 +8,9 @@ Welcome to Accessibility Scaffolding's documentation!
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
 
    0-intro.rst
+   1-1-design-practices.rst
 
 
 

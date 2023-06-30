@@ -1,0 +1,40 @@
+
+.. page::scaffolding:design-practices
+
+Design practices
+::::::::::::::::::::::::
+
+.. fillintheblank:design-practices: The number 101 in binary is |blank| in decimal.
+     correct:5: Correct!
+     incorrect:x: Oops... wrong.  Convert using powers of 2 for each position. Start with the rightmost digit times 1 (which is :math:`2^0`), next digit times :math:`2^1`, next times :math:`2^2` etc.
+
+.. mcq:design-practices:The decimal number 15 in binary is:
+     :1101:Wrong.
+     correct:1111:That's right!
+     :11111:Incorrect.
+     :11110:Wrong.
+
+An estimated **1.3 billion people** globally experience a significant disability (WHO).
+But 96.3% of the top 1,000,000 home pages have accessibility failures.
+
+One cause: *accessibility is not integrated early enough in the web development process*.
+
+Adee is one solution to this problem.
+
+.. image:: Images/Adee-logo.png
+   :width: 5cm
+   :align: center
+
+This is an example of scaffolding, in this case used to teach incorporating accessibility into the web design process.
+
+.. note:: Scaffolds are tools, strategies, and guides used by human and computer tutors, teachers, and animated pedagogical agents during learning to enable them to develop understandings beyond their immediate grasp
+
+          (Azevedo, Hadwin, 2005)
+
+.. likert::binary:How confident are you that you understand binary?
+   Not confident:Very confident
+
+.. youtube:: 5mbpnES7Q1c
+    :align: left
+
+`Back to the main page <index.html>`_

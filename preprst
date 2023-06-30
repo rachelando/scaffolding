@@ -134,7 +134,7 @@ def do_mcq(erstfile, line):
 	if compname == '':
 		compname = "none"
 	question = line.split(":",2)[2].strip()
-	print (">>> question: ", question)
+	# print (">>> question: ", question)
 
 	qid = "Q"+str(qnum)
 	qnum += 1
@@ -148,7 +148,7 @@ def do_mcq(erstfile, line):
 		if answerline.strip() == "":
 			break
 		answ = answerline.split(":", 2)
-		print (">>> answer: ", answ)
+		# print (">>> answer: ", answ)
 		if len(answ) != 3:
 			print ("++bad answer line: "+answerline+"\n", answ)
 			return None

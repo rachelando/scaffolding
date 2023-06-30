@@ -1,10 +1,10 @@
 #!/bin/bash
-SAVEPATH=/Library/Frameworks/Python.framework/Versions/2.7/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/bob/Bin
-SAVEPYTHONPATH=$PYTHONPATH
+# SAVEPATH=/Library/Frameworks/Python.framework/Versions/2.7/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/bob/Bin
+# SAVEPYTHONPATH=$PYTHONPATH
 
-SPHINXPATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
-PERSONISPATH=/Users/bob/Dropbox/Personis/Personis
-export PYTHONPATH=$PERSONISPATH/Src:$PERSONISPATH/lib/python:$PERSONISPATH/lib64/python
+# SPHINXPATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+# PERSONISPATH=/Users/bob/Dropbox/Personis/Personis
+# export PYTHONPATH=$PERSONISPATH/Src:$PERSONISPATH/lib/python:$PERSONISPATH/lib64/python
 
 cd source
 for f in *.erst
@@ -13,7 +13,7 @@ do
 	echo $f complete
 done
 cd ..
-PYTHONPATH=$SAVEPYTHONPATH
-PATH=$SPHINXPATH
-sphinx-build -M html source build
-
+# PYTHONPATH=$SAVEPYTHONPATH
+# PATH=$SPHINXPATH
+# sphinx-build -M html source build
+# make html
