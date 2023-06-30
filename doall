@@ -16,4 +16,4 @@ cd ..
 # PYTHONPATH=$SAVEPYTHONPATH
 # PATH=$SPHINXPATH
 # sphinx-build -M html source build
-# make html
+make html
