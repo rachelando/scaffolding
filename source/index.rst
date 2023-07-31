@@ -9,9 +9,15 @@ Welcome to Accessibility Scaffolding's documentation!
 .. toctree::
    :maxdepth: 2
 
+   practice.rst
+   practice-2.rst
    0-intro.rst
-   1-1-design-practices.rst
-
+   1-accessibility-design.rst
+   2-touch-target.rst
+   3-alt-text.rst
+   4-colour-general.rst
+   5-colour-contrast.rst
+   6-colour-blindness.rst
 
 
 Indices and tables

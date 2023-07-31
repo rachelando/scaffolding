@@ -6,7 +6,7 @@
    </script>
 
 
-Design practices
+Practice 2
 ::::::::::::::::::::::::
 
 .. raw:: html
