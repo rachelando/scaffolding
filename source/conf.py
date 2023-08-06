@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Accessibility Scaffolding'
+project = 'EarlyAccess'
 copyright = '2023, Rachel Andersen'
 author = 'Rachel Andersen'
 
