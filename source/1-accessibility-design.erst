@@ -1,4 +1,6 @@
 
+.. page::scaffolding:accessibility-design
+
 Accessibility and design
 ::::::::::::::::::::::::
 
@@ -7,7 +9,7 @@ Accessibility refers to the extent to which a web page can be interacted with by
 This includes questions like, "How would someone with blindness or low vision understand the content of this webpage?" or "Is this button large enough for someone with low motor skills to be able to click it easily?"
 
 Prevalence of disability
-It can be easy to think that not many people actually have disabilities and therefore accessibility is not a large concern.
+It can be easy to think that not many people have disabilities and therefore accessibility is not a large concern.
 However, according to the World Health Organization, 1.3 billion people globally experience a significant disability.
 That's around 16% of the global population.
 .. Could include feedback from a person with disabilities from e.g. a Tweet
@@ -46,8 +48,10 @@ Each guideline from WCAG has criteria that can be tested to determine whether a 
 For example, the Success Criterion 1.4.1 Use of Color is achieved if *“Color is not used as the only visual means of conveying information, indicating an
 action, prompting a response, or distinguishing a visual element”*.
 .. Either remove or expand on this section
-WCAG 2.0 has a total of X (TODO) guidelines that are categorised into 4 aspects with the acronym POUR: *P*erceivable, *O*perable, *U*nderstandable, and *R*obust.
+WCAG 2.0 has a total of X (TODO) guidelines that are categorised into 4 aspects with the acronym POUR: Perceivable, Operable, Understandable, and Robust.
 .. TODO: AA and AAA
+While meeting the WCAG will prevent the vast majority of accessibility issues, the WCAG is not a completely comprehensive solution. 
+Rather, it provides a minimum for designers to meet and exceed and also provides many accessibility principles that can be applied across situations. 
 
 Current design practices - not incorporating accessibility early enough
 Despite the availability of guidelines and resources on accessibility, accessibility is not prioritised highly enough.
@@ -73,5 +77,4 @@ It helps designers to easily integrate accessibility and have access to feedback
 .. TODO: may not mention if some don't use it
 One such accessibility tool is Adee. 
 
-
-`Back to the main page <index.html>`_
+`Next page: Target size <2-target-size.html>`_

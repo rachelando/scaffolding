@@ -1,0 +1,110 @@
+
+.. raw:: html
+
+   <script id="pagemeta" type="application/json">
+     { "ebook": "scaffolding", "component": "touch-target" } 
+   </script>
+
+
+Target size
+::::::::::::::::::::::::
+
+What is target size?
+Target size refers to how large or small buttons or other clickable/touchable targets are on a website.
+
+Examples of touch targets that are adequate size and some that are not
+
+The following is from WCAG 2.1 Success Criterion 2.5.5: Target Size (Level AAA).
+The WCAG can be difficult to understand due to technical language.
+We will work through it to understand what it means and how to apply it.
+Please read the following WCAG excerpt and then answer the following questions.
+
+    The size of the target for pointer inputs is at least 44 by 44 CSS pixels except when:
+
+    :Equivalent:
+        The target is available through an equivalent link or control on the same page that is at least 44 by 44 CSS pixels;
+    :Inline:
+        The target is in a sentence or block of text;
+    :User Agent Control:
+        The size of the target is determined by the user agent and is not modified by the author;
+    :Essential:
+        A particular presentation of the target is essential to the information being conveyed.
+
+.. raw:: html
+
+
+          <div class="mcq">
+                <p>Generally, what is the minimum target size from the WCAG?</p>
+		<form name=Q1 id="Q1" data-component="design-practices">
+		<input type="checkbox" id="Q1A1" value=""><label for="Q1A1">At least 44 mm in height</label> <span id="Q1A1-feedback"> </span><br> 		<input type="checkbox" id="Q1A2" value=""><label for="Q1A2">At least 44 CSS pixels in width</label> <span id="Q1A2-feedback"> </span><br> 		<input type="checkbox" id="Q1A3" value=""><label for="Q1A3">44 by 44 mm</label> <span id="Q1A3-feedback"> </span><br> 		<input type="checkbox" id="Q1A4" value="correct"><label for="Q1A4">44 by 44 CSS pixels.</label> <span id="Q1A4-feedback"> </span><br> 
+                <input type="button" value="Check" onclick="sendmcq('Q1')"><br>
+		</form>
+		<script id="Q1-answers" type="application/json"> 
+		[ 	{ "ansid":"Q1A1", "answer": "At least 44 mm in height", "feedback": "Incorrect.", "result": ""  } ,	{ "ansid":"Q1A2", "answer": "At least 44 CSS pixels in width", "feedback": "Incorrect.", "result": ""  } ,	{ "ansid":"Q1A3", "answer": "44 by 44 mm", "feedback": "Incorrect.", "result": ""  } ,	{ "ansid":"Q1A4", "answer": "44 by 44 CSS pixels.", "feedback": "That's right!", "result": "correct"  } 
+	]
+	</script>
+
+	</div>
+
+.. raw:: html
+
+
+          <div class="mcq">
+                <p>The headings Equivalent, Inline, User Agent Control and Essential refer to properties that pointer targets...</p>
+		<form name=Q2 id="Q2" data-component="design-practices">
+		<input type="checkbox" id="Q2A1" value=""><label for="Q2A1">... must have to fulfil WCAG target size requirements.</label> <span id="Q2A1-feedback"> </span><br> 		<input type="checkbox" id="Q2A2" value=""><label for="Q2A2">... should not ever have to fulfil WCAG target size requirements.</label> <span id="Q2A2-feedback"> </span><br> 		<input type="checkbox" id="Q2A3" value="correct"><label for="Q2A3">... have when they don't need to fulfil WCAG target size requirements.</label> <span id="Q2A3-feedback"> </span><br> 		<input type="checkbox" id="Q2A4" value=""><label for="Q2A4">... must have at least one of to fulfil WCAG target size requirements.</label> <span id="Q2A4-feedback"> </span><br> 
+                <input type="button" value="Check" onclick="sendmcq('Q2')"><br>
+		</form>
+		<script id="Q2-answers" type="application/json"> 
+		[ 	{ "ansid":"Q2A1", "answer": "... must have to fulfil WCAG target size requirements.", "feedback": "Incorrect.", "result": ""  } ,	{ "ansid":"Q2A2", "answer": "... should not ever have to fulfil WCAG target size requirements.", "feedback": "Incorrect.", "result": ""  } ,	{ "ansid":"Q2A3", "answer": "... have when they don't need to fulfil WCAG target size requirements.", "feedback": "That's right!", "result": "correct"  } ,	{ "ansid":"Q2A4", "answer": "... must have at least one of to fulfil WCAG target size requirements.", "feedback": "Incorrect.", "result": ""  } 
+	]
+	</script>
+
+	</div>
+
+Why does target size matter?
+Here is another excerpt from WCAG 2.1 Success Criterion 2.5.5: Target Size (Level AAA).
+Please read it then answer the following questions.
+
+    The intent of this success criteria is to ensure that target sizes are large enough for users to easily activate them, even if the user is accessing content on a small handheld touch screen device, has limited dexterity, or has trouble activating small targets for other reasons.
+    For instance, mice and similar pointing devices can be hard to use for these users, and a larger target will help them activate the target.
+
+.. raw:: html
+
+
+          <div class="mcq">
+                <p>From this excerpt, why is it important to have large enough target sizes?</p>
+		<form name=Q3 id="Q3" data-component="design-practices">
+		<input type="checkbox" id="Q3A1" value=""><label for="Q3A1">Some devices have small screens</label> <span id="Q3A1-feedback"> </span><br> 		<input type="checkbox" id="Q3A2" value=""><label for="Q3A2">Some users have limited dexterity</label> <span id="Q3A2-feedback"> </span><br> 		<input type="checkbox" id="Q3A3" value=""><label for="Q3A3">Larger targets help users who find mice hard to use</label> <span id="Q3A3-feedback"> </span><br> 		<input type="checkbox" id="Q3A4" value="correct"><label for="Q3A4">All of the above</label> <span id="Q3A4-feedback"> </span><br> 
+                <input type="button" value="Check" onclick="sendmcq('Q3')"><br>
+		</form>
+		<script id="Q3-answers" type="application/json"> 
+		[ 	{ "ansid":"Q3A1", "answer": "Some devices have small screens", "feedback": "That's true but there is a more correct answer.", "result": ""  } ,	{ "ansid":"Q3A2", "answer": "Some users have limited dexterity", "feedback": "That's true but there is a more correct answer.", "result": ""  } ,	{ "ansid":"Q3A3", "answer": "Larger targets help users who find mice hard to use", "feedback": "That's true but there is a more correct answer.", "result": ""  } ,	{ "ansid":"Q3A4", "answer": "All of the above", "feedback": "That's right!", "result": "correct"  } 
+	]
+	</script>
+
+	</div>
+
+Different standards for touch target size:
+As well as the WCAG, there are other important standards for touch target size.
+Apple and Android both have guidelines for developers as well as the Nielsen group who provide guidance on user experience.
+However these standards are all slightly different and in different units which makes it difficult to check if all of them are fulfilled.
+
+:Apple:
+    44 x 44 pt
+:Android:
+    48 x 48 dp
+:Nielsen:
+    1 x 1 cm
+:WCAG:
+    44 x 44 CSS pixels
+
+Adee simplifies these by converting the standards to the same units and displaying whether each standard is fulfilled together.
+.. TODO: which unit does Adee use?
+This makes it far easier and quicker for designers to check all of these guidelines.
+
+Touch target size depends on the device displaying the interface
+Minimum touch target size also depends on the device displaying the design.
+It is important to check that a design fulfils the required standards for a range of devices.
+
+`Next page: Alt text <3-alt-text.html>`_
