@@ -42,8 +42,8 @@ Accessibility also drives innovation (Apple and Google are examples of this) and
 Therefore, accessibility is worth pursuing from both ethical and practical viewpoints.
 
 Introducing WCAG
-    Understand the 4 aspects (POUR)
-    Understand AA and AAA standards
+- Understand the 4 aspects (POUR)
+- Understand AA and AAA standards
 But how exactly do we decide if a website is accessible or not?
 And are there any quantifiable measures of accessibility?
 The WCAG 2.0 provides accessibility guidelines that can be used for both design and evaluation of web pages.
@@ -54,9 +54,20 @@ For example, the Success Criterion 1.4.1 Use of Color is achieved if *“Color i
 action, prompting a response, or distinguishing a visual element”*.
 .. Either remove or expand on this section
 WCAG 2.0 has a total of X (TODO) guidelines that are categorised into 4 aspects with the acronym POUR: Perceivable, Operable, Understandable, and Robust.
-.. TODO: AA and AAA
 While meeting the WCAG will prevent the vast majority of accessibility issues, the WCAG is not a completely comprehensive solution.
 Rather, it provides a minimum for designers to meet and exceed and also provides many accessibility principles that can be applied across situations.
+There are different levels of the WCAG.
+Read the following excerpt from the WAI:
+
+    There are three levels of conformance:
+
+    - Level A is the minimum level.
+
+    - Level AA includes all Level A and AA requirements. Many organizations strive to meet Level AA.
+
+    - Level AAA includes all Level A, AA, and AAA requirements.
+
+It is generally good to aim for level AA and even better to aim for level AAA.
 
 Current design practices - not incorporating accessibility early enough
 Despite the availability of guidelines and resources on accessibility, accessibility is not prioritised highly enough.
@@ -70,16 +81,16 @@ How do people design UI? Use tools like Figma, show examples
 So what exactly is involved in the early stages of web design?
 Web designers create a draft non-working version of the website, called a prototype.
 They use design tools such as Figma, which is the tool that you will use in the second stage of this study.
-.. TODO: example of Figma
+.. TODO example of Figma
 
 Why there is a need for tools like Adee
-    Balancing requirements for design: accessibility, aesthetics, design brief
+- Balancing requirements for design: accessibility, aesthetics, design brief
 Accessibility experts recommend that accessibility support is incorporated into the tools that web designers use daily.
 There are many requirements to consider while designing including the design brief itself, aesthetics, company branding, marketing requirements, and many more.
 And accessibility is another crucial requirement to juggle.
 However, having in-built accessibility support in design tools helps with this.
 It helps designers to easily integrate accessibility and have access to feedback and resources without having to leave the tool and manually check WCAG requirements.
-.. TODO: may not mention if some don't use it
+.. TODO may not mention if some don't use it
 One such accessibility tool is Adee.
 
 `Next page: Target size <2-target-size.html>`_

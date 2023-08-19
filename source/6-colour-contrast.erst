@@ -1,28 +1,85 @@
 
+.. page::scaffolding:colour-contrast
+
 Colour contrast
 ::::::::::::::::::::::::
 
 What is colour contrast?
 Put simply, colour contrast is how different one colour is from another colour. 
+Measuring colour contrast requires **2 colours** to be compared against each other. 
+Colour contrast is particularly important for text and other essential elements. 
 
-Measuring colour contrast requires 2 colours to be compared against each other. 
+.. image:: Images/contrast-example.png
+   :alt: A web interface with a high contrast 'Accept' button and poor contrast 'Ignore' button
+   :width: 15cm
+   :align: center
 
-Colour contrast is between 2 colours
+https://m3.material.io/styles/color/the-color-system/accessibility
 
-Why do we need colour contrast? Examples of poor contrast
+Why do we need to ensure sufficient colour contrast? Examples of poor contrast; who it helps
+Having good colour contrast ensures that people with **low vision** are able to see elements clearly. 
+It also helps when viewing a screen in bright sunlight. 
+This is a good example of accessibility helping everyone, not just people with disabilities. 
+
+.. image:: Images/contrast-quiz.png
+   :alt: Two pale yellow rectangles with text, the left with light coloured text and the right with darker coloured text
+   :width: 20cm
+   :align: center
+
+.. mcq:colour-contrast:Which of these colour pairings has higher colour contrast?
+     :Image 1:Incorrect.
+     correct:Image 2:That's right!
 
 What are colour ratios?
-
-What are the AA and AAA standards?
-
-What are the requirements for different types of text e.g. normal, large, graphics?
-
-How is colour contrast different from colour blindness?
-TODO: Counterexample where different hues but same contrast. 
-[I have an example in Figma]
+.. TODO Look at Adee task, what is the colour ratio?
 
 What are the WCAG guidelines on colour contrast?
+Recommendations from the WCAG for colour contrast differ for AA and AAA levels. 
+Remember that AAA level requirements are stricter than AA level requirements. 
+Read the following WCAG excerpt *Success Criterion 1.4.3 Contrast (Minimum) (Level AA)*:
 
+    The visual presentation of text and images of text has a contrast ratio of at least 4.5:1, except for the following:
+
+    :Large Text: Large-scale text and images of large-scale text have a contrast ratio of at least 3:1;
+
+    ...
+
+Read the following WCAG excerpt *Success Criterion 1.4.4 Contrast (Enhanced) (Level AAA)*:
+
+    The visual presentation of text and images of text has a contrast ratio of at least 7:1, except for the following:
+
+    :Large Text: Large-scale text and images of large-scale text have a contrast ratio of at least 4.5:1;
+
+    ...
+
+From the two excerpts, please answer the following questions:
+
+.. mcq:colour-contrast:From the WCAG, 3:1 is the minimum colour ratio requirement for:
+     correct:Large text (level AA):That's right!
+     :Normal text (level AAA):Incorrect.
+     :Normal text (level AA) and large text (level AAA):Incorrect.
+
+.. mcq:colour-contrast:From the WCAG, 4.5:1 is the minimum colour ratio requirement for:
+     :Large text (level AA):Incorrect.
+     :Normal text (level AAA):Incorrect.
+     correct:Normal text (level AA) and large text (level AAA):That's right!
+
+.. mcq:colour-contrast:From the WCAG, 7:1 is the minimum colour ratio requirement for:
+     :Large text (level AA):Incorrect.
+     correct:Normal text (level AAA):That's right!
+     :Normal text (level AA) and large text (level AAA):Incorrect.
+
+Important non-text information such as **graphics** have the same WCAG contrast requirements as large text.
+That is, graphics should have a contrast ratio of 3:1 for level AA and 4.5:1 for level AAA. 
+
+How is colour contrast different from colour blindness? 
+TODO Counterexample where different hues but same contrast. 
+[I have an example in Figma]
+It is easy to get confused between colour blindness and colour contrast since they are both related to colour. 
+But it's important to remember colour blindness is related to the **hues** of colours (e.g., red, yellow) and colour contrast is related to the **luminance** (or brightness of colours). 
+For example, the image below is accessible in terms of colour blindness, since it is only in black and white. 
+However, it is still hard to read because of insufficient colour *contrast*. 
+Its colour ratio is around 1.7:1 which is below the WCAG requirements. 
 
 
 `Back to the main page <index.html>`_

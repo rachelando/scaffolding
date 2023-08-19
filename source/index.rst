@@ -18,6 +18,7 @@ Welcome to EarlyAccess
    4-colour-general.rst
    5-colour-blindness.rst
    6-colour-contrast.rst
+   7-quiz.rst
 
 
 Indices and tables

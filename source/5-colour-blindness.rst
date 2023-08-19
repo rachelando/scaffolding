@@ -38,7 +38,7 @@ TODO: Have a look at the different colourblind modes in Adee's colour blindness 
 
 
           <div class="fitb">
-                <p>Not including "Normal", how many types of colour blindness do you see to choose from? <input type="text" id="Q1" data-component="colour-blindness"></p>
+                <p>Not including "Normal", how many types of colour blindness can you choose from in Adee? <input type="text" id="Q1" data-component="colour-blindness"></p>
                 <button type="button" onclick="sendfitb('Q1')">Check</button>
 		<script id="Q1-answers" type="application/json">
 		[
@@ -53,15 +53,15 @@ TODO: Have a look at the different colourblind modes in Adee's colour blindness 
 From this number, there are 4 types of colour blindness that are *relatively mild*:
 
 :Deuteranomaly:
-    Type of red-green colour blindness.
-    Most common form of colour blindness.
+    Type of **red-green** colour blindness.
+    **Most common** form of colour blindness.
 :Protanomaly:
-    Another type of red-green colour blindness.
+    Another type of **red-green** colour blindness.
 :Tritanomaly:
-    Type of blue-yellow colour blindness.
+    Type of **blue-yellow** colour blindness.
     Less common than the above two red-green colour blindness types.
 :Achromatomaly:
-    Some deficiency in all colours.
+    Some deficiency in **all colours**.
     Rarest type of colour blindness.
 
 You might notice that the remaining 4 types are related to each of these milder forms.
