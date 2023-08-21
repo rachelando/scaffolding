@@ -75,7 +75,14 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="practice-2.html">Practice 2</a></li>
 <li class="toctree-l1"><a class="reference internal" href="0-intro.html">Introduction</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Accessibility and design</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Accessibility and design</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#what-is-accessibility">What is accessibility?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#why-is-accessibility-important">Why is accessibility important?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#accessibility-guidelines-wcag">Accessibility guidelines: WCAG</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#current-design-practices">Current design practices</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#accessible-design-tools-like-adee">Accessible design tools like Adee</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="2-target-size.html">Target size</a></li>
 <li class="toctree-l1"><a class="reference internal" href="3-alt-text.html">Alternative (alt) text</a></li>
 <li class="toctree-l1"><a class="reference internal" href="4-colour-general.html">Designing with colour</a></li>
@@ -110,50 +117,51 @@
   { "ebook": "scaffolding", "component": "accessibility-design" }
 </script><section id="accessibility-and-design">
 <h1>Accessibility and design<a class="headerlink" href="#accessibility-and-design" title="Permalink to this heading"><span>#</span></a></h1>
-<p>What is accessibility?
-Accessibility refers to the extent to which a web page can be interacted with by people with disabilities.
+<section id="what-is-accessibility">
+<h2>What is accessibility?<a class="headerlink" href="#what-is-accessibility" title="Permalink to this heading"><span>#</span></a></h2>
+<p>Accessibility refers to the extent to which a web page can be interacted with by people with disabilities.
 This includes questions like, “How would someone with blindness or low vision understand the content of this webpage?” or “Is this button large enough for someone with low motor skills to be able to click it easily?”</p>
-<p>Prevalence of disability
-It can be easy to think that not many people have disabilities and therefore accessibility is not a large concern.
+<p>It can be easy to think that not many people have disabilities and therefore accessibility is not a large concern.
 However, according to the World Health Organization, 1.3 billion people globally experience a significant disability.
 That’s around 16% of the global population.
 .. Could include feedback from a person with disabilities from e.g. a Tweet</p>
-<p>How accessibility helps people with disabilities - empathy</p>
-<p>Incorporating accessibility helps everyone - SVIs, elderly people; business case
-As well as the number of people with disabilities, another motivator for prioritising accessibility is that it helps <em>everyone</em>.
+</section>
+<section id="why-is-accessibility-important">
+<h2>Why is accessibility important?<a class="headerlink" href="#why-is-accessibility-important" title="Permalink to this heading"><span>#</span></a></h2>
+<p>As well as the number of people with disabilities, another motivator for prioritising accessibility is that it helps <strong>everyone</strong>.
 For example, poor vision may be caused by direct sunlight to a laptop.
 So, designing for people with poor vision due to a disability actually helps in this case too.</p>
-<p>Accessibility can also benefit other groups of users other than just those with disabilities.
+<p>Accessibility can also benefit <strong>other groups of users</strong> other than just those with disabilities.
 For example, many elderly people have poor vision and motor skills due to age rather than a disability.
 For example, users who frequently and expertly use a website (called “power users”) often navigate using the tab key rather than with a mouse or trackpad.
 Ensuring that content on the website is arranged correctly and can be navigated helps these users. This also helps users with blindness or low vision who use a tool c
-For example, people with blindness or low vision often use screen readers that read out content on web pages.
+For example, people with blindness or low vision often use <strong>screen readers</strong> that read out content on web pages.
 Screen readers can do this best when the content on websites are arranged correctly.
 Ensuring this also helps people who navigate using the tab key rather than with a mouse or trackpad although they have full vision.</p>
-<p>Motivations for making sure websites are accessible aren’t just from a moral standpoint.
+<p>There aren’t just moral motivations for making sure websites for accessible.
 There is also a good business case for accessibility.
 From the above, accessibility helps generate more customers as more user groups are able to use accessible websites (and not just people with disabilities).
 Accessibility also drives innovation (Apple and Google are examples of this) and minimises legal risks.
-Therefore, accessibility is worth pursuing from both ethical and practical viewpoints.</p>
-<p>Introducing WCAG
-- Understand the 4 aspects (POUR)
-- Understand AA and AAA standards
-But how exactly do we decide if a website is accessible or not?
+Therefore, accessibility is worth pursuing from <strong>both ethical and practical viewpoints</strong>.</p>
+</section>
+<section id="accessibility-guidelines-wcag">
+<h2>Accessibility guidelines: WCAG<a class="headerlink" href="#accessibility-guidelines-wcag" title="Permalink to this heading"><span>#</span></a></h2>
+<p>But how exactly do we decide if a website is accessible or not?
 And are there any quantifiable measures of accessibility?
-The WCAG 2.0 provides accessibility guidelines that can be used for both design and evaluation of web pages.
+The <strong>WCAG 2.1</strong> provides accessibility guidelines that can be used for both design and evaluation of web pages.
 WCAG stands for Web Content Accessibility Guidelines and are developed by the Web Accessibility Initiative (WAI).
-WAI is part of the World Wide Web Consortium (W3C) which provides universal standards for the web.
-Each guideline from WCAG has criteria that can be tested to determine whether a web design meets the guideline or not.
+WAI is part of the World Wide Web Consortium (W3C) which provides universal standards for the web.</p>
+<p>Each guideline from WCAG has <strong>criteria</strong> that can be tested to determine whether a web design meets the guideline or not.
 For example, the Success Criterion 1.4.1 Use of Color is achieved if <em>“Color is not used as the only visual means of conveying information, indicating an
 action, prompting a response, or distinguishing a visual element”</em>.
 .. Either remove or expand on this section
-WCAG 2.0 has a total of X (TODO) guidelines that are categorised into 4 aspects with the acronym POUR: Perceivable, Operable, Understandable, and Robust.
-While meeting the WCAG will prevent the vast majority of accessibility issues, the WCAG is not a completely comprehensive solution.
-Rather, it provides a minimum for designers to meet and exceed and also provides many accessibility principles that can be applied across situations.
-There are different levels of the WCAG.
+WCAG 2.1 has a total of X (TODO) guidelines that are categorised into 4 aspects with the acronym POUR: Perceivable, Operable, Understandable, and Robust.
+While meeting the WCAG will prevent the vast majority of accessibility issues, the WCAG is not completely comprehensive.
+Rather, it provides a <strong>minimum</strong> for designers to meet and exceed and also provides many accessibility principles that can be applied across situations.
+There are <strong>different levels</strong> of the WCAG.
 Read the following excerpt from the WAI:</p>
 <blockquote>
-<div><p>There are three levels of conformance:</p>
+<div><p>There are three levels of conformance [to the WCAG]:</p>
 <ul class="simple">
 <li><p>Level A is the minimum level.</p></li>
 <li><p>Level AA includes all Level A and AA requirements. Many organizations strive to meet Level AA.</p></li>
@@ -161,28 +169,33 @@ Read the following excerpt from the WAI:</p>
 </ul>
 </div></blockquote>
 <p>It is generally good to aim for level AA and even better to aim for level AAA.</p>
-<p>Current design practices - not incorporating accessibility early enough
-Despite the availability of guidelines and resources on accessibility, accessibility is not prioritised highly enough.
+</section>
+<section id="current-design-practices">
+<h2>Current design practices<a class="headerlink" href="#current-design-practices" title="Permalink to this heading"><span>#</span></a></h2>
+<p>Despite the availability of guidelines and resources on accessibility, <strong>accessibility is not prioritised highly enough</strong>.
 In fact, of the top one million home pages, 96.3% had WCAG failures.
 One of the key reasons for this is that accessibility is not incorporated early enough into the web design process.
-Rather, a lack of resources and deadlines mean that accessibility is only lightly considered at the end of the process or not considered at all.
+Rather, deadlines and a lack of resources mean that accessibility is only lightly considered at the end of the process or not considered at all.
 The motivation of this tool you’re using, EarlyAccess, is to counter this problem by increasing awareness and knowledge of accessible design practices, particularly in the early stages of web design.
-By incorporating accessibility from the very beginning of web design, the needs of people with disabilities are continually considered, it is less costly to fix accessibility problems, and better accessibility is good for everyone.</p>
-<p>How do people design UI? Use tools like Figma, show examples
-So what exactly is involved in the early stages of web design?
-Web designers create a draft non-working version of the website, called a prototype.
-They use design tools such as Figma, which is the tool that you will use in the second stage of this study.
+By incorporating accessibility from the very beginning of web design, the needs of people with disabilities are continually considered, it is less costly to fix accessibility problems, and better accessibility is good for everyone.
+.. TODO since its a test Q, diagram of web dev process and accessibility in design phase?</p>
+<p>So what exactly is involved in the early stages of web design?
+Web designers create a draft version of the website that is not fully functional, called a prototype.
+They use design tools such as Figma, which is the tool that you will use shortly.
 .. TODO example of Figma</p>
-<p>Why there is a need for tools like Adee
-- Balancing requirements for design: accessibility, aesthetics, design brief
-Accessibility experts recommend that accessibility support is incorporated into the tools that web designers use daily.
-There are many requirements to consider while designing including the design brief itself, aesthetics, company branding, marketing requirements, and many more.
+<p>Designs are then sent on to developers who write the actual code for the website based on the designs.</p>
+</section>
+<section id="accessible-design-tools-like-adee">
+<h2>Accessible design tools like Adee<a class="headerlink" href="#accessible-design-tools-like-adee" title="Permalink to this heading"><span>#</span></a></h2>
+<a class="reference internal image-reference" href="_images/Adee-logo.png"><img alt="Adee logo" class="align-center" src="_images/Adee-logo.png" style="width: 5cm;" /></a>
+<p>Accessibility experts recommend that accessibility support is incorporated into the tools that web designers use daily.
+There are many requirements for designers to consider while designing including the design brief itself, aesthetics, company branding, marketing requirements, and many more.
 And accessibility is another crucial requirement to juggle.
 However, having in-built accessibility support in design tools helps with this.
 It helps designers to easily integrate accessibility and have access to feedback and resources without having to leave the tool and manually check WCAG requirements.
-.. TODO may not mention if some don’t use it
-One such accessibility tool is Adee.</p>
+One such accessibility tool is <strong>Adee</strong> which you will use shortly.</p>
 <p><a class="reference external" href="2-target-size.html">Next page: Target size</a></p>
+</section>
 </section>
 
 

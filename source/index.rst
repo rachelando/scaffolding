@@ -12,13 +12,14 @@ Welcome to EarlyAccess
    practice.rst
    practice-2.rst
    0-intro.rst
-   1-accessibility-design.rst
-   2-target-size.rst
-   3-alt-text.rst
-   4-colour-general.rst
-   5-colour-blindness.rst
-   6-colour-contrast.rst
-   7-quiz.rst
+   1-accessibility.rst
+   2-in-practice.rst
+   3-target-size.rst
+   4-alt-text.rst
+   5-colour-general.rst
+   6-colour-blindness.rst
+   7-colour-contrast.rst
+   8-quiz.rst
 
 
 Indices and tables

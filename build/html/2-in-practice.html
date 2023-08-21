@@ -7,14 +7,14 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Practice 2 | EarlyAccess  documentation</title>
+  <title>Accessibility in practice | EarlyAccess  documentation</title>
   <link rel="stylesheet" href="_static/pygments.css" />
   <link rel="stylesheet" href="_static/theme.c973b470ab69573097f3.css" />
   <link rel="stylesheet" href="_static/css/custom.css" />
   <link rel="search" title="Search" href="search.html" />
   <link rel="index" title="Index" href="genindex.html" />
-  <link rel="next" title="Introduction" href="0-intro.html" />
-  <link rel="prev" title="Practice" href="practice.html" />
+  <link rel="next" title="Target size" href="3-target-size.html" />
+  <link rel="prev" title="Introduction to accessibility" href="1-accessibility.html" />
 </head>
 
 <body class="antialiased text-gray">
@@ -22,7 +22,7 @@
       data-action="keydown@window->search#focus "
       class="min-h-screen xl:h-screen flex flex-col xl:grid xl:grid-layout print:block print:h-auto"
     >
-      <a class="block transition -translate-x-full focus:translate-x-0 opacity-0 focus:opacity-100 text-xl bg-white p-4 z-20 absolute top-0 left-0 h-14" href="#practice-2" title="Skip navigation links">Skip to content</a>
+      <a class="block transition -translate-x-full focus:translate-x-0 opacity-0 focus:opacity-100 text-xl bg-white p-4 z-20 absolute top-0 left-0 h-14" href="#accessibility-in-practice" title="Skip navigation links">Skip to content</a>
 
     <header class="grid-area-header z-10 h-14 fixed w-full top-0 print:hidden">
       <div class="bg-gray-dark shadow-md flex items-center h-full xl:px-2 relative"><div class="flex items-center">
@@ -73,17 +73,17 @@
 <li class="toctree-l2"><a class="reference internal" href="practice.html#adee">Adee</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Practice 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="practice-2.html">Practice 2</a></li>
 <li class="toctree-l1"><a class="reference internal" href="0-intro.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="1-accessibility.html">Introduction to accessibility</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="1-accessibility.html#what-is-accessibility">What is accessibility?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="1-accessibility.html#why-is-accessibility-important">Why is accessibility important?</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="2-in-practice.html">Accessibility in practice</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="2-in-practice.html#accessibility-guidelines-wcag">Accessibility guidelines: WCAG</a></li>
-<li class="toctree-l2"><a class="reference internal" href="2-in-practice.html#current-design-practices">Current design practices</a></li>
-<li class="toctree-l2"><a class="reference internal" href="2-in-practice.html#accessible-design-tools-like-adee">Accessible design tools like Adee</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Accessibility in practice</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#accessibility-guidelines-wcag">Accessibility guidelines: WCAG</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#current-design-practices">Current design practices</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#accessible-design-tools-like-adee">Accessible design tools like Adee</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="3-target-size.html">Target size</a></li>
@@ -111,62 +111,67 @@
      aria-label="breadcrumbs"
      class="print:hidden mt-12 text-sm text-gray-light">
   <a class="text-gray-light text-sm hover:text-gray-dark font-medium focus:text-gray-dark" href="index.html">EarlyAccess  documentation</a>
-  <span class="mr-1">/</span><span aria-current="page">Practice 2</span>
+  <span class="mr-1">/</span><span aria-current="page">Accessibility in practice</span>
 </nav>
 
   <article role="main" class="flex-1 prose">
     
   <script id="pagemeta" type="application/json">
-  { "ebook": "scaffolding", "component": "design-practices" }
-</script><section id="practice-2">
-<h1>Practice 2<a class="headerlink" href="#practice-2" title="Permalink to this heading"><span>#</span></a></h1>
-  <div class="fitb">
-        <p>The number 101 in binary is <input type="text" id="Q1" data-component="design-practices"> in decimal.</p>
-        <button type="button" onclick="sendfitb('Q1')">Check</button>
-        <script id="Q1-answers" type="application/json">
-        [
-
-{ "regex": "5", "feedback": " Correct!", "result": "correct"  } ,
-{ "regex": "x", "feedback": " Oops... wrong.  Convert using powers of 2 for each position. Start with the rightmost digit times 1 (which is :math:`2^0`), next digit times :math:`2^1`, next times :math:`2^2` etc.", "result": "incorrect"  }         ]
-</script>
-<p id="Q1-feedback"> <p>
-
-</div>  <div class="mcq">
-        <p>The decimal number 15 in binary is:</p>
-        <form name=Q2 id="Q2" data-component="design-practices">
-        <input type="checkbox" id="Q2A1" value=""><label for="Q2A1">1101</label> <span id="Q2A1-feedback"> </span><br>          <input type="checkbox" id="Q2A2" value="correct"><label for="Q2A2">1111</label> <span id="Q2A2-feedback"> </span><br>           <input type="checkbox" id="Q2A3" value=""><label for="Q2A3">11111</label> <span id="Q2A3-feedback"> </span><br>                 <input type="checkbox" id="Q2A4" value=""><label for="Q2A4">11110</label> <span id="Q2A4-feedback"> </span><br>
-        <input type="button" value="Check" onclick="sendmcq('Q2')"><br>
-        </form>
-        <script id="Q2-answers" type="application/json">
-        [       { "ansid":"Q2A1", "answer": "1101", "feedback": "Wrong.", "result": ""  } ,     { "ansid":"Q2A2", "answer": "1111", "feedback": "That's right!", "result": "correct"  } ,       { "ansid":"Q2A3", "answer": "11111", "feedback": "Incorrect.", "result": ""  } ,        { "ansid":"Q2A4", "answer": "11110", "feedback": "Wrong.", "result": ""  }
-]
-</script>
-
-</div><p>An estimated <strong>1.3 billion people</strong> globally experience a significant disability (WHO).
-But 96.3% of the top 1,000,000 home pages have accessibility failures.</p>
-<p>One cause: <em>accessibility is not integrated early enough in the web development process</em>.</p>
-<p>Adee is one solution to this problem.</p>
-<a class="reference internal image-reference" href="_images/Adee-logo.png"><img alt="_images/Adee-logo.png" class="align-center" src="_images/Adee-logo.png" style="width: 5cm;" /></a>
-<p>This is an example of scaffolding, in this case used to teach incorporating accessibility into the web design process.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Scaffolds are tools, strategies, and guides used by human and computer tutors, teachers, and animated pedagogical agents during learning to enable them to develop understandings beyond their immediate grasp</p>
-<p>(Azevedo, Hadwin, 2005)</p>
-</div>
-<div class="likert"><br>
-How confident are you that you understand binary?
-<form id = "C3" data-component="binary">
-   Not confident
-<input type="radio" name="C3" id="C3A1">
-<input type="radio" name="C3" id="C3A2">
-<input type="radio" name="C3" id="C3A3">
-<input type="radio" name="C3" id="C3A4">
-<input type="radio" name="C3" id="C3A5">
-Very confident
-<input type="button" value="Submit" onclick="sendlik('C3','binary')"><br>
-</form>
-</div>     <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/5mbpnES7Q1c" frameborder="0"  allowfullscreen></iframe>
-</div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p><p><a class="reference external" href="index.html">Back to the main page</a></p>
+  { "ebook": "scaffolding", "component": "accessibility-design" }
+</script><section id="accessibility-in-practice">
+<h1>Accessibility in practice<a class="headerlink" href="#accessibility-in-practice" title="Permalink to this heading"><span>#</span></a></h1>
+<section id="accessibility-guidelines-wcag">
+<h2>Accessibility guidelines: WCAG<a class="headerlink" href="#accessibility-guidelines-wcag" title="Permalink to this heading"><span>#</span></a></h2>
+<p>But how exactly do we decide if a website is accessible or not?
+And are there any quantifiable measures of accessibility?
+The <strong>WCAG 2.1</strong> provides accessibility guidelines that can be used for both design and evaluation of web pages.
+WCAG stands for Web Content Accessibility Guidelines and are developed by the Web Accessibility Initiative (WAI).
+WAI is part of the World Wide Web Consortium (W3C) which provides universal standards for the web.</p>
+<p>Each guideline from WCAG has <strong>criteria</strong> that can be tested to determine whether a web design meets the guideline or not.
+For example, the Success Criterion 1.4.1 Use of Color is achieved if <em>“Color is not used as the only visual means of conveying information, indicating an
+action, prompting a response, or distinguishing a visual element”</em>.
+.. Either remove or expand on this section
+WCAG 2.1 has a total of X (TODO) guidelines that are categorised into 4 aspects with the acronym POUR: Perceivable, Operable, Understandable, and Robust.
+While meeting the WCAG will prevent the vast majority of accessibility issues, the WCAG is not completely comprehensive.
+Rather, it provides a <strong>minimum</strong> for designers to meet and exceed and also provides many accessibility principles that can be applied across situations.
+There are <strong>different levels</strong> of the WCAG.
+Read the following excerpt from the WAI:</p>
+<blockquote>
+<div><p>There are three levels of conformance [to the WCAG]:</p>
+<ul class="simple">
+<li><p>Level A is the minimum level.</p></li>
+<li><p>Level AA includes all Level A and AA requirements. Many organizations strive to meet Level AA.</p></li>
+<li><p>Level AAA includes all Level A, AA, and AAA requirements.</p></li>
+</ul>
+</div></blockquote>
+<p>It is generally good to aim for level AA and even better to aim for level AAA.</p>
+</section>
+<section id="current-design-practices">
+<h2>Current design practices<a class="headerlink" href="#current-design-practices" title="Permalink to this heading"><span>#</span></a></h2>
+<p>Despite the availability of guidelines and resources on accessibility, <strong>accessibility is not prioritised highly enough</strong>.
+In fact, of the top one million home pages, 96.3% had WCAG failures.
+One of the key reasons for this is that accessibility is not incorporated early enough into the web design process.
+Rather, deadlines and a lack of resources mean that accessibility is only lightly considered at the end of the process or not considered at all.
+The motivation of this tool you’re using, EarlyAccess, is to counter this problem by increasing awareness and knowledge of accessible design practices, particularly in the early stages of web design.
+By incorporating accessibility from the very beginning of web design, the needs of people with disabilities are continually considered, it is less costly to fix accessibility problems, and better accessibility is good for everyone.
+.. TODO since its a test Q, diagram of web dev process and accessibility in design phase?</p>
+<p>So what exactly is involved in the early stages of web design?
+Web designers create a draft version of the website that is not fully functional, called a prototype.
+They use design tools such as Figma, which is the tool that you will use shortly.
+.. TODO example of Figma</p>
+<p>Designs are then sent on to developers who write the actual code for the website based on the designs.</p>
+</section>
+<section id="accessible-design-tools-like-adee">
+<h2>Accessible design tools like Adee<a class="headerlink" href="#accessible-design-tools-like-adee" title="Permalink to this heading"><span>#</span></a></h2>
+<a class="reference internal image-reference" href="_images/Adee-logo.png"><img alt="Adee logo" class="align-center" src="_images/Adee-logo.png" style="width: 5cm;" /></a>
+<p>Accessibility experts recommend that accessibility support is incorporated into the tools that web designers use daily.
+There are many requirements for designers to consider while designing including the design brief itself, aesthetics, company branding, marketing requirements, and many more.
+And accessibility is another crucial requirement to juggle.
+However, having in-built accessibility support in design tools helps with this.
+It helps designers to easily integrate accessibility and have access to feedback and resources without having to leave the tool and manually check WCAG requirements.
+One such accessibility tool is <strong>Adee</strong> which you will use shortly.</p>
+<p><a class="reference external" href="2-target-size.html">Next page: Target size</a></p>
+</section>
 </section>
 
 
