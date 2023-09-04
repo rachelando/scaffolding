@@ -1,121 +1,298 @@
 
-  <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
 
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+<!DOCTYPE html>
 
-  <title>Practice | EarlyAccess  documentation</title>
-  <link rel="stylesheet" href="_static/pygments.css" />
-  <link rel="stylesheet" href="_static/theme.c973b470ab69573097f3.css" />
-  <link rel="stylesheet" href="_static/css/custom.css" />
-  <link rel="search" title="Search" href="search.html" />
-  <link rel="index" title="Index" href="genindex.html" />
-  <link rel="next" title="Practice 2" href="practice-2.html" />
-  <link rel="prev" title="Welcome to EarlyAccess" href="index.html" />
-</head>
 
-<body class="antialiased text-gray">
-    <div id="page" data-controller="sidebar search scroll "
-      data-action="keydown@window->search#focus "
-      class="min-h-screen xl:h-screen flex flex-col xl:grid xl:grid-layout print:block print:h-auto"
-    >
-      <a class="block transition -translate-x-full focus:translate-x-0 opacity-0 focus:opacity-100 text-xl bg-white p-4 z-20 absolute top-0 left-0 h-14" href="#practice" title="Skip navigation links">Skip to content</a>
+<html lang="en" >
 
-    <header class="grid-area-header z-10 h-14 fixed w-full top-0 print:hidden">
-      <div class="bg-gray-dark shadow-md flex items-center h-full xl:px-2 relative"><div class="flex items-center">
-    <button data-action="sidebar#open" data-sidebar-target="hamburger"
-  class="xl:hidden h-14 w-14 leading-14 text-gray-100 hover:bg-gray-700 hover:text-brand focus:outline-none focus:bg-gray-700 focus:text-brand">
-  <span class="sr-only">Open navigation menu</span>
-  <svg aria-hidden="true" class="inline fill-current h-8 w-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
-  </svg>
-</button><a class="hover:bg-gray-700 focus:bg-gray-700 focus:outline-none" href="index.html"
-  title="Back to homepage"><span class="hidden lg:inline-block shrink-0 font-medium text-gray-100 mx-5 leading-14 tracking-wider">EarlyAccess  documentation</span>
-</a></div><div class="flex justify-end items-center flex-1"><form
-  id="searchbox"
-  action="search.html"
-  data-action="click->search#focusSearchInput"
-  method="get"
-  class="flex print:hidden justify-between items-center leading-14 md:ml-4 bg-gray-dark text-gray-300 focus-within:bg-gray-50 focus-within:text-gray-800 focus-within:absolute focus-within:inset-x-0 focus-within:top-0 md:focus-within:w-full md:focus-within:static z-10">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-  <button
-    class="text-inherit h-14 w-14"
-    aria-label="Get search results"
-    tabindex="-1"
-  >
-    <svg aria-hidden="true" class="fill-current stroke-current h-8 w-8" stroke-width="0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
-  </button>
+    <title>Practice &#8212; EarlyAccess  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
 
-  <input
-    name="q"
-    id="search-input"
-    data-search-target="searchInput"
-    type="search"
-    aria-label="Search the docs"
-    placeholder="Search the docs"
-    class="pr-2 bg-transparent text-inherit focus:outline-none w-0 md:w-auto focus:w-full transition-all duration-100"
-  />
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/css/custom.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="_static/ebook.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'practice';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Practice 2" href="practice-2.html" />
+    <link rel="prev" title="Welcome to EarlyAccess" href="index.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
-</div>
-    </header>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
 
+  
+  <div class="sidebar-header-items sidebar-primary__section">
     
-<aside data-sidebar-target="sidebar" class="grid-area-sidebar h-full fixed pt-14 xl:relative inset-y-0 left-0 z-20 xl:z-0 print:hidden overflow-y-auto transition-all transform transform-gpu -translate-x-full opacity-0 duration-300 xl:translate-x-0 xl:opacity-100">
-  <nav
-  role="navigation"
-  class="h-full overflow-y-auto bg-white text-gray-600 pt-8 flex flex-col"
->
-  <div class="nav-toc flex-1 pl-6"><ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Practice</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#adee">Adee</a></li>
-</ul>
-</li>
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+    <p class="title logo__title">EarlyAccess  documentation</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Practice</a></li>
 <li class="toctree-l1"><a class="reference internal" href="practice-2.html">Practice 2</a></li>
 <li class="toctree-l1"><a class="reference internal" href="0-intro.html">Introduction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="1-accessibility.html">Introduction to accessibility</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="1-accessibility.html#what-is-accessibility">What is accessibility?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="1-accessibility.html#why-is-accessibility-important">Why is accessibility important?</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="2-in-practice.html">Accessibility in practice</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="2-in-practice.html#accessibility-guidelines-wcag">Accessibility guidelines: WCAG</a></li>
-<li class="toctree-l2"><a class="reference internal" href="2-in-practice.html#current-design-practices">Current design practices</a></li>
-<li class="toctree-l2"><a class="reference internal" href="2-in-practice.html#accessible-design-tools-like-adee">Accessible design tools like Adee</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="3-target-size.html">Target size</a></li>
-<li class="toctree-l1"><a class="reference internal" href="4-alt-text.html">Alternative (alt) text</a></li>
-<li class="toctree-l1"><a class="reference internal" href="5-colour-general.html">Designing with colour</a></li>
-<li class="toctree-l1"><a class="reference internal" href="6-colour-blindness.html">Colour blindness</a></li>
-<li class="toctree-l1"><a class="reference internal" href="7-colour-contrast.html">Colour contrast</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1-accessibility.html">😊 Accessibility introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2-in-practice.html">😕 Accessibility in practice</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3-target-size.html">😰 Target size ✅</a></li>
+<li class="toctree-l1"><a class="reference internal" href="4-alt-text.html">😐 Alternative (alt) text ❌</a></li>
+<li class="toctree-l1"><a class="reference internal" href="5-colour-general.html">😰 Designing with colour</a></li>
+<li class="toctree-l1"><a class="reference internal" href="6-cvd.html">🤩 Colour vision deficiency ❓</a></li>
+<li class="toctree-l1"><a class="reference internal" href="7-colour-contrast.html">😕 Colour contrast ✴️</a></li>
 <li class="toctree-l1"><a class="reference internal" href="8-quiz.html">Quiz</a></li>
 </ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/practice.rst" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.rst</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
 </div>
 
-  <button
-      data-action="sidebar#close"
-      title="Close navigation menu"
-      class="text-4xl text-gray-800 p-4 bottom-0 hover:text-brand xl:hidden focus:text-brand self-center">
-    <span class="sr-only">Close navigation menu</span>
-    <svg aria-hidden="true" class="fill-current stroke-current h-6 w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
   </button>
-</nav>
-</aside>
+`);
+</script>
 
-<main
-  class="px-4 pt-14 xl:ml-fluid grid-area-main overflow-y-auto flex flex-col flex-1 h-full mx-0 md:mx-auto xl:mr-0"
-><nav role="navigation"
-     aria-label="breadcrumbs"
-     class="print:hidden mt-12 text-sm text-gray-light">
-  <a class="text-gray-light text-sm hover:text-gray-dark font-medium focus:text-gray-dark" href="index.html">EarlyAccess  documentation</a>
-  <span class="mr-1">/</span><span aria-current="page">Practice</span>
-</nav>
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
 
-  <article role="main" class="flex-1 prose">
-    
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Practice</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#adee">Adee</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
   <section id="practice">
 <h1>Practice<a class="headerlink" href="#practice" title="Permalink to this heading"><span>#</span></a></h1>
 <p>Did you know an estimated <strong>1.3 billion people</strong> globally experience a significant disability (World Health Organization)?
@@ -136,32 +313,105 @@ But 96.3% of the top 1,000,000 home pages have accessibility failures (WebAIM, 2
 </section>
 
 
-  </article>
+                </article>
+              
 
-  <footer><div class="mt-20 mb-4 text-sm text-gray-700 print:mt-4">&copy; 2023, Rachel Andersen&nbsp;Made with <a class="text-link hover:text-brand focus:text-brand hover:underline focus:underline" href="https://www.sphinx-doc.org">Sphinx 7.1.2</a></div>
-  </footer></main>
-
-
-    <button
-  data-search-target="snackbar"
-  data-action="search#hideSnackbar"
-  class="fixed bottom-0 right-0 z-20 opacity-0 p-4 m-4 tracking-wide bg-gray-900 text-gray-100 transition transform transform-gpu duration-500 translate-y-full"
->
-  Clear highlights
-</button><div
-  data-sidebar-target="screen"
-  data-action="click->sidebar#close"
-  class="fixed hidden inset-0 bg-black bg-opacity-50">
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="index.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Welcome to EarlyAccess</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="practice-2.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Practice 2</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
 </div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#adee">Adee</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Rachel Andersen
+</p>
+
   </div>
   
-  
-<script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=b3ba4146"></script>
-<script src="_static/doctools.js?v=888ff710"></script>
-<script src="_static/sphinx_highlight.js?v=4825356b"></script>
-<script src="_static/ebook.js?v=26ff51a2"></script>
-<script src="_static/theme.c8991bd7bb6e57cbeea8.js"></script>
-  
-</body>
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2023, Rachel Andersen.
+      <br/>
+    
+  </p>
 
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
 </html>

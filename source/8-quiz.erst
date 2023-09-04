@@ -4,52 +4,48 @@
 Quiz
 ::::::::::::::::::::::::
 
-.. fillintheblank:colour-blindness: 1. What is accessibility? |blank|
-     correct:x: 
+.. mcq:quiz:1. What is web accessibility?
+     :Websites can be accessed by people across large and even remote geographical areas:Incorrect.
+     :Websites are designed and developed exclusively by people with disabilities so they can be used by people with disabilities:Incorrect.
+     correct:Websites are designed and developed so that people with disabilities can use them:That's right!
+     :Websites can be used effectively even with poor internet connection:Incorrect.
 
-.. mcq:quiz:Making web content accessible helps:
+.. mcq:quiz:2. Making web content accessible helps:
      :People living in remote areas:Incorrect.
      :People with disabilities:Incorrect.
      :People with poor internet connection:Incorrect.
      correct:Everyone:That's right!
 
-.. mcq:quiz:When should accessibility be introduced into the web development process?
+.. mcq:quiz:3. When should accessibility be introduced into the web development process?
      correct:Design phase:That's right!
      :Development phase:Incorrect.
-     :Testing phase:Incorrect.
+     :Testing phase:Incorrect. 
 
-TODO fix 
+.. mcq:quiz:4. Why are accessibility guidelines important? Which of the following statements is *incorrect*?
+     :Accessibility guidelines provide a minimum for designers to meet and exceed:Incorrect.
+     :Accessibility guidelines help evaluate whether a website is accessible or not:Incorrect.
+     :Accessibility guidelines:Incorrect.
+     correct:Following accessibility guidelines is a legal requirement for almost all websites:That's right!
 
-.. mcq:quiz:Why are accessibility guidelines important? Which of the following statements is *incorrect*?
-     Statement 1 - they provide a minimum for designers to meet and exceed
-     Statement 2 - they help evaluate whether a website is accessible or not 
-     Statement 3 - they help designers account for the needs of users with different disabilities
-     Statement 4 - following them is a legal requirement for almost all websites
-
-     :Statement 1:Incorrect.
-     :Statement 2:Incorrect.
-     :Statement 3:Incorrect.
-     correct:Statement 4:That's right!
-
-.. mcq:quiz:Sufficient touch target sizes particularly help users who:
+.. mcq:quiz:5. Sufficient touch target sizes particularly help users who:
      :Have low vision:Incorrect.
      :Are blind:Incorrect.
      correct:Have limited dexterity or are using a small handheld device:That's right!
      :Are colour blind:Incorrect.
 
-.. mcq:quiz:Using alt text particularly helps users who:
+.. mcq:quiz:6. Using alt text particularly helps users who:
      :Have low vision:Incorrect.
      correct:Are blind:That's right!
      :Have limited dexterity or are using a small handheld device:Incorrect.
      :Are colour blind:Incorrect.
 
-.. mcq:quiz:Being mindful of colour hues in a design particularly helps users who:
+.. mcq:quiz:7. Being mindful of colour hues in a design particularly helps users who:
      :Have low vision:Incorrect.
      :Are blind:Incorrect.
      :Have limited dexterity or are using a small handheld device:Incorrect.
      correct:Are colour blind:That's right!
 
-.. mcq:quiz:Being mindful of colour contrast particularly helps users who:
+.. mcq:quiz:8. Being mindful of colour contrast particularly helps users who:
      correct:Have low vision:That's right!
      :Are blind:Incorrect.
      :Have limited dexterity or are using a small handheld device:Incorrect.

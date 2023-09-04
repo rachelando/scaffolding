@@ -1,7 +1,7 @@
 
 .. page::scaffolding:colour-general
 
-Designing with colour
+😰 Designing with colour
 ::::::::::::::::::::::::
 
 We saw that alt text is particularly important for blind users. 
@@ -17,5 +17,7 @@ There are many factors to consider in terms of colour itself (hue, brightness, s
 Therefore, a good general approach is that colour should not be the only visual means of distinguishing or conveying information. 
 Relying only on colour means that users who aren't able to distinguish well between colours won't be able to understand the information. 
 
+.. likert::colour-general:How well do you understand this page?
+   Never heard of it:Could explain it to a friend
 
 `Next page: Colour blindness <5-colour-blindness.html>`_

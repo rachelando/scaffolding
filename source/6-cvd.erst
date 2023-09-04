@@ -1,15 +1,23 @@
 
-.. page::scaffolding:colour-blindness
+.. page::scaffolding:cvd
 
-Colour blindness
-::::::::::::::::::::::::
+🤩 Colour vision deficiency ❓
+::::::::::::::::::::::::::::::
 
-What is colour blindness?
-People with colour blindness are either unable to see some colours or distinguish between some colours. 
-Around 1 in 12 men (8%) and 1 in 200 women in Australia are colour-blind. 
+---------------------------------------
+What is colour vision deficiency (CVD)?
+---------------------------------------
+
+Colour vision deficiency (CVD) is also known as colour blindness. 
+People with CVD are either unable to see some colours or distinguish between some colours. 
+Around 1 in 12 men (8%) and 1 in 200 women in Australia have CVD. 
 The cause of colour blindness is usually genetic although some diseases or drugs can also be causes. 
 
-There are **different types** of colour blindness. 
+---------------
+Types of CVD ❓
+---------------
+
+There are **different types** of CVD. 
 Have a look at the following image. 
 
 .. image:: Images/normal-vision.jpeg
@@ -20,32 +28,32 @@ Have a look at the following image.
 Below shows how people with different types of colour blindness would perceive the same image. 
 
 .. image:: Images/colour-blindness.png
-   :alt: Four colour blindness types perception of several silver bowls filled with powders of different bright colours
+   :alt: Four CVD types' perception of several silver bowls filled with powders of different bright colours
    :width: 20cm
    :align: center
 
-From left to right, the corresponding colour blindness types are: deuteranopia, protoanopia, tritanopia, and achromatopsia. 
+From left to right, the corresponding CVD types are: deuteranopia, protoanopia, tritanopia, and achromatopsia. 
 We will learn more about each of these and more shortly. 
 
-TODO: Have a look at the different colourblind modes in Adee's colour blindness simulator.
+TODO: Have a look at the different colour blind modes in Adee's colour blindness simulator.
 
-.. fillintheblank:colour-blindness: Not including "Normal", how many types of colour blindness can you choose from in Adee? |blank|
+.. fillintheblank:cvd: Not including "Normal", how many types of CVD/colour blindness can you choose from in Adee? |blank|
      correct:8: Correct!
      incorrect:x: Incorrect, have another look.
 
-From this number, there are 4 types of colour blindness that are *relatively mild*:
+From this number, there are 4 types of CVD that are *relatively mild*:
 
 :Deuteranomaly:
-    Type of **red-green** colour blindness.
-    **Most common** form of colour blindness.
+    Type of **red-green** colour vision deficiency.
+    **Most common** form of CVD.
 :Protanomaly:
-    Another type of **red-green** colour blindness. 
+    Another type of **red-green** colour vision deficiency. 
 :Tritanomaly:
-    Type of **blue-yellow** colour blindness. 
-    Less common than the above two red-green colour blindness types. 
+    Type of **blue-yellow** colour vision deficiency. 
+    Less common than the above two red-green CVD types. 
 :Achromatomaly:
     Some deficiency in **all colours**. 
-    Rarest type of colour blindness. 
+    Rarest type of CVD. 
 
 You might notice that the remaining 4 types are related to each of these milder forms. 
 The remaining 4 types have the suffix "-opia" or "-opsia" instead of "-omaly" like the milder types. 
@@ -53,23 +61,25 @@ These remaining types are complete deficiencies.
 So, people with deuteranopia and protoanopia have complete red-green colour blindness so they cannot tell the difference between those colours at all. 
 People with tritanopia have complete blue-yellow colour blindness so they cannot tell the difference between blue and green, purple and red, and yellow and pink. 
 People with achromatopsia/monochromacy are unable to see any colour at all. 
-Achromatopsia is extremely rare. 
+This is extremely rare. 
 
-.. mcq:colour-blindness:To test a web design for the most common type of colour blindness, I would test for...
+.. mcq:cvd:To test a web design for the most common type of colour blindness, I would test for...
      :Tritanomaly, a type of red-green colour blindness.:Incorrect, tritanomaly is a type of blue-yellow colour blindness and it's not most common.
      correct:Deuteranomaly, a type of red-green colour blindness.:That's right!
      :Tritanomaly, a type of blue-yellow colour blindness.:Incorrect, tritanomaly is a type of blue-yellow colour blindness but it's not most common.
      :Deuteranomaly, a type of blue-yellow colour blindness.:Incorrect, deuteranomaly is most common but it's not a type of blue-yellow colour blindness.
 
-What implications does colour blindness have for design?
+-----------------
+CVD in web design
+-----------------
 
 As mentioned previously, it's important to not only use colour to communicate key information. 
-Otherwise people with colour blindness miss key information. 
+Otherwise people with CVD miss key information. 
 An example of this is below. 
 Notice how people with deuteranopia would find it difficult to use the key and only see 4 categories in the chart rather than 6.
 
 .. image:: Images/poor-colour.png
-   :alt: Fictional pie chart showcasing poor accessible design for people with colour blindness
+   :alt: Fictional pie chart showcasing poor accessible design for people with CVD
    :width: 15cm
    :align: center
 
@@ -78,8 +88,11 @@ Instead, use other indicators as well as colour such as spacing, borders, patter
 Below is an improved version of the same chart.  
 
 .. image:: Images/good-colour.png
-   :alt: Fictional pie chart showcasing good accessible design for people with colour blindness
+   :alt: Fictional pie chart showcasing good accessible design for people with CVD
    :width: 15cm
    :align: center
+
+.. likert::cvd:How well do you understand colour vision deficiency?
+   Never heard of it:Could explain it to a friend
 
 `Next page: Colour contrast <6-colour-contrast.html>`_

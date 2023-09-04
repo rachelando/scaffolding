@@ -1,14 +1,14 @@
 
-.. page::scaffolding:accessibility-design
+.. page::scaffolding:accessibility-intro
 
-Introduction to accessibility
+😊 Accessibility introduction
 :::::::::::::::::::::::::::::
 
 ----------------------
 What is accessibility?
 ----------------------
 
-Accessibility refers to the extent to which a web page can be interacted with by people with disabilities.
+Web accessibility means that websites, tools, and technologies are designed and developed so that people with disabilities can use them (https://www.w3.org/WAI/fundamentals/accessibility-intro/). 
 This includes questions like, "How would someone with blindness or low vision understand the content of this webpage?" or "Is this button large enough for someone with low motor skills to be able to click it easily?"
 
 It can be easy to think that not many people have disabilities and therefore accessibility is not a large concern.
@@ -37,5 +37,8 @@ There is also a good business case for accessibility.
 From the above, accessibility helps generate more customers as more user groups are able to use accessible websites (and not just people with disabilities).
 Accessibility also drives innovation (Apple and Google are examples of this) and minimises legal risks.
 Therefore, accessibility is worth pursuing from **both ethical and practical viewpoints**.
+
+.. likert::accessibility-intro:How well do you understand what accessibility is and why it's important?
+   Never heard of it:Could explain it to a friend
 
 `Next page: Target size <2-target-size.html>`_

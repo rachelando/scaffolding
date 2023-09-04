@@ -243,7 +243,7 @@ def do_likert(erstfile, line):
 		return
 	if likline.strip() != "":
 		liklimits = likline.split(":", 2)
-		print (">>> likert limits: ", liklimits)
+		# print (">>> likert limits: ", liklimits)
 		if len(liklimits) != 2:
 			print ("++bad likert limits line: "+likline+"\n", liklimits)
 			return None

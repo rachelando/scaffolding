@@ -12,15 +12,16 @@ Quiz
 .. raw:: html
 
 
-          <div class="fitb">
-                <p>1. What is accessibility? <input type="text" id="Q1" data-component="colour-blindness"></p>
-                <button type="button" onclick="sendfitb('Q1')">Check</button>
-		<script id="Q1-answers" type="application/json">
-		[
-
-        { "regex": "x", "feedback": " ", "result": "correct"  }         ]
+          <div class="mcq">
+                <p>1. What is web accessibility?</p>
+		<form name=Q1 id="Q1" data-component="quiz">
+		<input type="checkbox" id="Q1A1" value=""><label for="Q1A1">Websites can be accessed by people across large and even remote geographical areas</label> <span id="Q1A1-feedback"> </span><br> 		<input type="checkbox" id="Q1A2" value=""><label for="Q1A2">Websites are designed and developed exclusively by people with disabilities so they can be used by people with disabilities</label> <span id="Q1A2-feedback"> </span><br> 		<input type="checkbox" id="Q1A3" value="correct"><label for="Q1A3">Websites are designed and developed so that people with disabilities can use them</label> <span id="Q1A3-feedback"> </span><br> 		<input type="checkbox" id="Q1A4" value=""><label for="Q1A4">Websites can be used effectively even with poor internet connection</label> <span id="Q1A4-feedback"> </span><br> 
+                <input type="button" value="Check" onclick="sendmcq('Q1')"><br>
+		</form>
+		<script id="Q1-answers" type="application/json"> 
+		[ 	{ "ansid":"Q1A1", "answer": "Websites can be accessed by people across large and even remote geographical areas", "feedback": "Incorrect.", "result": ""  } ,	{ "ansid":"Q1A2", "answer": "Websites are designed and developed exclusively by people with disabilities so they can be used by people with disabilities", "feedback": "Incorrect.", "result": ""  } ,	{ "ansid":"Q1A3", "answer": "Websites are designed and developed so that people with disabilities can use them", "feedback": "That's right!", "result": "correct"  } ,	{ "ansid":"Q1A4", "answer": "Websites can be used effectively even with poor internet connection", "feedback": "Incorrect.", "result": ""  } 
+	]
 	</script>
-	<p id="Q1-feedback"> <p>
 
 	</div>
 
@@ -28,7 +29,7 @@ Quiz
 
 
           <div class="mcq">
-                <p>Making web content accessible helps:</p>
+                <p>2. Making web content accessible helps:</p>
 		<form name=Q2 id="Q2" data-component="quiz">
 		<input type="checkbox" id="Q2A1" value=""><label for="Q2A1">People living in remote areas</label> <span id="Q2A1-feedback"> </span><br> 		<input type="checkbox" id="Q2A2" value=""><label for="Q2A2">People with disabilities</label> <span id="Q2A2-feedback"> </span><br> 		<input type="checkbox" id="Q2A3" value=""><label for="Q2A3">People with poor internet connection</label> <span id="Q2A3-feedback"> </span><br> 		<input type="checkbox" id="Q2A4" value="correct"><label for="Q2A4">Everyone</label> <span id="Q2A4-feedback"> </span><br> 
                 <input type="button" value="Check" onclick="sendmcq('Q2')"><br>
@@ -44,7 +45,7 @@ Quiz
 
 
           <div class="mcq">
-                <p>When should accessibility be introduced into the web development process?</p>
+                <p>3. When should accessibility be introduced into the web development process?</p>
 		<form name=Q3 id="Q3" data-component="quiz">
 		<input type="checkbox" id="Q3A1" value="correct"><label for="Q3A1">Design phase</label> <span id="Q3A1-feedback"> </span><br> 		<input type="checkbox" id="Q3A2" value=""><label for="Q3A2">Development phase</label> <span id="Q3A2-feedback"> </span><br> 		<input type="checkbox" id="Q3A3" value=""><label for="Q3A3">Testing phase</label> <span id="Q3A3-feedback"> </span><br> 
                 <input type="button" value="Check" onclick="sendmcq('Q3')"><br>
@@ -56,23 +57,27 @@ Quiz
 
 	</div>
 
-TODO fix
-
 .. raw:: html
-     Statement 2 - they help evaluate whether a website is accessible or not
-     Statement 3 - they help designers account for the needs of users with different disabilities
-     Statement 4 - following them is a legal requirement for almost all websites
 
-     :Statement 1:Incorrect.
-     :Statement 2:Incorrect.
-     :Statement 3:Incorrect.
-     correct:Statement 4:That's right!
+
+          <div class="mcq">
+                <p>4. Why are accessibility guidelines important? Which of the following statements is *incorrect*?</p>
+		<form name=Q4 id="Q4" data-component="quiz">
+		<input type="checkbox" id="Q4A1" value=""><label for="Q4A1">Accessibility guidelines provide a minimum for designers to meet and exceed</label> <span id="Q4A1-feedback"> </span><br> 		<input type="checkbox" id="Q4A2" value=""><label for="Q4A2">Accessibility guidelines help evaluate whether a website is accessible or not</label> <span id="Q4A2-feedback"> </span><br> 		<input type="checkbox" id="Q4A3" value=""><label for="Q4A3">Accessibility guidelines</label> <span id="Q4A3-feedback"> </span><br> 		<input type="checkbox" id="Q4A4" value="correct"><label for="Q4A4">Following accessibility guidelines is a legal requirement for almost all websites</label> <span id="Q4A4-feedback"> </span><br> 
+                <input type="button" value="Check" onclick="sendmcq('Q4')"><br>
+		</form>
+		<script id="Q4-answers" type="application/json"> 
+		[ 	{ "ansid":"Q4A1", "answer": "Accessibility guidelines provide a minimum for designers to meet and exceed", "feedback": "Incorrect.", "result": ""  } ,	{ "ansid":"Q4A2", "answer": "Accessibility guidelines help evaluate whether a website is accessible or not", "feedback": "Incorrect.", "result": ""  } ,	{ "ansid":"Q4A3", "answer": "Accessibility guidelines", "feedback": "Incorrect.", "result": ""  } ,	{ "ansid":"Q4A4", "answer": "Following accessibility guidelines is a legal requirement for almost all websites", "feedback": "That's right!", "result": "correct"  } 
+	]
+	</script>
+
+	</div>
 
 .. raw:: html
 
 
           <div class="mcq">
-                <p>Sufficient touch target sizes particularly help users who:</p>
+                <p>5. Sufficient touch target sizes particularly help users who:</p>
 		<form name=Q5 id="Q5" data-component="quiz">
 		<input type="checkbox" id="Q5A1" value=""><label for="Q5A1">Have low vision</label> <span id="Q5A1-feedback"> </span><br> 		<input type="checkbox" id="Q5A2" value=""><label for="Q5A2">Are blind</label> <span id="Q5A2-feedback"> </span><br> 		<input type="checkbox" id="Q5A3" value="correct"><label for="Q5A3">Have limited dexterity or are using a small handheld device</label> <span id="Q5A3-feedback"> </span><br> 		<input type="checkbox" id="Q5A4" value=""><label for="Q5A4">Are colour blind</label> <span id="Q5A4-feedback"> </span><br> 
                 <input type="button" value="Check" onclick="sendmcq('Q5')"><br>
@@ -88,7 +93,7 @@ TODO fix
 
 
           <div class="mcq">
-                <p>Using alt text particularly helps users who:</p>
+                <p>6. Using alt text particularly helps users who:</p>
 		<form name=Q6 id="Q6" data-component="quiz">
 		<input type="checkbox" id="Q6A1" value=""><label for="Q6A1">Have low vision</label> <span id="Q6A1-feedback"> </span><br> 		<input type="checkbox" id="Q6A2" value="correct"><label for="Q6A2">Are blind</label> <span id="Q6A2-feedback"> </span><br> 		<input type="checkbox" id="Q6A3" value=""><label for="Q6A3">Have limited dexterity or are using a small handheld device</label> <span id="Q6A3-feedback"> </span><br> 		<input type="checkbox" id="Q6A4" value=""><label for="Q6A4">Are colour blind</label> <span id="Q6A4-feedback"> </span><br> 
                 <input type="button" value="Check" onclick="sendmcq('Q6')"><br>
@@ -104,7 +109,7 @@ TODO fix
 
 
           <div class="mcq">
-                <p>Being mindful of colour hues in a design particularly helps users who:</p>
+                <p>7. Being mindful of colour hues in a design particularly helps users who:</p>
 		<form name=Q7 id="Q7" data-component="quiz">
 		<input type="checkbox" id="Q7A1" value=""><label for="Q7A1">Have low vision</label> <span id="Q7A1-feedback"> </span><br> 		<input type="checkbox" id="Q7A2" value=""><label for="Q7A2">Are blind</label> <span id="Q7A2-feedback"> </span><br> 		<input type="checkbox" id="Q7A3" value=""><label for="Q7A3">Have limited dexterity or are using a small handheld device</label> <span id="Q7A3-feedback"> </span><br> 		<input type="checkbox" id="Q7A4" value="correct"><label for="Q7A4">Are colour blind</label> <span id="Q7A4-feedback"> </span><br> 
                 <input type="button" value="Check" onclick="sendmcq('Q7')"><br>
@@ -120,7 +125,7 @@ TODO fix
 
 
           <div class="mcq">
-                <p>Being mindful of colour contrast particularly helps users who:</p>
+                <p>8. Being mindful of colour contrast particularly helps users who:</p>
 		<form name=Q8 id="Q8" data-component="quiz">
 		<input type="checkbox" id="Q8A1" value="correct"><label for="Q8A1">Have low vision</label> <span id="Q8A1-feedback"> </span><br> 		<input type="checkbox" id="Q8A2" value=""><label for="Q8A2">Are blind</label> <span id="Q8A2-feedback"> </span><br> 		<input type="checkbox" id="Q8A3" value=""><label for="Q8A3">Have limited dexterity or are using a small handheld device</label> <span id="Q8A3-feedback"> </span><br> 		<input type="checkbox" id="Q8A4" value=""><label for="Q8A4">Are colour blind</label> <span id="Q8A4-feedback"> </span><br> 
                 <input type="button" value="Check" onclick="sendmcq('Q8')"><br>

@@ -9,10 +9,17 @@
 Colour blindness
 ::::::::::::::::::::::::
 
+-------------------------
 What is colour blindness?
+-------------------------
+
 People with colour blindness are either unable to see some colours or distinguish between some colours.
 Around 1 in 12 men (8%) and 1 in 200 women in Australia are colour-blind.
 The cause of colour blindness is usually genetic although some diseases or drugs can also be causes.
+
+-------------------------
+Types of colour blindness
+-------------------------
 
 There are **different types** of colour blindness.
 Have a look at the following image.
@@ -88,7 +95,9 @@ Achromatopsia is extremely rare.
 
 	</div>
 
-What implications does colour blindness have for design?
+------------------------------
+Colour blindness in web design
+------------------------------
 
 As mentioned previously, it's important to not only use colour to communicate key information.
 Otherwise people with colour blindness miss key information.
@@ -108,5 +117,22 @@ Below is an improved version of the same chart.
    :alt: Fictional pie chart showcasing good accessible design for people with colour blindness
    :width: 15cm
    :align: center
+
+.. raw:: html
+
+   <div class="likert"><br>
+   How confident are you that you understand colour blindness?
+   <form id = "C3" data-component="colour-blindness">
+      Not confident
+   <input type="radio" name="C3" id="C3A1">
+   <input type="radio" name="C3" id="C3A2">
+   <input type="radio" name="C3" id="C3A3">
+   <input type="radio" name="C3" id="C3A4">
+   <input type="radio" name="C3" id="C3A5">
+   Very confident
+   <input type="button" value="Submit" onclick="sendlik('C3','colour-blindness')"><br>
+   </form>
+   </div>
+
 
 `Next page: Colour contrast <6-colour-contrast.html>`_

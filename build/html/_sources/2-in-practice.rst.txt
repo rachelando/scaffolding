@@ -2,7 +2,7 @@
 .. raw:: html
 
    <script id="pagemeta" type="application/json">
-     { "ebook": "scaffolding", "component": "accessibility-design" } 
+     { "ebook": "scaffolding", "component": "in-practice" } 
    </script>
 
 
@@ -73,5 +73,22 @@ And accessibility is another crucial requirement to juggle.
 However, having in-built accessibility support in design tools helps with this.
 It helps designers to easily integrate accessibility and have access to feedback and resources without having to leave the tool and manually check WCAG requirements.
 One such accessibility tool is **Adee** which you will use shortly.
+
+.. raw:: html
+
+   <div class="likert"><br>
+   How confident are you that you understand accessibility in design practice?
+   <form id = "C1" data-component="in-practice">
+      Not confident
+   <input type="radio" name="C1" id="C1A1">
+   <input type="radio" name="C1" id="C1A2">
+   <input type="radio" name="C1" id="C1A3">
+   <input type="radio" name="C1" id="C1A4">
+   <input type="radio" name="C1" id="C1A5">
+   Very confident
+   <input type="button" value="Submit" onclick="sendlik('C1','in-practice')"><br>
+   </form>
+   </div>
+
 
 `Next page: Target size <2-target-size.html>`_

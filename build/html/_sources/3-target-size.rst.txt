@@ -9,10 +9,17 @@
 Target size
 ::::::::::::::::::::::::
 
+--------------------
 What is target size?
+--------------------
+
 Target size refers to how large or small buttons or other clickable/touchable targets are on a website.
 
-Examples of touch targets that are adequate size and some that are not
+.. TODO examples of touch targets that are adequate size and some that are not
+
+-----------------------
+Target size in the WCAG
+-----------------------
 
 The following is from WCAG 2.1 Success Criterion 2.5.5: Target Size (Level AAA).
 The WCAG can be difficult to understand due to technical language.
@@ -58,7 +65,10 @@ Please read the following WCAG excerpt and then answer the following questions.
 
 	</div>
 
+----------------------------
 Why does target size matter?
+----------------------------
+
 Here is another excerpt from WCAG 2.1 Success Criterion 2.5.5: Target Size (Level AAA).
 Please read it then answer the following questions.
 
@@ -81,7 +91,10 @@ Please read it then answer the following questions.
 
 	</div>
 
-Different standards for touch target size:
+-------------------------------
+Different target size standards
+-------------------------------
+
 As well as the WCAG, there are other important standards for touch target size.
 Apple and Android both have guidelines for developers as well as the Nielsen group who provide guidance on user experience.
 However these standards are all slightly different and in different units which makes it difficult to check if all of them are fulfilled.
@@ -95,8 +108,29 @@ Adee simplifies these by converting the standards to the same units and displayi
 .. TODO: which unit does Adee use?
 This makes it far easier and quicker for designers to check all of these guidelines.
 
+-----------
+Device size
+-----------
+
 Touch target size depends on the device displaying the interface
 Minimum touch target size also depends on the device displaying the design.
 It is important to check that a design fulfils the required standards for a range of devices.
+
+.. raw:: html
+
+   <div class="likert"><br>
+   How confident are you that you understand target size?
+   <form id = "C4" data-component="target-size">
+      Not confident
+   <input type="radio" name="C4" id="C4A1">
+   <input type="radio" name="C4" id="C4A2">
+   <input type="radio" name="C4" id="C4A3">
+   <input type="radio" name="C4" id="C4A4">
+   <input type="radio" name="C4" id="C4A5">
+   Very confident
+   <input type="button" value="Submit" onclick="sendlik('C4','target-size')"><br>
+   </form>
+   </div>
+
 
 `Next page: Alt text <3-alt-text.html>`_

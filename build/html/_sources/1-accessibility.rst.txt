@@ -2,7 +2,7 @@
 .. raw:: html
 
    <script id="pagemeta" type="application/json">
-     { "ebook": "scaffolding", "component": "accessibility-design" } 
+     { "ebook": "scaffolding", "component": "accessibility-intro" } 
    </script>
 
 
@@ -13,7 +13,7 @@ Introduction to accessibility
 What is accessibility?
 ----------------------
 
-Accessibility refers to the extent to which a web page can be interacted with by people with disabilities.
+Web accessibility means that websites, tools, and technologies are designed and developed so that people with disabilities can use them (https://www.w3.org/WAI/fundamentals/accessibility-intro/).
 This includes questions like, "How would someone with blindness or low vision understand the content of this webpage?" or "Is this button large enough for someone with low motor skills to be able to click it easily?"
 
 It can be easy to think that not many people have disabilities and therefore accessibility is not a large concern.
@@ -42,5 +42,22 @@ There is also a good business case for accessibility.
 From the above, accessibility helps generate more customers as more user groups are able to use accessible websites (and not just people with disabilities).
 Accessibility also drives innovation (Apple and Google are examples of this) and minimises legal risks.
 Therefore, accessibility is worth pursuing from **both ethical and practical viewpoints**.
+
+.. raw:: html
+
+   <div class="likert"><br>
+   How confident are you that you understand what accessibility is and why it's important?
+   <form id = "C1" data-component="accessibility-intro">
+      Not confident
+   <input type="radio" name="C1" id="C1A1">
+   <input type="radio" name="C1" id="C1A2">
+   <input type="radio" name="C1" id="C1A3">
+   <input type="radio" name="C1" id="C1A4">
+   <input type="radio" name="C1" id="C1A5">
+   Very confident
+   <input type="button" value="Submit" onclick="sendlik('C1','accessibility-intro')"><br>
+   </form>
+   </div>
+
 
 `Next page: Target size <2-target-size.html>`_

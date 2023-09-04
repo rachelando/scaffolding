@@ -1,13 +1,20 @@
 
 .. page::scaffolding:target-size
 
-Target size
+😰 Target size ✅
 ::::::::::::::::::::::::
 
+--------------------
 What is target size?
+--------------------
+
 Target size refers to how large or small buttons or other clickable/touchable targets are on a website. 
 
-Examples of touch targets that are adequate size and some that are not 
+.. TODO examples of touch targets that are adequate size and some that are not 
+
+--------------------------
+Target size in the WCAG ✅
+--------------------------
 
 The following is from WCAG 2.1 Success Criterion 2.5.5: Target Size (Level AAA). 
 The WCAG can be difficult to understand due to technical language. 
@@ -33,7 +40,10 @@ Please read the following WCAG excerpt and then answer the following questions.
      correct:... have when they don't need to fulfil WCAG target size requirements.:That's right!
      :... must have at least one of to fulfil WCAG target size requirements.:Incorrect.
 
-Why does target size matter?
+-------------------------------
+Why does target size matter? ✅
+-------------------------------
+
 Here is another excerpt from WCAG 2.1 Success Criterion 2.5.5: Target Size (Level AAA). 
 Please read it then answer the following questions. 
 
@@ -46,7 +56,10 @@ Please read it then answer the following questions.
      :Larger targets help users who find mice hard to use:That's true but there is a more correct answer.
      correct:All of the above:That's right!
 
-Different standards for touch target size: 
+-------------------------------
+Different target size standards
+-------------------------------
+
 As well as the WCAG, there are other important standards for touch target size. 
 Apple and Android both have guidelines for developers as well as the Nielsen group who provide guidance on user experience. 
 However these standards are all slightly different and in different units which makes it difficult to check if all of them are fulfilled. 
@@ -56,12 +69,19 @@ However these standards are all slightly different and in different units which 
 :Nielsen: 1 x 1 cm
 :WCAG: 44 x 44 CSS pixels
 
-Adee simplifies these by converting the standards to the same units and displaying whether each standard is fulfilled together.
-.. TODO: which unit does Adee use?
+Adee simplifies these by converting the standards to the same unit, px.
+Adee also helps designers check whether the standards are fulfilled all at one glance. 
 This makes it far easier and quicker for designers to check all of these guidelines. 
+
+-----------
+Device size
+-----------
 
 Touch target size depends on the device displaying the interface
 Minimum touch target size also depends on the device displaying the design. 
 It is important to check that a design fulfils the required standards for a range of devices. 
+
+.. likert::target-size:How well do you understand target size?
+   Never heard of it:Could explain it to a friend
 
 `Next page: Alt text <3-alt-text.html>`_

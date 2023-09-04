@@ -22,5 +22,21 @@ There are many factors to consider in terms of colour itself (hue, brightness, s
 Therefore, a good general approach is that colour should not be the only visual means of distinguishing or conveying information.
 Relying only on colour means that users who aren't able to distinguish well between colours won't be able to understand the information.
 
+.. raw:: html
+
+   <div class="likert"><br>
+   How confident are you that you understand this page?
+   <form id = "C1" data-component="colour-general">
+      Not confident
+   <input type="radio" name="C1" id="C1A1">
+   <input type="radio" name="C1" id="C1A2">
+   <input type="radio" name="C1" id="C1A3">
+   <input type="radio" name="C1" id="C1A4">
+   <input type="radio" name="C1" id="C1A5">
+   Very confident
+   <input type="button" value="Submit" onclick="sendlik('C1','colour-general')"><br>
+   </form>
+   </div>
+
 
 `Next page: Colour blindness <5-colour-blindness.html>`_

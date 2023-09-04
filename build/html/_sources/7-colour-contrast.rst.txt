@@ -9,7 +9,10 @@
 Colour contrast
 ::::::::::::::::::::::::
 
-What is colour contrast?
+----------------------------------
+Colour contrast and its importance
+----------------------------------
+
 Put simply, colour contrast is how different one colour is from another colour.
 Measuring colour contrast requires **2 colours** to be compared against each other.
 Colour contrast is particularly important for text and other essential elements.
@@ -28,7 +31,7 @@ This is a good example of accessibility helping everyone, not just people with d
 
 .. image:: Images/contrast-quiz.png
    :alt: Two pale yellow rectangles with text, the left with light coloured text and the right with darker coloured text
-   :width: 20cm
+   :width: 15cm
    :align: center
 
 .. raw:: html
@@ -47,7 +50,10 @@ This is a good example of accessibility helping everyone, not just people with d
 
 	</div>
 
-What are colour ratios?
+--------------------------
+Colour ratios and the WCAG
+--------------------------
+
 .. TODO Look at Adee task, what is the colour ratio?
 
 What are the WCAG guidelines on colour contrast?
@@ -122,14 +128,37 @@ From the two excerpts, please answer the following questions:
 Important non-text information such as **graphics** have the same WCAG contrast requirements as large text.
 That is, graphics should have a contrast ratio of 3:1 for level AA and 4.5:1 for level AAA.
 
-How is colour contrast different from colour blindness?
-TODO Counterexample where different hues but same contrast.
-[I have an example in Figma]
+-----------------------------------
+Colour contrast vs colour blindness
+-----------------------------------
+
 It is easy to get confused between colour blindness and colour contrast since they are both related to colour.
 But it's important to remember colour blindness is related to the **hues** of colours (e.g., red, yellow) and colour contrast is related to the **luminance** (or brightness of colours).
 For example, the image below is accessible in terms of colour blindness, since it is only in black and white.
+
+.. image:: Images/dark-text.png
+   :alt: Grey text "Some text on a dark background" on a darker grey background
+   :width: 7cm
+   :align: center
+
 However, it is still hard to read because of insufficient colour *contrast*.
 Its colour ratio is around 1.7:1 which is below the WCAG requirements.
 
+.. raw:: html
 
-`Back to the main page <index.html>`_
+   <div class="likert"><br>
+   How confident are you that you understand colour contrast?
+   <form id = "C5" data-component="colour-contrast">
+      Not confident
+   <input type="radio" name="C5" id="C5A1">
+   <input type="radio" name="C5" id="C5A2">
+   <input type="radio" name="C5" id="C5A3">
+   <input type="radio" name="C5" id="C5A4">
+   <input type="radio" name="C5" id="C5A5">
+   Very confident
+   <input type="button" value="Submit" onclick="sendlik('C5','colour-contrast')"><br>
+   </form>
+   </div>
+
+
+`Next page: quiz <8-quiz.html>`_

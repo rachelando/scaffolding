@@ -45,7 +45,8 @@ exclude_patterns = []
 # a list of builtin themes.
 #
 html_permalinks_icon = '<span>#</span>'
-html_theme = 'sphinxawesome_theme'
+# html_theme = 'sphinxawesome_theme'
+html_theme = 'sphinx_book_theme'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -53,10 +54,3 @@ html_theme = 'sphinxawesome_theme'
 html_static_path = ['_static']
 html_css_files = ['css/custom.css']
 html_js_files = ['ebook.js']
-html_sidebars = {
-    '**': [
-        'about.html',
-        'navigation.html',
-        'searchbox.html',
-    ]
-}
