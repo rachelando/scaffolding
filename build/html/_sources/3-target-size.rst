@@ -15,7 +15,10 @@ What is target size?
 
 Target size refers to how large or small buttons or other clickable/touchable targets are on a website.
 
-.. TODO examples of touch targets that are adequate size and some that are not
+.. image:: Images/touch-targets.png
+   :alt: A row of four 24dp icons and one 40dp icon
+   :width: 18cm
+   :align: center
 
 --------------------------
 Target size in the WCAG ✅

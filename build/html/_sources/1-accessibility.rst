@@ -33,7 +33,7 @@ This includes questions like, "How would someone with blindness or low vision un
 	</div>
 
 It can be easy to think that not many people have disabilities and therefore accessibility is not a large concern.
-However, according to the World Health Organization, **1.3 billion people** globally experience a significant disability.
+However, **1.3 billion people** globally experience a significant disability [#]_.
 That's around 16% of the global population.
 
 -------------------------------
@@ -87,3 +87,4 @@ Therefore, accessibility is worth pursuing from **both ethical and practical vie
 
 
 .. [#] `WAI (2022) <https://www.w3.org/WAI/fundamentals/accessibility-intro/>`_
+.. [#] `WHO <https://www.who.int/health-topics/disability>`_
