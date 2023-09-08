@@ -9,8 +9,9 @@ What is colour vision deficiency (CVD)?
 ---------------------------------------
 
 Colour vision deficiency (CVD) is also known as colour blindness. 
-People with CVD are either unable to see some colours or distinguish between some colours. 
-Around 1 in 12 men (8%) and 1 in 200 women in Australia have CVD. 
+People with CVD are either unable or have a decreased ability to see some colours or distinguish between some colours. 
+Since very few people are strictly colour *blind*, colour vision deficiency is a better term. 
+Around 1 in 12 men and 1 in 200 women in Australia have CVD [#]_. 
 The cause of colour blindness is usually genetic although some diseases or drugs can also be causes. 
 
 ---------------
@@ -37,11 +38,11 @@ We will learn more about each of these and more shortly.
 
 TODO: Have a look at the different colour blind modes in Adee's colour blindness simulator.
 
-.. fillintheblank:cvd: Not including "Normal", how many types of CVD/colour blindness can you choose from in Adee? |blank|
+.. fillintheblank:cvd: Not including "Normal", how many types of CVD/colour blindness can you choose from in Adee? (Please enter as a single digit e.g., 1) |blank|
      correct:8: Correct!
      incorrect:x: Incorrect, have another look.
 
-From this number, there are 4 types of CVD that are *relatively mild*:
+From this number, there are 4 types of CVD that are **relatively mild**:
 
 :Deuteranomaly:
     Type of **red-green** colour vision deficiency.
@@ -56,12 +57,12 @@ From this number, there are 4 types of CVD that are *relatively mild*:
     Rarest type of CVD. 
 
 You might notice that the remaining 4 types are related to each of these milder forms. 
-The remaining 4 types have the suffix "-opia" or "-opsia" instead of "-omaly" like the milder types. 
+The remaining 4 types have the suffix "-opia" or "-opsia" instead of "-omaly". 
 These remaining types are complete deficiencies. 
 So, people with deuteranopia and protoanopia have complete red-green colour blindness so they cannot tell the difference between those colours at all. 
 People with tritanopia have complete blue-yellow colour blindness so they cannot tell the difference between blue and green, purple and red, and yellow and pink. 
 People with achromatopsia/monochromacy are unable to see any colour at all. 
-This is extremely rare. 
+Achromatopsia is extremely rare. 
 
 .. mcq:cvd:To test a web design for the most common type of colour blindness, I would test for...
      :Tritanomaly, a type of red-green colour blindness.:Incorrect, tritanomaly is a type of blue-yellow colour blindness and it's not most common.
@@ -74,8 +75,8 @@ CVD in web design
 -----------------
 
 As mentioned previously, it's important to not only use colour to communicate key information. 
-Otherwise people with CVD miss key information. 
-An example of this is below. 
+Otherwise people with CVD miss this information. 
+An example [#]_ of this is below. 
 Notice how people with deuteranopia would find it difficult to use the key and only see 4 categories in the chart rather than 6.
 
 .. image:: Images/poor-colour.png
@@ -92,7 +93,13 @@ Below is an improved version of the same chart.
    :width: 15cm
    :align: center
 
+.. mcq:cvd:How has this second pie chart been improved in terms of CVD accessibility?
+     correct:Labels and spacing as additional cues:That's right!
+     :Spacing and patterns as additional cues:Incorrect.
+     :Labels and patterns as additional cues:Incorrect.
+
 .. likert::cvd:How well do you understand colour vision deficiency?
    Never heard of it:Could explain it to a friend
 
-`Next page: Colour contrast <6-colour-contrast.html>`_
+.. [#] Simunovic, M. Colour vision deficiency. (2010). *Eye*. 24, 747–755. `<https://doi.org/10.1038/eye.2009.251>`_
+.. [#] `Crux Collaborative (2018) <https://cruxcollaborative.com/insights/understanding-color-blindness-guide-to-accessible-design>`_

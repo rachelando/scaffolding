@@ -14,8 +14,9 @@ What is colour vision deficiency (CVD)?
 ---------------------------------------
 
 Colour vision deficiency (CVD) is also known as colour blindness.
-People with CVD are either unable to see some colours or distinguish between some colours.
-Around 1 in 12 men (8%) and 1 in 200 women in Australia have CVD.
+People with CVD are either unable or have a decreased ability to see some colours or distinguish between some colours.
+Since very few people are strictly colour *blind*, colour vision deficiency is a better term.
+Around 1 in 12 men and 1 in 200 women in Australia have CVD [#]_.
 The cause of colour blindness is usually genetic although some diseases or drugs can also be causes.
 
 ---------------
@@ -46,7 +47,7 @@ TODO: Have a look at the different colour blind modes in Adee's colour blindness
 
 
           <div class="fitb">
-                <p>Not including "Normal", how many types of CVD/colour blindness can you choose from in Adee? <input type="text" id="Q1" data-component="cvd"></p>
+                <p>Not including "Normal", how many types of CVD/colour blindness can you choose from in Adee? (Please enter as a single digit e.g., 1) <input type="text" id="Q1" data-component="cvd"></p>
                 <button type="button" onclick="sendfitb('Q1')">Check</button>
 		<script id="Q1-answers" type="application/json">
 		[
@@ -58,7 +59,7 @@ TODO: Have a look at the different colour blind modes in Adee's colour blindness
 
 	</div>
 
-From this number, there are 4 types of CVD that are *relatively mild*:
+From this number, there are 4 types of CVD that are **relatively mild**:
 
 :Deuteranomaly:
     Type of **red-green** colour vision deficiency.
@@ -73,12 +74,12 @@ From this number, there are 4 types of CVD that are *relatively mild*:
     Rarest type of CVD.
 
 You might notice that the remaining 4 types are related to each of these milder forms.
-The remaining 4 types have the suffix "-opia" or "-opsia" instead of "-omaly" like the milder types.
+The remaining 4 types have the suffix "-opia" or "-opsia" instead of "-omaly".
 These remaining types are complete deficiencies.
 So, people with deuteranopia and protoanopia have complete red-green colour blindness so they cannot tell the difference between those colours at all.
 People with tritanopia have complete blue-yellow colour blindness so they cannot tell the difference between blue and green, purple and red, and yellow and pink.
 People with achromatopsia/monochromacy are unable to see any colour at all.
-This is extremely rare.
+Achromatopsia is extremely rare.
 
 .. raw:: html
 
@@ -101,8 +102,8 @@ CVD in web design
 -----------------
 
 As mentioned previously, it's important to not only use colour to communicate key information.
-Otherwise people with CVD miss key information.
-An example of this is below.
+Otherwise people with CVD miss this information.
+An example [#]_ of this is below.
 Notice how people with deuteranopia would find it difficult to use the key and only see 4 categories in the chart rather than 6.
 
 .. image:: Images/poor-colour.png
@@ -121,19 +122,36 @@ Below is an improved version of the same chart.
 
 .. raw:: html
 
+
+          <div class="mcq">
+                <p>How has this second pie chart been improved in terms of CVD accessibility?</p>
+		<form name=Q3 id="Q3" data-component="cvd">
+		<input type="checkbox" id="Q3A1" value="correct"><label for="Q3A1">Labels and spacing as additional cues</label> <span id="Q3A1-feedback"> </span><br> 		<input type="checkbox" id="Q3A2" value=""><label for="Q3A2">Spacing and patterns as additional cues</label> <span id="Q3A2-feedback"> </span><br> 		<input type="checkbox" id="Q3A3" value=""><label for="Q3A3">Labels and patterns as additional cues</label> <span id="Q3A3-feedback"> </span><br> 
+                <input type="button" value="Check" onclick="sendmcq('Q3')"><br>
+		</form>
+		<script id="Q3-answers" type="application/json"> 
+		[ 	{ "ansid":"Q3A1", "answer": "Labels and spacing as additional cues", "feedback": "That's right!", "result": "correct"  } ,	{ "ansid":"Q3A2", "answer": "Spacing and patterns as additional cues", "feedback": "Incorrect.", "result": ""  } ,	{ "ansid":"Q3A3", "answer": "Labels and patterns as additional cues", "feedback": "Incorrect.", "result": ""  } 
+	]
+	</script>
+
+	</div>
+
+.. raw:: html
+
    <div class="likert"><br>
    How well do you understand colour vision deficiency?
-   <form id = "C3" data-component="cvd">
+   <form id = "C4" data-component="cvd">
       Never heard of it
-   <input type="radio" name="C3" id="C3A1">
-   <input type="radio" name="C3" id="C3A2">
-   <input type="radio" name="C3" id="C3A3">
-   <input type="radio" name="C3" id="C3A4">
-   <input type="radio" name="C3" id="C3A5">
+   <input type="radio" name="C4" id="C4A1">
+   <input type="radio" name="C4" id="C4A2">
+   <input type="radio" name="C4" id="C4A3">
+   <input type="radio" name="C4" id="C4A4">
+   <input type="radio" name="C4" id="C4A5">
    Could explain it to a friend
-   <input type="button" value="Submit" onclick="sendlik('C3','cvd')"><br>
+   <input type="button" value="Submit" onclick="sendlik('C4','cvd')"><br>
    </form>
    </div>
 
 
-`Next page: Colour contrast <6-colour-contrast.html>`_
+.. [#] Simunovic, M. Colour vision deficiency. (2010). *Eye*. 24, 747–755. `<https://doi.org/10.1038/eye.2009.251>`_
+.. [#] `Crux Collaborative (2018) <https://cruxcollaborative.com/insights/understanding-color-blindness-guide-to-accessible-design>`_
