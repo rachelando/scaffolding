@@ -13,7 +13,7 @@
 What is target size?
 --------------------
 
-Target size refers to how large or small buttons or other clickable/touchable targets are on a website.
+Target size refers to **how large or small buttons or other clickable/touchable targets are** on a website.
 
 .. image:: Images/touch-targets.png
    :alt: A row of four 24dp icons and one 40dp icon
@@ -25,8 +25,7 @@ Target size in the WCAG ✅
 --------------------------
 
 The following is from WCAG 2.1 Success Criterion 2.5.5: Target Size (Level AAA).
-The WCAG can be difficult to understand due to technical language.
-We will work through it to understand what it means and how to apply it.
+The WCAG can be difficult to understand but we will work through it to understand it and how to apply it.
 Please read the following WCAG excerpt and then answer the following questions.
 
     The size of the target for pointer inputs is at least 44 by 44 CSS pixels except when:
@@ -109,14 +108,14 @@ However these standards are all slightly different and in different units which 
 
 Adee simplifies these by converting the standards to the same unit, px.
 Adee also helps designers check whether the standards are fulfilled all at one glance.
-This makes it far easier and quicker for designers to check all of these guidelines.
+This makes it far easier and quicker for designers to check all of these guidelines at once.
 
 -----------
 Device size
 -----------
 
-Touch target size depends on the device displaying the interface
-Minimum touch target size also depends on the device displaying the design.
+Minimum touch target size **depends on the device** displaying the interface.
+Adee automatically calculates the minimum touch size depending on which device you select.
 It is important to check that a design fulfils the required standards for a range of devices.
 
 .. raw:: html
@@ -135,5 +134,3 @@ It is important to check that a design fulfils the required standards for a rang
    </form>
    </div>
 
-
-`Next page: Alt text <3-alt-text.html>`_
