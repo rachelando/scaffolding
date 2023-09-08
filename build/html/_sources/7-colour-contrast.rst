@@ -153,5 +153,3 @@ Its colour ratio is around 1.7:1 which is below the WCAG requirements.
    </form>
    </div>
 
-
-`Next page: quiz <8-quiz.html>`_

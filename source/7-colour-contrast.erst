@@ -32,7 +32,7 @@ Colour ratios and the WCAG ❓
 
 .. TODO Look at Adee task, what is the colour ratio?
 
-What are the WCAG guidelines on colour contrast?
+What are the WCAG guidelines on colour contrast? 
 Recommendations from the WCAG for colour contrast differ for AA and AAA levels. 
 Remember that AAA level requirements are stricter than AA level requirements. 
 Read the following WCAG excerpt *Success Criterion 1.4.3 Contrast (Minimum) (Level AA)*:
@@ -89,5 +89,3 @@ Its colour ratio is around 1.7:1 which is below the WCAG requirements.
 
 .. likert::colour-contrast:How well do you understand colour contrast?
    Never heard of it:Could explain it to a friend
-
-`Next page: quiz <8-quiz.html>`_
