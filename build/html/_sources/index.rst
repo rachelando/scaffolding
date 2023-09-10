@@ -10,6 +10,7 @@ Welcome to EarlyAccess
    :maxdepth: 2
 
    0-intro.rst
+   initial-ratings.rst
    1-accessibility.rst
    2-in-practice.rst
    3-target-size.rst

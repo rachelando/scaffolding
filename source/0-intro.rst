@@ -1,4 +1,11 @@
 
+.. raw:: html
+
+   <script id="pagemeta" type="application/json">
+     { "ebook": "scaffolding", "component": "intro" } 
+   </script>
+
+
 Introduction
 ::::::::::::::::::::::::
 
@@ -42,7 +49,7 @@ Your confidence self-ratings will be represented as face emojis next to each mai
     :😕: 2 - Know very little
     :😐: 3 - Know a fair amount
     :😊: 4 - Know/understand quite well
-    :🤩: 5 - Could explain it to a friend
+    :🥳: 5 - Could explain it to a friend
 
 Your short question progress and performance will also be represented as an emoji on the left on the main headings.
 Short answer progress will also be shown for subheadings within a page on the navigation panel on the *right*.
@@ -54,4 +61,3 @@ Short answer progress will also be shown for subheadings within a page on the na
     :✴️: Partial marks
     :✅: Full marks
 
-`Back to the main page <index.html>`_

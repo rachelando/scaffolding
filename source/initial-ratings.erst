@@ -1,0 +1,39 @@
+
+.. page::scaffolding:initial-ratings
+
+Initial knowledge
+:::::::::::::::::::::::::::::::
+
+Please fill out the all the ratings below. 
+This is only used to gauge the starting point of your understanding of accessibility and it's not at all a test. 
+You should see your understanding improve as you work through EarlyAccess. 
+
+    Confidence self-ratings:
+
+    :1: Never heard of it
+    :2: Know very little
+    :3: Know a fair amount
+    :4: Know/understand quite well
+    :5: Could explain it to a friend
+
+.. likert::accessibility-intro:1. How well do you understand what accessibility is and why it's important?
+   Never heard of it:Could explain it to a friend
+
+.. likert::in-practice:2. How well do you understand accessibility in design practice?
+   Never heard of it:Could explain it to a friend
+
+.. likert::target-size:3. How well do you understand target size?
+   Never heard of it:Could explain it to a friend
+
+.. likert::alt-text:4. How well do you understand alt text?
+   Never heard of it:Could explain it to a friend
+
+.. likert::colour-general:How well do you understand general principles about colour and accessibility?
+   Never heard of it:Could explain it to a friend
+
+.. likert::cvd:How well do you understand colour vision deficiency?
+   Never heard of it:Could explain it to a friend
+
+.. likert::colour-contrast:How well do you understand colour contrast?
+   Never heard of it:Could explain it to a friend
+
