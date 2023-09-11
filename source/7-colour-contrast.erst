@@ -85,6 +85,13 @@ For example, the image below is accessible in terms of colour blindness, since i
 However, it is still hard to read because of insufficient colour *contrast*. 
 Its colour ratio is around 1.7:1 which is below the WCAG requirements. 
 
+------------------------
+Colour contrast in Adee
+------------------------
+
+Adee allows you to modify either of the two selected colours on the spot and immediately see if the contrast standards are met. 
+Selecting the "Apply" button saves the changes in Adee to the actual Figma object. 
+
 .. admonition:: Adee task 5
 
      Check the colour contrast of a button.

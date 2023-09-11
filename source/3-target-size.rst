@@ -110,6 +110,15 @@ Adee simplifies these by converting the standards to the same unit, px.
 Adee also helps designers check whether the standards are fulfilled all at one glance.
 This makes it far easier and quicker for designers to check all of these guidelines at once.
 
+.. image:: Images/target-size-tables.png
+   :alt: Target size standards tables from the Adee interface
+   :width: 10cm
+   :align: center
+
+Above is a screenshot from the Adee interface.
+The upper table shows the size of the selected target in pixels and whether it meets each of the 4 accessibility standards for the device type selected.
+The lower table shows the minimum height and width needed for the button depending on the device type selected.
+
 -----------
 Device size
 -----------
@@ -117,6 +126,8 @@ Device size
 Minimum touch target size **depends on the device** displaying the interface.
 Adee automatically calculates the minimum touch size depending on which device you select.
 It is important to check that a design fulfils the required standards for a range of devices.
+
+.. Tip:: For elements to be shown in Adee, they must be selected in Figma. Either click or drag-select over elements to select them in Figma.
 
 .. admonition:: Adee task 1
 

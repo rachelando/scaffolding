@@ -108,6 +108,9 @@ However, having in-built accessibility support in design tools helps with this.
 It helps designers to easily integrate accessibility and have access to feedback and resources without having to leave the tool and manually check WCAG requirements.
 One such accessibility tool is **Adee** which you will also use shortly.
 
+Adee also makes it easy for designers to report how well they are following accessibility guidelines.
+The "Generate" button in Adee generates a report that can be shown to managers or colleagues.
+
 .. raw:: html
 
    <div class="likert"><br>
