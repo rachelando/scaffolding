@@ -36,11 +36,11 @@ Below shows how people with different types of colour blindness would perceive t
 From left to right, the corresponding CVD types are: deuteranopia, protoanopia, tritanopia, and achromatopsia. 
 We will learn more about each of these and more shortly. 
 
-TODO: Have a look at the different colour blind modes in Adee's colour blindness simulator.
-
-.. fillintheblank:cvd: Have a look at the "Colorblind Simulator" function of Adee. Not including "Normal", how many types of CVD/colour blindness can you choose from in Adee? (Please enter as a single digit e.g., 1) |blank|
-     correct:8: Correct!
-     incorrect:x: Incorrect, have another look.
+.. mcq:cvd:Have a look at the "Colorblind Simulator" function of Adee. Not including "Normal", how many types of CVD/colour blindness can you choose from in Adee?
+     :4 (2 pairs):Incorrect.
+     correct:8 (4 pairs):That's right!
+     :9 (3 groups of 3):Incorrect.
+     :10 (5 pairs):Incorrect.
 
 From this number, there are 4 types of CVD that are **relatively mild**:
 
