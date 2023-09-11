@@ -98,6 +98,19 @@ Below is an improved version of the same chart.
      :Spacing and patterns as additional cues:Incorrect.
      :Labels and patterns as additional cues:Incorrect.
 
+.. admonition:: Adee task 4
+
+     Check the accessibility of a chart for colour vision deficiency.
+
+     1. Select the chart image under Task 4
+     2. Open the Adee plugin to "Colorblind Simulator tool"
+     3. Check the chart image's colour against the "Tritanopia" colour blind type
+     4. Explain how a designer should improve the chart based on the simulation results
+     5. Close the plugin
+
+.. likert::cvd:Rate the difficulty of Adee task 4
+   Extremely difficult:Extremely easy
+
 .. likert::cvd:How well do you understand colour vision deficiency?
    Never heard of it:Could explain it to a friend
 

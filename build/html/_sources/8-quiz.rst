@@ -9,6 +9,10 @@
 Quiz
 ::::::::::::::::::::::::
 
+Please answer all the questions below.
+Please do *not* refer back to previous pages.
+This quiz helps us understand how helpful EarlyAccess has been for understanding accessibility.
+
 .. raw:: html
 
 
@@ -137,3 +141,5 @@ Quiz
 
 	</div>
 
+Thank you for using EarlyAccess!
+Hopefully you are now better able to appreciate the importance of accessibility in web design!

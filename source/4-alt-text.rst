@@ -76,6 +76,35 @@ From the below screenshot, please answer the following questions:
 
 	</div>
 
+.. admonition:: Adee task 2
+
+     Create alt text for an image.
+
+     1. Select the image under Task 2
+     2. Open the Adee plugin to "AltText Generator tool"
+     3. Try to edit the related information of the image in the plugin
+     4. Decide whether the image is informative or decorative
+     5. If there are any further fields, fill them in
+     6. Record the changes to the image information
+     7. Close the plugin
+
+.. raw:: html
+
+   <div class="likert"><br>
+   Rate the difficulty of Adee task 2
+   <form id = "C3" data-component="alt-text">
+      Extremely difficult
+   <input type="radio" name="C3" id="C3A1">
+   <input type="radio" name="C3" id="C3A2">
+   <input type="radio" name="C3" id="C3A3">
+   <input type="radio" name="C3" id="C3A4">
+   <input type="radio" name="C3" id="C3A5">
+   Extremely easy
+   <input type="button" value="Submit" onclick="sendlik('C3','alt-text')"><br>
+   </form>
+   </div>
+
+
 -------------------------
 Alt text can be difficult
 -------------------------
@@ -104,19 +133,48 @@ Then include a longer description with:
 Where possible, include this longer description in the shorter alt text.
 Also where possible and practical, include a table with the actual data.
 
+.. admonition:: Adee task 3
+
+     Create alt text for a chart.
+
+     1. Select the chart image under Task 3
+     2. Open the Adee plugin to "AltText Generator tool"
+     3. Try to edit the related information of the image in the plugin
+     4. Decide whether the image is informative or decorative
+     5. If there are any further fields, fill them in
+     6. Record the changes to the image information
+     7. Close the plugin
+
+.. raw:: html
+
+   <div class="likert"><br>
+   Rate the difficulty of Adee task 3
+   <form id = "C4" data-component="alt-text">
+      Extremely difficult
+   <input type="radio" name="C4" id="C4A1">
+   <input type="radio" name="C4" id="C4A2">
+   <input type="radio" name="C4" id="C4A3">
+   <input type="radio" name="C4" id="C4A4">
+   <input type="radio" name="C4" id="C4A5">
+   Extremely easy
+   <input type="button" value="Submit" onclick="sendlik('C4','alt-text')"><br>
+   </form>
+   </div>
+
+
 .. raw:: html
 
    <div class="likert"><br>
    How well do you understand alt text?
-   <form id = "C3" data-component="alt-text">
+   <form id = "C5" data-component="alt-text">
       Never heard of it
-   <input type="radio" name="C3" id="C3A1">
-   <input type="radio" name="C3" id="C3A2">
-   <input type="radio" name="C3" id="C3A3">
-   <input type="radio" name="C3" id="C3A4">
-   <input type="radio" name="C3" id="C3A5">
+   <input type="radio" name="C5" id="C5A1">
+   <input type="radio" name="C5" id="C5A2">
+   <input type="radio" name="C5" id="C5A3">
+   <input type="radio" name="C5" id="C5A4">
+   <input type="radio" name="C5" id="C5A5">
    Could explain it to a friend
-   <input type="button" value="Submit" onclick="sendlik('C3','alt-text')"><br>
+   <input type="button" value="Submit" onclick="sendlik('C5','alt-text')"><br>
    </form>
    </div>
 

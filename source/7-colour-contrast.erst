@@ -30,8 +30,6 @@ This is a good example of accessibility helping everyone, not just people with d
 Colour ratios and the WCAG ❓
 -----------------------------
 
-.. TODO Look at Adee task, what is the colour ratio?
-
 What are the WCAG guidelines on colour contrast? 
 Recommendations from the WCAG for colour contrast differ for AA and AAA levels. 
 Remember that AAA level requirements are stricter than AA level requirements. 
@@ -86,6 +84,19 @@ For example, the image below is accessible in terms of colour blindness, since i
 
 However, it is still hard to read because of insufficient colour *contrast*. 
 Its colour ratio is around 1.7:1 which is below the WCAG requirements. 
+
+.. admonition:: Adee task 5
+
+     Check the colour contrast of a button.
+
+     1. Select the text and its background in task 5
+     2. Open the Adee plugin to "Contrast Checker tool"
+     3. Check the contrast of the button text and its background
+     4. Adjust the colours to meet AAA level standards
+     5. Close the plugin
+
+.. likert::colour-contrast:Rate the difficulty of Adee task 5
+   Extremely difficult:Extremely easy
 
 .. likert::colour-contrast:How well do you understand colour contrast?
    Never heard of it:Could explain it to a friend

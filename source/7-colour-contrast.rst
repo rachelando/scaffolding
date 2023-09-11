@@ -47,8 +47,6 @@ This is a good example of accessibility helping everyone, not just people with d
 Colour ratios and the WCAG ❓
 -----------------------------
 
-.. TODO Look at Adee task, what is the colour ratio?
-
 What are the WCAG guidelines on colour contrast?
 Recommendations from the WCAG for colour contrast differ for AA and AAA levels.
 Remember that AAA level requirements are stricter than AA level requirements.
@@ -137,19 +135,46 @@ For example, the image below is accessible in terms of colour blindness, since i
 However, it is still hard to read because of insufficient colour *contrast*.
 Its colour ratio is around 1.7:1 which is below the WCAG requirements.
 
+.. admonition:: Adee task 5
+
+     Check the colour contrast of a button.
+
+     1. Select the text and its background in task 5
+     2. Open the Adee plugin to "Contrast Checker tool"
+     3. Check the contrast of the button text and its background
+     4. Adjust the colours to meet AAA level standards
+     5. Close the plugin
+
 .. raw:: html
 
    <div class="likert"><br>
-   How well do you understand colour contrast?
+   Rate the difficulty of Adee task 5
    <form id = "C5" data-component="colour-contrast">
-      Never heard of it
+      Extremely difficult
    <input type="radio" name="C5" id="C5A1">
    <input type="radio" name="C5" id="C5A2">
    <input type="radio" name="C5" id="C5A3">
    <input type="radio" name="C5" id="C5A4">
    <input type="radio" name="C5" id="C5A5">
-   Could explain it to a friend
+   Extremely easy
    <input type="button" value="Submit" onclick="sendlik('C5','colour-contrast')"><br>
+   </form>
+   </div>
+
+
+.. raw:: html
+
+   <div class="likert"><br>
+   How well do you understand colour contrast?
+   <form id = "C6" data-component="colour-contrast">
+      Never heard of it
+   <input type="radio" name="C6" id="C6A1">
+   <input type="radio" name="C6" id="C6A2">
+   <input type="radio" name="C6" id="C6A3">
+   <input type="radio" name="C6" id="C6A4">
+   <input type="radio" name="C6" id="C6A5">
+   Could explain it to a friend
+   <input type="button" value="Submit" onclick="sendlik('C6','colour-contrast')"><br>
    </form>
    </div>
 

@@ -4,6 +4,10 @@
 Quiz
 ::::::::::::::::::::::::
 
+Please answer all the questions below. 
+Please do *not* refer back to previous pages. 
+This quiz helps us understand how helpful EarlyAccess has been for understanding accessibility. 
+
 .. mcq:quiz:1. What is web accessibility?
      :Websites can be accessed by people across large and even remote geographical areas:Incorrect.
      :Websites are designed and developed exclusively by people with disabilities so they can be used by people with disabilities:Incorrect.
@@ -51,3 +55,5 @@ Quiz
      :Have limited dexterity or are using a small handheld device:Incorrect.
      :Are colour blind:Incorrect.
 
+Thank you for using EarlyAccess!
+Hopefully you are now better able to appreciate the importance of accessibility in web design!

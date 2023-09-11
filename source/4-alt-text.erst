@@ -47,6 +47,21 @@ From the below screenshot, please answer the following questions:
      :Informative:Incorrect.
      correct:Decorative:That's right!
 
+.. admonition:: Adee task 2
+
+     Create alt text for an image.
+
+     1. Select the image under Task 2
+     2. Open the Adee plugin to "AltText Generator tool"
+     3. Try to edit the related information of the image in the plugin
+     4. Decide whether the image is informative or decorative
+     5. If there are any further fields, fill them in
+     6. Record the changes to the image information
+     7. Close the plugin
+
+.. likert::alt-text:Rate the difficulty of Adee task 2
+   Extremely difficult:Extremely easy
+
 -------------------------
 Alt text can be difficult
 -------------------------
@@ -74,6 +89,21 @@ Then include a longer description with:
 
 Where possible, include this longer description in the shorter alt text. 
 Also where possible and practical, include a table with the actual data. 
+
+.. admonition:: Adee task 3
+
+     Create alt text for a chart.
+
+     1. Select the chart image under Task 3
+     2. Open the Adee plugin to "AltText Generator tool"
+     3. Try to edit the related information of the image in the plugin
+     4. Decide whether the image is informative or decorative
+     5. If there are any further fields, fill them in
+     6. Record the changes to the image information
+     7. Close the plugin
+
+.. likert::alt-text:Rate the difficulty of Adee task 3
+   Extremely difficult:Extremely easy
 
 .. likert::alt-text:How well do you understand alt text?
    Never heard of it:Could explain it to a friend

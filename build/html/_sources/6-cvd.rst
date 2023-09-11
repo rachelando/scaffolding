@@ -136,19 +136,46 @@ Below is an improved version of the same chart.
 
 	</div>
 
+.. admonition:: Adee task 4
+
+     Check the accessibility of a chart for colour vision deficiency.
+
+     1. Select the chart image under Task 4
+     2. Open the Adee plugin to "Colorblind Simulator tool"
+     3. Check the chart image's colour against the "Tritanopia" colour blind type
+     4. Explain how a designer should improve the chart based on the simulation results
+     5. Close the plugin
+
 .. raw:: html
 
    <div class="likert"><br>
-   How well do you understand colour vision deficiency?
+   Rate the difficulty of Adee task 4
    <form id = "C4" data-component="cvd">
-      Never heard of it
+      Extremely difficult
    <input type="radio" name="C4" id="C4A1">
    <input type="radio" name="C4" id="C4A2">
    <input type="radio" name="C4" id="C4A3">
    <input type="radio" name="C4" id="C4A4">
    <input type="radio" name="C4" id="C4A5">
-   Could explain it to a friend
+   Extremely easy
    <input type="button" value="Submit" onclick="sendlik('C4','cvd')"><br>
+   </form>
+   </div>
+
+
+.. raw:: html
+
+   <div class="likert"><br>
+   How well do you understand colour vision deficiency?
+   <form id = "C5" data-component="cvd">
+      Never heard of it
+   <input type="radio" name="C5" id="C5A1">
+   <input type="radio" name="C5" id="C5A2">
+   <input type="radio" name="C5" id="C5A3">
+   <input type="radio" name="C5" id="C5A4">
+   <input type="radio" name="C5" id="C5A5">
+   Could explain it to a friend
+   <input type="button" value="Submit" onclick="sendlik('C5','cvd')"><br>
    </form>
    </div>
 

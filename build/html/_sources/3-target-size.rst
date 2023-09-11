@@ -118,19 +118,46 @@ Minimum touch target size **depends on the device** displaying the interface.
 Adee automatically calculates the minimum touch size depending on which device you select.
 It is important to check that a design fulfils the required standards for a range of devices.
 
+.. admonition:: Adee task 1
+
+     Check the target size of a button against accessibility standards.
+
+     1. Select the button under Task 1
+     2. Open the Adee plugin to "Touch Size Checker tool"
+     3. Test the size of the button if an iPhone Mini device was used
+     4. Based on the results, explain how a designer should improve the button size for better accessibility
+     5. Close the plugin
+
 .. raw:: html
 
    <div class="likert"><br>
-   How well do you understand target size?
+   Rate the difficulty of Adee task 1
    <form id = "C4" data-component="target-size">
-      Never heard of it
+      Extremely difficult
    <input type="radio" name="C4" id="C4A1">
    <input type="radio" name="C4" id="C4A2">
    <input type="radio" name="C4" id="C4A3">
    <input type="radio" name="C4" id="C4A4">
    <input type="radio" name="C4" id="C4A5">
-   Could explain it to a friend
+   Extremely easy
    <input type="button" value="Submit" onclick="sendlik('C4','target-size')"><br>
+   </form>
+   </div>
+
+
+.. raw:: html
+
+   <div class="likert"><br>
+   How well do you understand target size?
+   <form id = "C5" data-component="target-size">
+      Never heard of it
+   <input type="radio" name="C5" id="C5A1">
+   <input type="radio" name="C5" id="C5A2">
+   <input type="radio" name="C5" id="C5A3">
+   <input type="radio" name="C5" id="C5A4">
+   <input type="radio" name="C5" id="C5A5">
+   Could explain it to a friend
+   <input type="button" value="Submit" onclick="sendlik('C5','target-size')"><br>
    </form>
    </div>
 
