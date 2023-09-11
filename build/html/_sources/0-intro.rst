@@ -61,6 +61,12 @@ Short answer progress will also be shown for subheadings within a page on the na
     :✴️: Partial marks
     :✅: Full marks
 
+---------------------------------
+How you will complete this study
+---------------------------------
+
+Think aloud
+
 ---------------------------
 Figma set-up
 ---------------------------
