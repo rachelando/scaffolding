@@ -47,7 +47,7 @@ TODO: Have a look at the different colour blind modes in Adee's colour blindness
 
 
           <div class="fitb">
-                <p>Not including "Normal", how many types of CVD/colour blindness can you choose from in Adee? (Please enter as a single digit e.g., 1) <input type="text" id="Q1" data-component="cvd"></p>
+                <p>Have a look at the "Colorblind Simulator" function of Adee. Not including "Normal", how many types of CVD/colour blindness can you choose from in Adee? (Please enter as a single digit e.g., 1) <input type="text" id="Q1" data-component="cvd"></p>
                 <button type="button" onclick="sendfitb('Q1')">Check</button>
 		<script id="Q1-answers" type="application/json">
 		[

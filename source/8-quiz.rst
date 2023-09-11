@@ -142,4 +142,4 @@ This quiz helps us understand how helpful EarlyAccess has been for understanding
 	</div>
 
 Thank you for using EarlyAccess!
-Hopefully you are now better able to appreciate the importance of accessibility in web design!
+We hope you are now better able to appreciate the importance of accessibility in web design!
