@@ -11,8 +11,8 @@ Welcome to EarlyAccess
 
    0a-intro.rst
    0b-olm.rst
-   0c-think-aloud.rst
-   0d-initial-ratings.rst
+   0c-initial-ratings.rst
+   0d-think-aloud.rst
    1-accessibility.rst
    2-in-practice.rst
    3-target-size.rst
