@@ -1,0 +1,22 @@
+
+.. page::scaffolding:target-size
+
+Touch target size
+::::::::::::::::::::::::::::::::
+
+-----------
+Adee task 1
+-----------
+
+.. admonition:: Adee task 1
+
+     Check the target size of a button against accessibility standards. 
+
+     1. Select the button under Task 1
+     2. Open the Adee plugin to "Touch Size Checker tool"
+     3. Test the size of the button if an iPhone Mini device was used
+     4. Based on the results, explain how a designer should improve the button size for better accessibility
+     5. Close the plugin
+
+.. likert::target-size:Rate the difficulty of Adee task 1
+   Extremely difficult:Extremely easy

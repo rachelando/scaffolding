@@ -1,0 +1,22 @@
+
+.. page::scaffolding:colour-contrast
+
+Colour contrast
+::::::::::::::::::::::::::::::::
+
+-----------
+Adee task 5
+-----------
+
+.. admonition:: Adee task 5
+
+     Check the colour contrast of a button.
+
+     1. Select the text and its background in task 5
+     2. Open the Adee plugin to "Contrast Checker tool"
+     3. Check the contrast of the button text and its background
+     4. Adjust the colours to meet AAA level standards
+     5. Close the plugin
+
+.. likert::colour-contrast:Rate the difficulty of Adee task 5
+   Extremely difficult:Extremely easy

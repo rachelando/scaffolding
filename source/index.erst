@@ -9,9 +9,13 @@ Welcome to EarlyAccess
 .. toctree::
    :maxdepth: 2
    
-   0c-initial-ratings.rst
    0d-think-aloud.rst
-   8-quiz.rst
+   3-target-size.rst
+   4-alt-text.rst
+   6-cvd.rst
+   7-colour-contrast.rst
+   8a-topic-ratings.rst
+   8b-quiz.rst
 
 
 Indices and tables
