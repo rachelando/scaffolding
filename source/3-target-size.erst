@@ -1,12 +1,12 @@
 
 .. page::scaffolding:target-size
 
-😰 Target size ✅
-::::::::::::::::::::::::
+1️⃣ Touch target size ✅
+::::::::::::::::::::::::::::::::
 
---------------------
-What is target size?
---------------------
+--------------------------
+What is touch target size?
+--------------------------
 
 Target size refers to **how large or small buttons or other clickable/touchable targets are** on a website. 
 
@@ -15,9 +15,9 @@ Target size refers to **how large or small buttons or other clickable/touchable 
    :width: 18cm
    :align: center
 
---------------------------
-Target size in the WCAG ✅
---------------------------
+---------------------------------
+Touch target size in the WCAG ✅
+---------------------------------
 
 The following is from WCAG 2.1 Success Criterion 2.5.5: Target Size (Level AAA). 
 The WCAG can be difficult to understand but we will work through it to understand it and how to apply it. 
@@ -42,9 +42,9 @@ Please read the following WCAG excerpt and then answer the following questions.
      correct:... have when they don't need to fulfil WCAG target size requirements.:That's right!
      :... must have at least one of to fulfil WCAG target size requirements.:Incorrect.
 
--------------------------------
-Why does target size matter? ✅
--------------------------------
+--------------------------------------
+Why does touch target size matter? ✅
+--------------------------------------
 
 Here is another excerpt from WCAG 2.1 Success Criterion 2.5.5: Target Size (Level AAA). 
 Please read it then answer the following questions. 
@@ -93,6 +93,10 @@ Adee automatically calculates the minimum touch size depending on which device y
 It is important to check that a design fulfils the required standards for a range of devices. 
 
 .. Tip:: For elements to be shown in Adee, they must be selected in Figma. Either click or drag-select over elements to select them in Figma.
+
+-----------
+Adee task 1
+-----------
 
 .. admonition:: Adee task 1
 

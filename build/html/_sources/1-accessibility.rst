@@ -6,8 +6,8 @@
    </script>
 
 
-😊 Accessibility introduction
-:::::::::::::::::::::::::::::
+4️⃣ Accessibility introduction
+::::::::::::::::::::::::::::::::
 
 ----------------------
 What is accessibility?
@@ -19,7 +19,9 @@ This includes questions like, "How would someone with blindness or low vision un
 .. raw:: html
 
 
+		  <div class="admonition attention">
           <div class="mcq">
+		  <p class="admonition-title">MCQ</p>
                 <p>Which of these user groups is NOT related to accessibility?</p>
 		<form name=Q1 id="Q1" data-component="accessibility-intro">
 		<input type="checkbox" id="Q1A1" value=""><label for="Q1A1">People with low vision</label> <span id="Q1A1-feedback"> </span><br> 		<input type="checkbox" id="Q1A2" value=""><label for="Q1A2">People with cognitive impairments</label> <span id="Q1A2-feedback"> </span><br> 		<input type="checkbox" id="Q1A3" value="correct"><label for="Q1A3">People in remote locations</label> <span id="Q1A3-feedback"> </span><br> 		<input type="checkbox" id="Q1A4" value=""><label for="Q1A4">People with hearing impairments</label> <span id="Q1A4-feedback"> </span><br> 
@@ -30,6 +32,7 @@ This includes questions like, "How would someone with blindness or low vision un
 	]
 	</script>
 
+	</div>
 	</div>
 
 It can be easy to think that not many people have disabilities and therefore accessibility is not a large concern.
@@ -56,7 +59,9 @@ Therefore, accessibility is worth pursuing from **both ethical and practical vie
 .. raw:: html
 
 
+		  <div class="admonition attention">
           <div class="mcq">
+		  <p class="admonition-title">MCQ</p>
                 <p>Which of the below statements is NOT a motivation for accessibility?</p>
 		<form name=Q2 id="Q2" data-component="accessibility-intro">
 		<input type="checkbox" id="Q2A1" value=""><label for="Q2A1">Accessibility also helps other user groups</label> <span id="Q2A1-feedback"> </span><br> 		<input type="checkbox" id="Q2A2" value=""><label for="Q2A2">Accessibility has a good business case</label> <span id="Q2A2-feedback"> </span><br> 		<input type="checkbox" id="Q2A3" value=""><label for="Q2A3">Accessibility helps everyone</label> <span id="Q2A3-feedback"> </span><br> 		<input type="checkbox" id="Q2A4" value="correct"><label for="Q2A4">Accessibility is unnecessary from an ethical standpoint</label> <span id="Q2A4-feedback"> </span><br> 
@@ -68,10 +73,13 @@ Therefore, accessibility is worth pursuing from **both ethical and practical vie
 	</script>
 
 	</div>
+	</div>
 
 .. raw:: html
 
-   <div class="likert"><br>
+   <div class="admonition caution"><br>
+   <div class="likert">
+   <p class="admonition-title">Knowledge self-rating</p>
    How well do you understand what accessibility is and why it's important?
    <form id = "C3" data-component="accessibility-intro">
       Never heard of it
@@ -83,6 +91,7 @@ Therefore, accessibility is worth pursuing from **both ethical and practical vie
    Could explain it to a friend
    <input type="button" value="Submit" onclick="sendlik('C3','accessibility-intro')"><br>
    </form>
+   </div>
    </div>
 
 

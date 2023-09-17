@@ -23,7 +23,9 @@ You should see your understanding improve as you work through EarlyAccess.
 
 .. raw:: html
 
-   <div class="likert"><br>
+   <div class="admonition caution"><br>
+   <div class="likert">
+   <p class="admonition-title">Knowledge self-rating</p>
    1. How well do you understand what accessibility is and why it's important?
    <form id = "C1" data-component="accessibility-intro">
       Never heard of it
@@ -36,11 +38,14 @@ You should see your understanding improve as you work through EarlyAccess.
    <input type="button" value="Submit" onclick="sendlik('C1','accessibility-intro')"><br>
    </form>
    </div>
+   </div>
 
 
 .. raw:: html
 
-   <div class="likert"><br>
+   <div class="admonition caution"><br>
+   <div class="likert">
+   <p class="admonition-title">Knowledge self-rating</p>
    2. How well do you understand accessibility in design practice?
    <form id = "C2" data-component="in-practice">
       Never heard of it
@@ -53,11 +58,14 @@ You should see your understanding improve as you work through EarlyAccess.
    <input type="button" value="Submit" onclick="sendlik('C2','in-practice')"><br>
    </form>
    </div>
+   </div>
 
 
 .. raw:: html
 
-   <div class="likert"><br>
+   <div class="admonition caution"><br>
+   <div class="likert">
+   <p class="admonition-title">Knowledge self-rating</p>
    3. How well do you understand target size?
    <form id = "C3" data-component="target-size">
       Never heard of it
@@ -70,11 +78,14 @@ You should see your understanding improve as you work through EarlyAccess.
    <input type="button" value="Submit" onclick="sendlik('C3','target-size')"><br>
    </form>
    </div>
+   </div>
 
 
 .. raw:: html
 
-   <div class="likert"><br>
+   <div class="admonition caution"><br>
+   <div class="likert">
+   <p class="admonition-title">Knowledge self-rating</p>
    4. How well do you understand alt text?
    <form id = "C4" data-component="alt-text">
       Never heard of it
@@ -87,12 +98,15 @@ You should see your understanding improve as you work through EarlyAccess.
    <input type="button" value="Submit" onclick="sendlik('C4','alt-text')"><br>
    </form>
    </div>
+   </div>
 
 
 .. raw:: html
 
-   <div class="likert"><br>
-   How well do you understand general principles about colour and accessibility?
+   <div class="admonition caution"><br>
+   <div class="likert">
+   <p class="admonition-title">Knowledge self-rating</p>
+   5. How well do you understand general principles about colour and accessibility?
    <form id = "C5" data-component="colour-general">
       Never heard of it
    <input type="radio" name="C5" id="C5A1">
@@ -104,12 +118,15 @@ You should see your understanding improve as you work through EarlyAccess.
    <input type="button" value="Submit" onclick="sendlik('C5','colour-general')"><br>
    </form>
    </div>
+   </div>
 
 
 .. raw:: html
 
-   <div class="likert"><br>
-   How well do you understand colour vision deficiency?
+   <div class="admonition caution"><br>
+   <div class="likert">
+   <p class="admonition-title">Knowledge self-rating</p>
+   6. How well do you understand colour vision deficiency?
    <form id = "C6" data-component="cvd">
       Never heard of it
    <input type="radio" name="C6" id="C6A1">
@@ -121,12 +138,15 @@ You should see your understanding improve as you work through EarlyAccess.
    <input type="button" value="Submit" onclick="sendlik('C6','cvd')"><br>
    </form>
    </div>
+   </div>
 
 
 .. raw:: html
 
-   <div class="likert"><br>
-   How well do you understand colour contrast?
+   <div class="admonition caution"><br>
+   <div class="likert">
+   <p class="admonition-title">Knowledge self-rating</p>
+   7. How well do you understand colour contrast?
    <form id = "C7" data-component="colour-contrast">
       Never heard of it
    <input type="radio" name="C7" id="C7A1">
@@ -137,6 +157,7 @@ You should see your understanding improve as you work through EarlyAccess.
    Could explain it to a friend
    <input type="button" value="Submit" onclick="sendlik('C7','colour-contrast')"><br>
    </form>
+   </div>
    </div>
 
 

@@ -6,8 +6,8 @@
    </script>
 
 
-🥳 Colour vision deficiency ❓
-::::::::::::::::::::::::::::::
+5️⃣ Colour vision deficiency ❓
+::::::::::::::::::::::::::::::::
 
 ---------------------------------------
 What is colour vision deficiency (CVD)?
@@ -41,22 +41,23 @@ Below shows how people with different types of colour blindness would perceive t
 From left to right, the corresponding CVD types are: deuteranopia, protoanopia, tritanopia, and achromatopsia.
 We will learn more about each of these and more shortly.
 
-TODO: Have a look at the different colour blind modes in Adee's colour blindness simulator.
-
 .. raw:: html
 
 
-          <div class="fitb">
-                <p>Have a look at the "Colorblind Simulator" function of Adee. Not including "Normal", how many types of CVD/colour blindness can you choose from in Adee? (Please enter as a single digit e.g., 1) <input type="text" id="Q1" data-component="cvd"></p>
-                <button type="button" onclick="sendfitb('Q1')">Check</button>
-		<script id="Q1-answers" type="application/json">
-		[
-
-        { "regex": "8", "feedback": " Correct!", "result": "correct"  } ,
-        { "regex": "x", "feedback": " Incorrect, have another look.", "result": "incorrect"  }         ]
+		  <div class="admonition attention">
+          <div class="mcq">
+		  <p class="admonition-title">MCQ</p>
+                <p>Have a look at the "Colorblind Simulator" function of Adee. Not including "Normal", how many types of CVD/colour blindness can you choose from in Adee?</p>
+		<form name=Q1 id="Q1" data-component="cvd">
+		<input type="checkbox" id="Q1A1" value=""><label for="Q1A1">4 (2 pairs)</label> <span id="Q1A1-feedback"> </span><br> 		<input type="checkbox" id="Q1A2" value="correct"><label for="Q1A2">8 (4 pairs)</label> <span id="Q1A2-feedback"> </span><br> 		<input type="checkbox" id="Q1A3" value=""><label for="Q1A3">9 (3 groups of 3)</label> <span id="Q1A3-feedback"> </span><br> 		<input type="checkbox" id="Q1A4" value=""><label for="Q1A4">10 (5 pairs)</label> <span id="Q1A4-feedback"> </span><br> 
+                <input type="button" value="Check" onclick="sendmcq('Q1')"><br>
+		</form>
+		<script id="Q1-answers" type="application/json"> 
+		[ 	{ "ansid":"Q1A1", "answer": "4 (2 pairs)", "feedback": "Incorrect.", "result": ""  } ,	{ "ansid":"Q1A2", "answer": "8 (4 pairs)", "feedback": "That's right!", "result": "correct"  } ,	{ "ansid":"Q1A3", "answer": "9 (3 groups of 3)", "feedback": "Incorrect.", "result": ""  } ,	{ "ansid":"Q1A4", "answer": "10 (5 pairs)", "feedback": "Incorrect.", "result": ""  } 
+	]
 	</script>
-	<p id="Q1-feedback"> <p>
 
+	</div>
 	</div>
 
 From this number, there are 4 types of CVD that are **relatively mild**:
@@ -84,7 +85,9 @@ Achromatopsia is extremely rare.
 .. raw:: html
 
 
+		  <div class="admonition attention">
           <div class="mcq">
+		  <p class="admonition-title">MCQ</p>
                 <p>To test a web design for the most common type of colour blindness, I would test for...</p>
 		<form name=Q2 id="Q2" data-component="cvd">
 		<input type="checkbox" id="Q2A1" value=""><label for="Q2A1">Tritanomaly, a type of red-green colour blindness.</label> <span id="Q2A1-feedback"> </span><br> 		<input type="checkbox" id="Q2A2" value="correct"><label for="Q2A2">Deuteranomaly, a type of red-green colour blindness.</label> <span id="Q2A2-feedback"> </span><br> 		<input type="checkbox" id="Q2A3" value=""><label for="Q2A3">Tritanomaly, a type of blue-yellow colour blindness.</label> <span id="Q2A3-feedback"> </span><br> 		<input type="checkbox" id="Q2A4" value=""><label for="Q2A4">Deuteranomaly, a type of blue-yellow colour blindness.</label> <span id="Q2A4-feedback"> </span><br> 
@@ -95,6 +98,7 @@ Achromatopsia is extremely rare.
 	]
 	</script>
 
+	</div>
 	</div>
 
 -----------------
@@ -123,7 +127,9 @@ Below is an improved version of the same chart.
 .. raw:: html
 
 
+		  <div class="admonition attention">
           <div class="mcq">
+		  <p class="admonition-title">MCQ</p>
                 <p>How has this second pie chart been improved in terms of CVD accessibility?</p>
 		<form name=Q3 id="Q3" data-component="cvd">
 		<input type="checkbox" id="Q3A1" value="correct"><label for="Q3A1">Labels and spacing as additional cues</label> <span id="Q3A1-feedback"> </span><br> 		<input type="checkbox" id="Q3A2" value=""><label for="Q3A2">Spacing and patterns as additional cues</label> <span id="Q3A2-feedback"> </span><br> 		<input type="checkbox" id="Q3A3" value=""><label for="Q3A3">Labels and patterns as additional cues</label> <span id="Q3A3-feedback"> </span><br> 
@@ -135,6 +141,11 @@ Below is an improved version of the same chart.
 	</script>
 
 	</div>
+	</div>
+
+-----------
+Adee task 4
+-----------
 
 .. admonition:: Adee task 4
 
@@ -148,7 +159,9 @@ Below is an improved version of the same chart.
 
 .. raw:: html
 
-   <div class="likert"><br>
+   <div class="admonition-adee-task-likert admonition"><br>
+   <div class="likert">
+   <p class="admonition-title">Adee task rating</p>
    Rate the difficulty of Adee task 4
    <form id = "C4" data-component="cvd">
       Extremely difficult
@@ -161,11 +174,14 @@ Below is an improved version of the same chart.
    <input type="button" value="Submit" onclick="sendlik('C4','cvd')"><br>
    </form>
    </div>
+   </div>
 
 
 .. raw:: html
 
-   <div class="likert"><br>
+   <div class="admonition caution"><br>
+   <div class="likert">
+   <p class="admonition-title">Knowledge self-rating</p>
    How well do you understand colour vision deficiency?
    <form id = "C5" data-component="cvd">
       Never heard of it
@@ -177,6 +193,7 @@ Below is an improved version of the same chart.
    Could explain it to a friend
    <input type="button" value="Submit" onclick="sendlik('C5','cvd')"><br>
    </form>
+   </div>
    </div>
 
 

@@ -159,7 +159,9 @@ def do_mcq(erstfile, line):
 	#print ("answers: ", answers)
 
 	qformat = '''\n
+		  <div class="admonition attention">
           <div class="mcq">
+		  <p class="admonition-title">MCQ</p>
                 <p>%(question)s</p>
 		<form name=%(qid)s id="%(qid)s" data-component="%(compname)s">
 '''
@@ -174,6 +176,7 @@ def do_mcq(erstfile, line):
 	]
 	</script>
 
+	</div>
 	</div>
 
 '''
@@ -237,6 +240,12 @@ def do_likert(erstfile, line):
 		return
 	attribute = parts[1].split(":")[0].strip()
 	likertq = parts[1].split(":")[1].strip()
+	# Change class for Adee task
+	css_class = "admonition caution"
+	admonition_title = "Knowledge self-rating"
+	if "Adee" in likertq:
+		css_class = "admonition-adee-task-likert admonition"
+		admonition_title = "Adee task rating"
 	likline = erstfile.readline()[:-1]
 	if likline == None:
 		print ("EOF while reading likert limits ")
@@ -255,7 +264,9 @@ def do_likert(erstfile, line):
 	cid = "C"+str(qnum)
 	qnum += 1
 	likertfmt = """
-   <div class="likert"><br>
+   <div class="%(css_class)s"><br>
+   <div class="likert">
+   <p class="admonition-title">%(admonition_title)s</p>
    %(likertq)s
    <form id = "%(cid)s" data-component="%(attribute)s">
    %(lowlik)s
@@ -268,9 +279,10 @@ def do_likert(erstfile, line):
    <input type="button" value="Submit" onclick="sendlik('%(cid)s','%(attribute)s')"><br>
    </form>
    </div>
+   </div>
 
 """
-	rstfile.write (likertfmt % dict(likertq=likertq, cid=cid, attribute=attribute, lowlik=lowlik, highlik=highlik))
+	rstfile.write (likertfmt % dict(likertq=likertq, css_class=css_class, admonition_title=admonition_title, cid=cid, attribute=attribute, lowlik=lowlik, highlik=highlik))
 
 
 

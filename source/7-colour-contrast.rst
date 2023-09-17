@@ -6,8 +6,8 @@
    </script>
 
 
-😕 Colour contrast ✴️
-::::::::::::::::::::::::
+2️⃣ Colour contrast 🟧
+::::::::::::::::::::::::::::::::
 
 -------------------------------------
 Colour contrast and its importance ✅
@@ -25,7 +25,9 @@ Colour contrast is particularly important for text and other essential elements.
 .. raw:: html
 
 
+		  <div class="admonition attention">
           <div class="mcq">
+		  <p class="admonition-title">MCQ</p>
                 <p>Which of these colour pairings has higher colour contrast?</p>
 		<form name=Q1 id="Q1" data-component="colour-contrast">
 		<input type="checkbox" id="Q1A1" value=""><label for="Q1A1">Image 1</label> <span id="Q1A1-feedback"> </span><br> 		<input type="checkbox" id="Q1A2" value="correct"><label for="Q1A2">Image 2</label> <span id="Q1A2-feedback"> </span><br> 
@@ -36,6 +38,7 @@ Colour contrast is particularly important for text and other essential elements.
 	]
 	</script>
 
+	</div>
 	</div>
 
 Why do we need to ensure sufficient colour contrast? Examples of poor contrast; who it helps
@@ -71,7 +74,9 @@ From the two excerpts, please answer the following questions:
 .. raw:: html
 
 
+		  <div class="admonition attention">
           <div class="mcq">
+		  <p class="admonition-title">MCQ</p>
                 <p>From the WCAG, 3:1 is the minimum colour ratio requirement for:</p>
 		<form name=Q2 id="Q2" data-component="colour-contrast">
 		<input type="checkbox" id="Q2A1" value="correct"><label for="Q2A1">Large text (level AA)</label> <span id="Q2A1-feedback"> </span><br> 		<input type="checkbox" id="Q2A2" value=""><label for="Q2A2">Normal text (level AAA)</label> <span id="Q2A2-feedback"> </span><br> 		<input type="checkbox" id="Q2A3" value=""><label for="Q2A3">Normal text (level AA) and large text (level AAA)</label> <span id="Q2A3-feedback"> </span><br> 
@@ -83,11 +88,14 @@ From the two excerpts, please answer the following questions:
 	</script>
 
 	</div>
+	</div>
 
 .. raw:: html
 
 
+		  <div class="admonition attention">
           <div class="mcq">
+		  <p class="admonition-title">MCQ</p>
                 <p>From the WCAG, 4.5:1 is the minimum colour ratio requirement for:</p>
 		<form name=Q3 id="Q3" data-component="colour-contrast">
 		<input type="checkbox" id="Q3A1" value=""><label for="Q3A1">Large text (level AA)</label> <span id="Q3A1-feedback"> </span><br> 		<input type="checkbox" id="Q3A2" value=""><label for="Q3A2">Normal text (level AAA)</label> <span id="Q3A2-feedback"> </span><br> 		<input type="checkbox" id="Q3A3" value="correct"><label for="Q3A3">Normal text (level AA) and large text (level AAA)</label> <span id="Q3A3-feedback"> </span><br> 
@@ -99,11 +107,14 @@ From the two excerpts, please answer the following questions:
 	</script>
 
 	</div>
+	</div>
 
 .. raw:: html
 
 
+		  <div class="admonition attention">
           <div class="mcq">
+		  <p class="admonition-title">MCQ</p>
                 <p>From the WCAG, 7:1 is the minimum colour ratio requirement for:</p>
 		<form name=Q4 id="Q4" data-component="colour-contrast">
 		<input type="checkbox" id="Q4A1" value=""><label for="Q4A1">Large text (level AA)</label> <span id="Q4A1-feedback"> </span><br> 		<input type="checkbox" id="Q4A2" value="correct"><label for="Q4A2">Normal text (level AAA)</label> <span id="Q4A2-feedback"> </span><br> 		<input type="checkbox" id="Q4A3" value=""><label for="Q4A3">Normal text (level AA) and large text (level AAA)</label> <span id="Q4A3-feedback"> </span><br> 
@@ -114,6 +125,7 @@ From the two excerpts, please answer the following questions:
 	]
 	</script>
 
+	</div>
 	</div>
 
 Important non-text information such as **graphics** have the same WCAG contrast requirements as large text.
@@ -142,6 +154,10 @@ Colour contrast in Adee
 Adee allows you to modify either of the two selected colours on the spot and immediately see if the contrast standards are met.
 Selecting the "Apply" button saves the changes in Adee to the actual Figma object.
 
+-----------
+Adee task 5
+-----------
+
 .. admonition:: Adee task 5
 
      Check the colour contrast of a button.
@@ -154,7 +170,9 @@ Selecting the "Apply" button saves the changes in Adee to the actual Figma objec
 
 .. raw:: html
 
-   <div class="likert"><br>
+   <div class="admonition-adee-task-likert admonition"><br>
+   <div class="likert">
+   <p class="admonition-title">Adee task rating</p>
    Rate the difficulty of Adee task 5
    <form id = "C5" data-component="colour-contrast">
       Extremely difficult
@@ -167,11 +185,14 @@ Selecting the "Apply" button saves the changes in Adee to the actual Figma objec
    <input type="button" value="Submit" onclick="sendlik('C5','colour-contrast')"><br>
    </form>
    </div>
+   </div>
 
 
 .. raw:: html
 
-   <div class="likert"><br>
+   <div class="admonition caution"><br>
+   <div class="likert">
+   <p class="admonition-title">Knowledge self-rating</p>
    How well do you understand colour contrast?
    <form id = "C6" data-component="colour-contrast">
       Never heard of it
@@ -183,5 +204,6 @@ Selecting the "Apply" button saves the changes in Adee to the actual Figma objec
    Could explain it to a friend
    <input type="button" value="Submit" onclick="sendlik('C6','colour-contrast')"><br>
    </form>
+   </div>
    </div>
 

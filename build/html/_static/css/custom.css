@@ -1,5 +1,5 @@
 
-div.fitb {
+/* div.fitb {
     background-color: lightgrey;
     border: 2px solid green;
     padding: 30px;
@@ -26,4 +26,9 @@ table.olm, td {
     border: 2px solid black;
     border-collapse: collapse;
     padding: 10px;
+} */
+
+div.mcq input[type='checkbox'] {
+    /* padding: 30px; */
+    margin: 10px;
 }

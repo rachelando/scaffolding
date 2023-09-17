@@ -6,8 +6,8 @@
    </script>
 
 
-😐 Alternative (alt) text ❌
-::::::::::::::::::::::::::::
+3️⃣ Alternative (alt) text ❌
+::::::::::::::::::::::::::::::::
 
 ---------------------------
 Alt text and its importance
@@ -47,34 +47,25 @@ From the below screenshot, please answer the following questions:
 .. raw:: html
 
 
+		  <div class="admonition attention">
           <div class="mcq">
-                <p>What image type is the image labelled 1?</p>
+		  <p class="admonition-title">MCQ</p>
+                <p>Are the above images informative or decorative?</p>
 		<form name=Q1 id="Q1" data-component="design-practices">
-		<input type="checkbox" id="Q1A1" value="correct"><label for="Q1A1">Informative</label> <span id="Q1A1-feedback"> </span><br> 		<input type="checkbox" id="Q1A2" value=""><label for="Q1A2">Decorative</label> <span id="Q1A2-feedback"> </span><br> 
+		<input type="checkbox" id="Q1A1" value="correct"><label for="Q1A1">1 is informative, 2 is decorative</label> <span id="Q1A1-feedback"> </span><br> 		<input type="checkbox" id="Q1A2" value=""><label for="Q1A2">1 is decorative, 2 is informative</label> <span id="Q1A2-feedback"> </span><br> 
                 <input type="button" value="Check" onclick="sendmcq('Q1')"><br>
 		</form>
 		<script id="Q1-answers" type="application/json"> 
-		[ 	{ "ansid":"Q1A1", "answer": "Informative", "feedback": "That's right!", "result": "correct"  } ,	{ "ansid":"Q1A2", "answer": "Decorative", "feedback": "Incorrect.", "result": ""  } 
+		[ 	{ "ansid":"Q1A1", "answer": "1 is informative, 2 is decorative", "feedback": "That's right!", "result": "correct"  } ,	{ "ansid":"Q1A2", "answer": "1 is decorative, 2 is informative", "feedback": "Incorrect.", "result": ""  } 
 	]
 	</script>
 
 	</div>
-
-.. raw:: html
-
-
-          <div class="mcq">
-                <p>What image type is the image labelled 2?</p>
-		<form name=Q2 id="Q2" data-component="design-practices">
-		<input type="checkbox" id="Q2A1" value=""><label for="Q2A1">Informative</label> <span id="Q2A1-feedback"> </span><br> 		<input type="checkbox" id="Q2A2" value="correct"><label for="Q2A2">Decorative</label> <span id="Q2A2-feedback"> </span><br> 
-                <input type="button" value="Check" onclick="sendmcq('Q2')"><br>
-		</form>
-		<script id="Q2-answers" type="application/json"> 
-		[ 	{ "ansid":"Q2A1", "answer": "Informative", "feedback": "Incorrect.", "result": ""  } ,	{ "ansid":"Q2A2", "answer": "Decorative", "feedback": "That's right!", "result": "correct"  } 
-	]
-	</script>
-
 	</div>
+
+-----------
+Adee task 2
+-----------
 
 .. admonition:: Adee task 2
 
@@ -90,18 +81,21 @@ From the below screenshot, please answer the following questions:
 
 .. raw:: html
 
-   <div class="likert"><br>
+   <div class="admonition-adee-task-likert admonition"><br>
+   <div class="likert">
+   <p class="admonition-title">Adee task rating</p>
    Rate the difficulty of Adee task 2
-   <form id = "C3" data-component="alt-text">
+   <form id = "C2" data-component="alt-text">
       Extremely difficult
-   <input type="radio" name="C3" id="C3A1">
-   <input type="radio" name="C3" id="C3A2">
-   <input type="radio" name="C3" id="C3A3">
-   <input type="radio" name="C3" id="C3A4">
-   <input type="radio" name="C3" id="C3A5">
+   <input type="radio" name="C2" id="C2A1">
+   <input type="radio" name="C2" id="C2A2">
+   <input type="radio" name="C2" id="C2A3">
+   <input type="radio" name="C2" id="C2A4">
+   <input type="radio" name="C2" id="C2A5">
    Extremely easy
-   <input type="button" value="Submit" onclick="sendlik('C3','alt-text')"><br>
+   <input type="button" value="Submit" onclick="sendlik('C2','alt-text')"><br>
    </form>
+   </div>
    </div>
 
 
@@ -133,6 +127,10 @@ Then include a longer description with:
 Where possible, include this longer description in the shorter alt text.
 Also where possible and practical, include a table with the actual data.
 
+-----------
+Adee task 3
+-----------
+
 .. admonition:: Adee task 3
 
      Create alt text for a chart.
@@ -147,35 +145,41 @@ Also where possible and practical, include a table with the actual data.
 
 .. raw:: html
 
-   <div class="likert"><br>
+   <div class="admonition-adee-task-likert admonition"><br>
+   <div class="likert">
+   <p class="admonition-title">Adee task rating</p>
    Rate the difficulty of Adee task 3
-   <form id = "C4" data-component="alt-text">
+   <form id = "C3" data-component="alt-text">
       Extremely difficult
-   <input type="radio" name="C4" id="C4A1">
-   <input type="radio" name="C4" id="C4A2">
-   <input type="radio" name="C4" id="C4A3">
-   <input type="radio" name="C4" id="C4A4">
-   <input type="radio" name="C4" id="C4A5">
+   <input type="radio" name="C3" id="C3A1">
+   <input type="radio" name="C3" id="C3A2">
+   <input type="radio" name="C3" id="C3A3">
+   <input type="radio" name="C3" id="C3A4">
+   <input type="radio" name="C3" id="C3A5">
    Extremely easy
-   <input type="button" value="Submit" onclick="sendlik('C4','alt-text')"><br>
+   <input type="button" value="Submit" onclick="sendlik('C3','alt-text')"><br>
    </form>
+   </div>
    </div>
 
 
 .. raw:: html
 
-   <div class="likert"><br>
+   <div class="admonition caution"><br>
+   <div class="likert">
+   <p class="admonition-title">Knowledge self-rating</p>
    How well do you understand alt text?
-   <form id = "C5" data-component="alt-text">
+   <form id = "C4" data-component="alt-text">
       Never heard of it
-   <input type="radio" name="C5" id="C5A1">
-   <input type="radio" name="C5" id="C5A2">
-   <input type="radio" name="C5" id="C5A3">
-   <input type="radio" name="C5" id="C5A4">
-   <input type="radio" name="C5" id="C5A5">
+   <input type="radio" name="C4" id="C4A1">
+   <input type="radio" name="C4" id="C4A2">
+   <input type="radio" name="C4" id="C4A3">
+   <input type="radio" name="C4" id="C4A4">
+   <input type="radio" name="C4" id="C4A5">
    Could explain it to a friend
-   <input type="button" value="Submit" onclick="sendlik('C5','alt-text')"><br>
+   <input type="button" value="Submit" onclick="sendlik('C4','alt-text')"><br>
    </form>
+   </div>
    </div>
 
 

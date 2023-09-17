@@ -6,8 +6,8 @@
    </script>
 
 
-😰 Designing with colour
-::::::::::::::::::::::::
+1️⃣ Designing with colour
+::::::::::::::::::::::::::::::::
 
 We saw that alt text is particularly important for blind users.
 What about users who are able to see but aren't able to distinguish between colours easily?
@@ -26,7 +26,9 @@ Relying only on colour means that users who aren't able to distinguish well betw
 .. raw:: html
 
 
+		  <div class="admonition attention">
           <div class="mcq">
+		  <p class="admonition-title">MCQ</p>
                 <p>It is best for accessibility to just use colour to show information.</p>
 		<form name=Q1 id="Q1" data-component="colour-general">
 		<input type="checkbox" id="Q1A1" value=""><label for="Q1A1">True</label> <span id="Q1A1-feedback"> </span><br> 		<input type="checkbox" id="Q1A2" value="correct"><label for="Q1A2">False</label> <span id="Q1A2-feedback"> </span><br> 
@@ -38,10 +40,13 @@ Relying only on colour means that users who aren't able to distinguish well betw
 	</script>
 
 	</div>
+	</div>
 
 .. raw:: html
 
-   <div class="likert"><br>
+   <div class="admonition caution"><br>
+   <div class="likert">
+   <p class="admonition-title">Knowledge self-rating</p>
    How well do you understand general principles about colour and accessibility?
    <form id = "C2" data-component="colour-general">
       Never heard of it
@@ -53,5 +58,6 @@ Relying only on colour means that users who aren't able to distinguish well betw
    Could explain it to a friend
    <input type="button" value="Submit" onclick="sendlik('C2','colour-general')"><br>
    </form>
+   </div>
    </div>
 

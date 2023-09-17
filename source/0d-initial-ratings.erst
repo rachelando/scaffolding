@@ -28,12 +28,12 @@ You should see your understanding improve as you work through EarlyAccess.
 .. likert::alt-text:4. How well do you understand alt text?
    Never heard of it:Could explain it to a friend
 
-.. likert::colour-general:How well do you understand general principles about colour and accessibility?
+.. likert::colour-general:5. How well do you understand general principles about colour and accessibility?
    Never heard of it:Could explain it to a friend
 
-.. likert::cvd:How well do you understand colour vision deficiency?
+.. likert::cvd:6. How well do you understand colour vision deficiency?
    Never heard of it:Could explain it to a friend
 
-.. likert::colour-contrast:How well do you understand colour contrast?
+.. likert::colour-contrast:7. How well do you understand colour contrast?
    Never heard of it:Could explain it to a friend
 

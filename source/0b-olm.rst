@@ -1,0 +1,22 @@
+
+.. raw:: html
+
+   <script id="pagemeta" type="application/json">
+     { "ebook": "scaffolding", "component": "olm" } 
+   </script>
+
+
+Showing your progress
+:::::::::::::::::::::
+
+As you work through EarlyAccess, you can track your progress on the side navigation menu.
+There are two methods for this:
+
+- Confidence self-ratings (from 1-5)
+
+- Short question progress
+
+See the menu on the *left* for a key for both of these.
+
+EarlyAccess contains 17 multiple-choice questions as well as 8 multiple-choice questions in a final quiz.
+Your short question progress will also be shown for subheadings within a page on the sub-menu on the *right*.

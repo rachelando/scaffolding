@@ -6,12 +6,12 @@
    </script>
 
 
-😰 Target size ✅
-::::::::::::::::::::::::
+1️⃣ Touch target size ✅
+::::::::::::::::::::::::::::::::
 
---------------------
-What is target size?
---------------------
+--------------------------
+What is touch target size?
+--------------------------
 
 Target size refers to **how large or small buttons or other clickable/touchable targets are** on a website.
 
@@ -20,9 +20,9 @@ Target size refers to **how large or small buttons or other clickable/touchable 
    :width: 18cm
    :align: center
 
---------------------------
-Target size in the WCAG ✅
---------------------------
+---------------------------------
+Touch target size in the WCAG ✅
+---------------------------------
 
 The following is from WCAG 2.1 Success Criterion 2.5.5: Target Size (Level AAA).
 The WCAG can be difficult to understand but we will work through it to understand it and how to apply it.
@@ -38,7 +38,9 @@ Please read the following WCAG excerpt and then answer the following questions.
 .. raw:: html
 
 
+		  <div class="admonition attention">
           <div class="mcq">
+		  <p class="admonition-title">MCQ</p>
                 <p>Generally, what is the minimum target size from the WCAG?</p>
 		<form name=Q1 id="Q1" data-component="target-size">
 		<input type="checkbox" id="Q1A1" value=""><label for="Q1A1">At least 44 mm in height</label> <span id="Q1A1-feedback"> </span><br> 		<input type="checkbox" id="Q1A2" value=""><label for="Q1A2">At least 44 CSS pixels in width</label> <span id="Q1A2-feedback"> </span><br> 		<input type="checkbox" id="Q1A3" value=""><label for="Q1A3">44 by 44 mm</label> <span id="Q1A3-feedback"> </span><br> 		<input type="checkbox" id="Q1A4" value="correct"><label for="Q1A4">44 by 44 CSS pixels.</label> <span id="Q1A4-feedback"> </span><br> 
@@ -50,11 +52,14 @@ Please read the following WCAG excerpt and then answer the following questions.
 	</script>
 
 	</div>
+	</div>
 
 .. raw:: html
 
 
+		  <div class="admonition attention">
           <div class="mcq">
+		  <p class="admonition-title">MCQ</p>
                 <p>The headings Equivalent, Inline, User Agent Control and Essential refer to properties that pointer targets...</p>
 		<form name=Q2 id="Q2" data-component="target-size">
 		<input type="checkbox" id="Q2A1" value=""><label for="Q2A1">... must have to fulfil WCAG target size requirements.</label> <span id="Q2A1-feedback"> </span><br> 		<input type="checkbox" id="Q2A2" value=""><label for="Q2A2">... should not ever have to fulfil WCAG target size requirements.</label> <span id="Q2A2-feedback"> </span><br> 		<input type="checkbox" id="Q2A3" value="correct"><label for="Q2A3">... have when they don't need to fulfil WCAG target size requirements.</label> <span id="Q2A3-feedback"> </span><br> 		<input type="checkbox" id="Q2A4" value=""><label for="Q2A4">... must have at least one of to fulfil WCAG target size requirements.</label> <span id="Q2A4-feedback"> </span><br> 
@@ -66,10 +71,11 @@ Please read the following WCAG excerpt and then answer the following questions.
 	</script>
 
 	</div>
+	</div>
 
--------------------------------
-Why does target size matter? ✅
--------------------------------
+--------------------------------------
+Why does touch target size matter? ✅
+--------------------------------------
 
 Here is another excerpt from WCAG 2.1 Success Criterion 2.5.5: Target Size (Level AAA).
 Please read it then answer the following questions.
@@ -80,7 +86,9 @@ Please read it then answer the following questions.
 .. raw:: html
 
 
+		  <div class="admonition attention">
           <div class="mcq">
+		  <p class="admonition-title">MCQ</p>
                 <p>From this excerpt, why is it important to have large enough target sizes?</p>
 		<form name=Q3 id="Q3" data-component="target-size">
 		<input type="checkbox" id="Q3A1" value=""><label for="Q3A1">Some devices have small screens</label> <span id="Q3A1-feedback"> </span><br> 		<input type="checkbox" id="Q3A2" value=""><label for="Q3A2">Some users have limited dexterity</label> <span id="Q3A2-feedback"> </span><br> 		<input type="checkbox" id="Q3A3" value=""><label for="Q3A3">Larger targets help users who find mice hard to use</label> <span id="Q3A3-feedback"> </span><br> 		<input type="checkbox" id="Q3A4" value="correct"><label for="Q3A4">All of the above</label> <span id="Q3A4-feedback"> </span><br> 
@@ -91,6 +99,7 @@ Please read it then answer the following questions.
 	]
 	</script>
 
+	</div>
 	</div>
 
 -------------------------------
@@ -129,6 +138,10 @@ It is important to check that a design fulfils the required standards for a rang
 
 .. Tip:: For elements to be shown in Adee, they must be selected in Figma. Either click or drag-select over elements to select them in Figma.
 
+-----------
+Adee task 1
+-----------
+
 .. admonition:: Adee task 1
 
      Check the target size of a button against accessibility standards.
@@ -141,7 +154,9 @@ It is important to check that a design fulfils the required standards for a rang
 
 .. raw:: html
 
-   <div class="likert"><br>
+   <div class="admonition-adee-task-likert admonition"><br>
+   <div class="likert">
+   <p class="admonition-title">Adee task rating</p>
    Rate the difficulty of Adee task 1
    <form id = "C4" data-component="target-size">
       Extremely difficult
@@ -154,11 +169,14 @@ It is important to check that a design fulfils the required standards for a rang
    <input type="button" value="Submit" onclick="sendlik('C4','target-size')"><br>
    </form>
    </div>
+   </div>
 
 
 .. raw:: html
 
-   <div class="likert"><br>
+   <div class="admonition caution"><br>
+   <div class="likert">
+   <p class="admonition-title">Knowledge self-rating</p>
    How well do you understand target size?
    <form id = "C5" data-component="target-size">
       Never heard of it
@@ -170,5 +188,6 @@ It is important to check that a design fulfils the required standards for a rang
    Could explain it to a friend
    <input type="button" value="Submit" onclick="sendlik('C5','target-size')"><br>
    </form>
+   </div>
    </div>
 
