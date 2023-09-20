@@ -14,7 +14,8 @@ Welcome to EarlyAccess
    0c-initial-ratings.rst
    0d-think-aloud.rst
    1-accessibility.rst
-   2-in-practice.rst
+   2a-wcag.rst
+   2b-in-practice.rst
    3-target-size.rst
    4-alt-text.rst
    5-colour-general.rst

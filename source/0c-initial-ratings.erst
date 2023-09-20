@@ -18,6 +18,9 @@ This is only used to gauge your understanding of accessibility and it's not at a
 .. likert::accessibility-intro:1. How well do you understand what accessibility is and why it's important?
    Never heard of it:Could explain it to a friend
 
+.. likert::wcag:How well do you understand the WCAG?
+   Never heard of it:Could explain it to a friend
+
 .. likert::in-practice:2. How well do you understand accessibility in design practice?
    Never heard of it:Could explain it to a friend
 
