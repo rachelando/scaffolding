@@ -175,10 +175,6 @@ def do_mcq(erstfile, line):
 	qformat3 = '''
 	]
 	</script>
-	<script class="log" id="%(qid)s-log" type="application/json"> 
-		[ 
-		]
-	</script>
 
 	</div>
 	</div>
@@ -291,10 +287,6 @@ def do_likert(erstfile, line):
    %(highlik)s
    <input type="button" value="Submit" onclick="sendlikseven('%(cid)s','%(attribute)s')"><br>
    </form>
-   <script class="log" id="%(cid)s-log" type="application/json"> 
-		[ 
-		]
-	</script>
    </div>
    </div>
 
@@ -316,10 +308,6 @@ def do_likert(erstfile, line):
    %(highlik)s
    <input type="button" value="Submit" onclick="sendlik('%(cid)s','%(attribute)s')"><br>
    </form>
-   <script class="log" id="%(cid)s-log" type="application/json"> 
-		[ 
-		]
-	</script>
    </div>
    </div>
 

@@ -56,10 +56,6 @@ We will learn more about each of these and more shortly.
 		[ 	{ "ansid":"Q1A1", "answer": "4 (2 pairs)", "feedback": "Incorrect.", "result": ""  } ,	{ "ansid":"Q1A2", "answer": "8 (4 pairs)", "feedback": "That's right!", "result": "correct"  } ,	{ "ansid":"Q1A3", "answer": "9 (3 groups of 3)", "feedback": "Incorrect.", "result": ""  } ,	{ "ansid":"Q1A4", "answer": "10 (5 pairs)", "feedback": "Incorrect.", "result": ""  } 
 	]
 	</script>
-	<script class="log" id="Q1-log" type="application/json"> 
-		[ 
-		]
-	</script>
 
 	</div>
 	</div>
@@ -100,10 +96,6 @@ Achromatopsia is extremely rare.
 		<script id="Q2-answers" type="application/json"> 
 		[ 	{ "ansid":"Q2A1", "answer": "Tritanomaly, a type of red-green colour blindness.", "feedback": "Incorrect, tritanomaly is a type of blue-yellow colour blindness and it's not most common.", "result": ""  } ,	{ "ansid":"Q2A2", "answer": "Deuteranomaly, a type of red-green colour blindness.", "feedback": "That's right!", "result": "correct"  } ,	{ "ansid":"Q2A3", "answer": "Tritanomaly, a type of blue-yellow colour blindness.", "feedback": "Incorrect, tritanomaly is a type of blue-yellow colour blindness but it's not most common.", "result": ""  } ,	{ "ansid":"Q2A4", "answer": "Deuteranomaly, a type of blue-yellow colour blindness.", "feedback": "Incorrect, deuteranomaly is most common but it's not a type of blue-yellow colour blindness.", "result": ""  } 
 	]
-	</script>
-	<script class="log" id="Q2-log" type="application/json"> 
-		[ 
-		]
 	</script>
 
 	</div>
@@ -147,10 +139,6 @@ Below is an improved version of the same chart.
 		[ 	{ "ansid":"Q3A1", "answer": "Labels and spacing as additional cues", "feedback": "That's right!", "result": "correct"  } ,	{ "ansid":"Q3A2", "answer": "Spacing and patterns as additional cues", "feedback": "Incorrect.", "result": ""  } ,	{ "ansid":"Q3A3", "answer": "Labels and patterns as additional cues", "feedback": "Incorrect.", "result": ""  } 
 	]
 	</script>
-	<script class="log" id="Q3-log" type="application/json"> 
-		[ 
-		]
-	</script>
 
 	</div>
 	</div>
@@ -187,10 +175,6 @@ Adee task 4
    Extremely easy
    <input type="button" value="Submit" onclick="sendlikseven('C4','cvd')"><br>
    </form>
-   <script class="log" id="C4-log" type="application/json"> 
-		[ 
-		]
-	</script>
    </div>
    </div>
 
@@ -211,10 +195,6 @@ Adee task 4
    Could explain it to a friend
    <input type="button" value="Submit" onclick="sendlik('C5','cvd')"><br>
    </form>
-   <script class="log" id="C5-log" type="application/json"> 
-		[ 
-		]
-	</script>
    </div>
    </div>
 

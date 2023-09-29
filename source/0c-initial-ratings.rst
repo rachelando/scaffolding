@@ -36,10 +36,6 @@ This is only used to gauge your understanding of accessibility and it's not at a
    Could explain it to a friend
    <input type="button" value="Submit" onclick="sendlik('C1','accessibility-intro')"><br>
    </form>
-   <script class="log" id="C1-log" type="application/json"> 
-		[ 
-		]
-	</script>
    </div>
    </div>
 
@@ -60,10 +56,6 @@ This is only used to gauge your understanding of accessibility and it's not at a
    Could explain it to a friend
    <input type="button" value="Submit" onclick="sendlik('C2','wcag')"><br>
    </form>
-   <script class="log" id="C2-log" type="application/json"> 
-		[ 
-		]
-	</script>
    </div>
    </div>
 
@@ -84,10 +76,6 @@ This is only used to gauge your understanding of accessibility and it's not at a
    Could explain it to a friend
    <input type="button" value="Submit" onclick="sendlik('C3','in-practice')"><br>
    </form>
-   <script class="log" id="C3-log" type="application/json"> 
-		[ 
-		]
-	</script>
    </div>
    </div>
 
@@ -108,10 +96,6 @@ This is only used to gauge your understanding of accessibility and it's not at a
    Could explain it to a friend
    <input type="button" value="Submit" onclick="sendlik('C4','target-size')"><br>
    </form>
-   <script class="log" id="C4-log" type="application/json"> 
-		[ 
-		]
-	</script>
    </div>
    </div>
 
@@ -132,10 +116,6 @@ This is only used to gauge your understanding of accessibility and it's not at a
    Could explain it to a friend
    <input type="button" value="Submit" onclick="sendlik('C5','alt-text')"><br>
    </form>
-   <script class="log" id="C5-log" type="application/json"> 
-		[ 
-		]
-	</script>
    </div>
    </div>
 
@@ -156,10 +136,6 @@ This is only used to gauge your understanding of accessibility and it's not at a
    Could explain it to a friend
    <input type="button" value="Submit" onclick="sendlik('C6','colour-general')"><br>
    </form>
-   <script class="log" id="C6-log" type="application/json"> 
-		[ 
-		]
-	</script>
    </div>
    </div>
 
@@ -180,10 +156,6 @@ This is only used to gauge your understanding of accessibility and it's not at a
    Could explain it to a friend
    <input type="button" value="Submit" onclick="sendlik('C7','cvd')"><br>
    </form>
-   <script class="log" id="C7-log" type="application/json"> 
-		[ 
-		]
-	</script>
    </div>
    </div>
 
@@ -204,10 +176,6 @@ This is only used to gauge your understanding of accessibility and it's not at a
    Could explain it to a friend
    <input type="button" value="Submit" onclick="sendlik('C8','colour-contrast')"><br>
    </form>
-   <script class="log" id="C8-log" type="application/json"> 
-		[ 
-		]
-	</script>
    </div>
    </div>
 

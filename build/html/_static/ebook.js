@@ -243,19 +243,6 @@ function sendmcq(qid)
         var ansobj = JSON.parse(ansobjTag.textContent);
 
 
-        // RACHEL test - works
-        const testJson = {
-          "test1": "test1value",
-          "test2": 1
-        };
-        ansobj.push(testJson);
-        console.log(ansobj);
-        // TODO: update json
-        const updatedAnsobj = JSON.stringify(ansobj);
-        console.log(updatedAnsobj);
-        ansobjTag.textContent = updatedAnsobj;
-        console.log(ansobjTag);
-
         // RACHEL json log variables
         result = '';
         givenAns = '';
@@ -271,7 +258,7 @@ function sendmcq(qid)
     // RACHEL
     result = ansobj[ans].result; // 'correct' if correct, blank if incorrect
     givenAns = ansobj[ans].answer // '<given answer>'
-    saveMcq(qid, ansid, givenAns, result);
+    // saveMcq(qid, ansid, givenAns, result);
 
     document.getElementById(fbackid).innerHTML = " : "+ansobj[ans].feedback;
     // sendmcqmsg(qid, ansid, ansobj[ans].feedback);

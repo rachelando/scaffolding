@@ -37,10 +37,6 @@ Colour contrast is particularly important for text and other essential elements.
 		[ 	{ "ansid":"Q1A1", "answer": "Image 1", "feedback": "Incorrect.", "result": ""  } ,	{ "ansid":"Q1A2", "answer": "Image 2", "feedback": "That's right!", "result": "correct"  } 
 	]
 	</script>
-	<script class="log" id="Q1-log" type="application/json"> 
-		[ 
-		]
-	</script>
 
 	</div>
 	</div>
@@ -90,10 +86,6 @@ From the two excerpts, please answer the following questions:
 		[ 	{ "ansid":"Q2A1", "answer": "Large text (level AA)", "feedback": "That's right!", "result": "correct"  } ,	{ "ansid":"Q2A2", "answer": "Normal text (level AAA)", "feedback": "Incorrect.", "result": ""  } ,	{ "ansid":"Q2A3", "answer": "Normal text (level AA) and large text (level AAA)", "feedback": "Incorrect.", "result": ""  } 
 	]
 	</script>
-	<script class="log" id="Q2-log" type="application/json"> 
-		[ 
-		]
-	</script>
 
 	</div>
 	</div>
@@ -113,10 +105,6 @@ From the two excerpts, please answer the following questions:
 		[ 	{ "ansid":"Q3A1", "answer": "Large text (level AA)", "feedback": "Incorrect.", "result": ""  } ,	{ "ansid":"Q3A2", "answer": "Normal text (level AAA)", "feedback": "Incorrect.", "result": ""  } ,	{ "ansid":"Q3A3", "answer": "Normal text (level AA) and large text (level AAA)", "feedback": "That's right!", "result": "correct"  } 
 	]
 	</script>
-	<script class="log" id="Q3-log" type="application/json"> 
-		[ 
-		]
-	</script>
 
 	</div>
 	</div>
@@ -135,10 +123,6 @@ From the two excerpts, please answer the following questions:
 		<script id="Q4-answers" type="application/json"> 
 		[ 	{ "ansid":"Q4A1", "answer": "Large text (level AA)", "feedback": "Incorrect.", "result": ""  } ,	{ "ansid":"Q4A2", "answer": "Normal text (level AAA)", "feedback": "That's right!", "result": "correct"  } ,	{ "ansid":"Q4A3", "answer": "Normal text (level AA) and large text (level AAA)", "feedback": "Incorrect.", "result": ""  } 
 	]
-	</script>
-	<script class="log" id="Q4-log" type="application/json"> 
-		[ 
-		]
 	</script>
 
 	</div>
@@ -202,10 +186,6 @@ Adee task 5
    Extremely easy
    <input type="button" value="Submit" onclick="sendlikseven('C5','colour-contrast')"><br>
    </form>
-   <script class="log" id="C5-log" type="application/json"> 
-		[ 
-		]
-	</script>
    </div>
    </div>
 
@@ -226,10 +206,6 @@ Adee task 5
    Could explain it to a friend
    <input type="button" value="Submit" onclick="sendlik('C6','colour-contrast')"><br>
    </form>
-   <script class="log" id="C6-log" type="application/json"> 
-		[ 
-		]
-	</script>
    </div>
    </div>
 
