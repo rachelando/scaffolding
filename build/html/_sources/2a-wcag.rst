@@ -34,6 +34,10 @@ WAI is part of the World Wide Web Consortium (W3C) which provides universal stan
 		[ 	{ "ansid":"Q1A1", "answer": "World Wide Web Consortium (W3C)", "feedback": "Incorrect.", "result": ""  } ,	{ "ansid":"Q1A2", "answer": "Web Accessibility Initiative (WAI)", "feedback": "Incorrect.", "result": ""  } ,	{ "ansid":"Q1A3", "answer": "Web Content Accessibility Guidelines (WCAG)", "feedback": "That's right!", "result": "correct"  } 
 	]
 	</script>
+	<script class="log" id="Q1-log" type="application/json"> 
+		[ 
+		]
+	</script>
 
 	</div>
 	</div>
@@ -70,6 +74,10 @@ Read the following excerpt from the WAI:
 		[ 	{ "ansid":"Q2A1", "answer": "Level A is highest, then AA, then AAA", "feedback": "Incorrect.", "result": ""  } ,	{ "ansid":"Q2A2", "answer": "If level AAA is met, some level AA requirements have not been met", "feedback": "Incorrect.", "result": ""  } ,	{ "ansid":"Q2A3", "answer": "It is generally good to aim for level AA and even better to aim for level AAA", "feedback": "That's right!", "result": "correct"  } ,	{ "ansid":"Q2A4", "answer": "All websites are required to follow AAA requirements", "feedback": "Incorrect.", "result": ""  } 
 	]
 	</script>
+	<script class="log" id="Q2-log" type="application/json"> 
+		[ 
+		]
+	</script>
 
 	</div>
 	</div>
@@ -90,6 +98,10 @@ Read the following excerpt from the WAI:
    Could explain it to a friend
    <input type="button" value="Submit" onclick="sendlik('C3','wcag')"><br>
    </form>
+   <script class="log" id="C3-log" type="application/json"> 
+		[ 
+		]
+	</script>
    </div>
    </div>
 

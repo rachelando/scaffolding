@@ -31,6 +31,10 @@ This includes questions like, "How would someone with blindness or low vision un
 		[ 	{ "ansid":"Q1A1", "answer": "People with low vision", "feedback": "Incorrect, that IS related to accessibility.", "result": ""  } ,	{ "ansid":"Q1A2", "answer": "People with cognitive impairments", "feedback": "Incorrect, that IS related to accessibility.", "result": ""  } ,	{ "ansid":"Q1A3", "answer": "People in remote locations", "feedback": "That's right! That is NOT related to accessibility.", "result": "correct"  } ,	{ "ansid":"Q1A4", "answer": "People with hearing impairments", "feedback": "Incorrect, that IS related to accessibility.", "result": ""  } 
 	]
 	</script>
+	<script class="log" id="Q1-log" type="application/json"> 
+		[ 
+		]
+	</script>
 
 	</div>
 	</div>
@@ -71,6 +75,10 @@ Therefore, accessibility is worth pursuing from **both ethical and practical vie
 		[ 	{ "ansid":"Q2A1", "answer": "Accessibility also helps other user groups", "feedback": "Incorrect, that IS a motivation.", "result": ""  } ,	{ "ansid":"Q2A2", "answer": "Accessibility has a good business case", "feedback": "Incorrect, that IS a motivation.", "result": ""  } ,	{ "ansid":"Q2A3", "answer": "Accessibility helps everyone", "feedback": "Incorrect, that IS a motivation.", "result": ""  } ,	{ "ansid":"Q2A4", "answer": "Accessibility is unnecessary from an ethical standpoint", "feedback": "That's right! That is NOT a motivation.", "result": "correct"  } 
 	]
 	</script>
+	<script class="log" id="Q2-log" type="application/json"> 
+		[ 
+		]
+	</script>
 
 	</div>
 	</div>
@@ -91,6 +99,10 @@ Therefore, accessibility is worth pursuing from **both ethical and practical vie
    Could explain it to a friend
    <input type="button" value="Submit" onclick="sendlik('C3','accessibility-intro')"><br>
    </form>
+   <script class="log" id="C3-log" type="application/json"> 
+		[ 
+		]
+	</script>
    </div>
    </div>
 

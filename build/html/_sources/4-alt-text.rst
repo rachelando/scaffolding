@@ -59,6 +59,10 @@ From the below screenshot, please answer the following questions:
 		[ 	{ "ansid":"Q1A1", "answer": "1 is informative, 2 is decorative", "feedback": "That's right!", "result": "correct"  } ,	{ "ansid":"Q1A2", "answer": "1 is decorative, 2 is informative", "feedback": "Incorrect.", "result": ""  } 
 	]
 	</script>
+	<script class="log" id="Q1-log" type="application/json"> 
+		[ 
+		]
+	</script>
 
 	</div>
 	</div>
@@ -92,9 +96,15 @@ Adee task 2
    <input type="radio" name="C2" id="C2A3">
    <input type="radio" name="C2" id="C2A4">
    <input type="radio" name="C2" id="C2A5">
+   <input type="radio" name="C2" id="C2A6">
+   <input type="radio" name="C2" id="C2A7">
    Extremely easy
-   <input type="button" value="Submit" onclick="sendlik('C2','alt-text')"><br>
+   <input type="button" value="Submit" onclick="sendlikseven('C2','alt-text')"><br>
    </form>
+   <script class="log" id="C2-log" type="application/json"> 
+		[ 
+		]
+	</script>
    </div>
    </div>
 
@@ -156,9 +166,15 @@ Adee task 3
    <input type="radio" name="C3" id="C3A3">
    <input type="radio" name="C3" id="C3A4">
    <input type="radio" name="C3" id="C3A5">
+   <input type="radio" name="C3" id="C3A6">
+   <input type="radio" name="C3" id="C3A7">
    Extremely easy
-   <input type="button" value="Submit" onclick="sendlik('C3','alt-text')"><br>
+   <input type="button" value="Submit" onclick="sendlikseven('C3','alt-text')"><br>
    </form>
+   <script class="log" id="C3-log" type="application/json"> 
+		[ 
+		]
+	</script>
    </div>
    </div>
 
@@ -179,6 +195,10 @@ Adee task 3
    Could explain it to a friend
    <input type="button" value="Submit" onclick="sendlik('C4','alt-text')"><br>
    </form>
+   <script class="log" id="C4-log" type="application/json"> 
+		[ 
+		]
+	</script>
    </div>
    </div>
 

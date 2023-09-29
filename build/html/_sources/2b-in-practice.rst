@@ -46,6 +46,10 @@ Designs are then sent on to developers who write the actual code for the website
 		[ 	{ "ansid":"Q1A1", "answer": "Currently, most websites have accessibility problems", "feedback": "Incorrect. That IS true about web design.", "result": ""  } ,	{ "ansid":"Q1A2", "answer": "Fixing accessibility problems early saves money and time", "feedback": "Incorrect. That IS true about web design.", "result": ""  } ,	{ "ansid":"Q1A3", "answer": "Ideally, accessibility should be incorporated after the design phase", "feedback": "That's right! It should be incorporated DURING the design phase.", "result": "correct"  } ,	{ "ansid":"Q1A4", "answer": "Accessibility is not considered enough due to deadlines and a lack of resources", "feedback": "Incorrect. That IS true about web design.", "result": ""  } 
 	]
 	</script>
+	<script class="log" id="Q1-log" type="application/json"> 
+		[ 
+		]
+	</script>
 
 	</div>
 	</div>
@@ -85,6 +89,10 @@ The "Generate" button in Adee generates a report that can be shown to managers o
    Could explain it to a friend
    <input type="button" value="Submit" onclick="sendlik('C2','in-practice')"><br>
    </form>
+   <script class="log" id="C2-log" type="application/json"> 
+		[ 
+		]
+	</script>
    </div>
    </div>
 

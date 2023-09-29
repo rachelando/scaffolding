@@ -50,6 +50,10 @@ Please read the following WCAG excerpt and then answer the following questions.
 		[ 	{ "ansid":"Q1A1", "answer": "At least 44 mm in height", "feedback": "Incorrect.", "result": ""  } ,	{ "ansid":"Q1A2", "answer": "At least 44 CSS pixels in width", "feedback": "Incorrect.", "result": ""  } ,	{ "ansid":"Q1A3", "answer": "44 by 44 mm", "feedback": "Incorrect.", "result": ""  } ,	{ "ansid":"Q1A4", "answer": "44 by 44 CSS pixels.", "feedback": "That's right!", "result": "correct"  } 
 	]
 	</script>
+	<script class="log" id="Q1-log" type="application/json"> 
+		[ 
+		]
+	</script>
 
 	</div>
 	</div>
@@ -68,6 +72,10 @@ Please read the following WCAG excerpt and then answer the following questions.
 		<script id="Q2-answers" type="application/json"> 
 		[ 	{ "ansid":"Q2A1", "answer": "... must have to fulfil WCAG target size requirements.", "feedback": "Incorrect.", "result": ""  } ,	{ "ansid":"Q2A2", "answer": "... should not ever have to fulfil WCAG target size requirements.", "feedback": "Incorrect.", "result": ""  } ,	{ "ansid":"Q2A3", "answer": "... have when they don't need to fulfil WCAG target size requirements.", "feedback": "That's right!", "result": "correct"  } ,	{ "ansid":"Q2A4", "answer": "... must have at least one of to fulfil WCAG target size requirements.", "feedback": "Incorrect.", "result": ""  } 
 	]
+	</script>
+	<script class="log" id="Q2-log" type="application/json"> 
+		[ 
+		]
 	</script>
 
 	</div>
@@ -97,6 +105,10 @@ Please read it then answer the following questions.
 		<script id="Q3-answers" type="application/json"> 
 		[ 	{ "ansid":"Q3A1", "answer": "Some devices have small screens", "feedback": "That's true but there is a more correct answer.", "result": ""  } ,	{ "ansid":"Q3A2", "answer": "Some users have limited dexterity", "feedback": "That's true but there is a more correct answer.", "result": ""  } ,	{ "ansid":"Q3A3", "answer": "Larger targets help users who find mice hard to use", "feedback": "That's true but there is a more correct answer.", "result": ""  } ,	{ "ansid":"Q3A4", "answer": "All of the above", "feedback": "That's right!", "result": "correct"  } 
 	]
+	</script>
+	<script class="log" id="Q3-log" type="application/json"> 
+		[ 
+		]
 	</script>
 
 	</div>
@@ -165,9 +177,15 @@ Adee task 1
    <input type="radio" name="C4" id="C4A3">
    <input type="radio" name="C4" id="C4A4">
    <input type="radio" name="C4" id="C4A5">
+   <input type="radio" name="C4" id="C4A6">
+   <input type="radio" name="C4" id="C4A7">
    Extremely easy
-   <input type="button" value="Submit" onclick="sendlik('C4','target-size')"><br>
+   <input type="button" value="Submit" onclick="sendlikseven('C4','target-size')"><br>
    </form>
+   <script class="log" id="C4-log" type="application/json"> 
+		[ 
+		]
+	</script>
    </div>
    </div>
 
@@ -188,6 +206,10 @@ Adee task 1
    Could explain it to a friend
    <input type="button" value="Submit" onclick="sendlik('C5','target-size')"><br>
    </form>
+   <script class="log" id="C5-log" type="application/json"> 
+		[ 
+		]
+	</script>
    </div>
    </div>
 

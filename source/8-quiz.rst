@@ -28,6 +28,10 @@ This quiz helps us understand how helpful EarlyAccess has been for understanding
 		[ 	{ "ansid":"Q1A1", "answer": "Websites can be accessed by people across large and even remote geographical areas", "feedback": "Incorrect.", "result": ""  } ,	{ "ansid":"Q1A2", "answer": "Websites that are designed and developed by people with disabilities", "feedback": "Incorrect.", "result": ""  } ,	{ "ansid":"Q1A3", "answer": "Websites are designed and developed so that people with disabilities can use them", "feedback": "That's right!", "result": "correct"  } ,	{ "ansid":"Q1A4", "answer": "Websites can be used effectively even with poor internet connection", "feedback": "Incorrect.", "result": ""  } 
 	]
 	</script>
+	<script class="log" id="Q1-log" type="application/json"> 
+		[ 
+		]
+	</script>
 
 	</div>
 	</div>
@@ -46,6 +50,10 @@ This quiz helps us understand how helpful EarlyAccess has been for understanding
 		<script id="Q2-answers" type="application/json"> 
 		[ 	{ "ansid":"Q2A1", "answer": "People living in remote areas", "feedback": "Incorrect.", "result": ""  } ,	{ "ansid":"Q2A2", "answer": "People with disabilities", "feedback": "Incorrect.", "result": ""  } ,	{ "ansid":"Q2A3", "answer": "People with poor internet connection", "feedback": "Incorrect.", "result": ""  } ,	{ "ansid":"Q2A4", "answer": "Everyone", "feedback": "That's right!", "result": "correct"  } 
 	]
+	</script>
+	<script class="log" id="Q2-log" type="application/json"> 
+		[ 
+		]
 	</script>
 
 	</div>
@@ -66,6 +74,10 @@ This quiz helps us understand how helpful EarlyAccess has been for understanding
 		[ 	{ "ansid":"Q3A1", "answer": "Design phase", "feedback": "That's right!", "result": "correct"  } ,	{ "ansid":"Q3A2", "answer": "Development phase", "feedback": "Incorrect.", "result": ""  } ,	{ "ansid":"Q3A3", "answer": "Testing phase", "feedback": "Incorrect.", "result": ""  } 
 	]
 	</script>
+	<script class="log" id="Q3-log" type="application/json"> 
+		[ 
+		]
+	</script>
 
 	</div>
 	</div>
@@ -84,6 +96,10 @@ This quiz helps us understand how helpful EarlyAccess has been for understanding
 		<script id="Q4-answers" type="application/json"> 
 		[ 	{ "ansid":"Q4A1", "answer": "Accessibility guidelines provide a minimum for designers to meet and exceed", "feedback": "Incorrect.", "result": ""  } ,	{ "ansid":"Q4A2", "answer": "Accessibility guidelines help evaluate whether a website is accessible or not", "feedback": "Incorrect.", "result": ""  } ,	{ "ansid":"Q4A3", "answer": "Accessibility guidelines", "feedback": "Incorrect.", "result": ""  } ,	{ "ansid":"Q4A4", "answer": "Following accessibility guidelines is a legal requirement for almost all websites", "feedback": "That's right!", "result": "correct"  } 
 	]
+	</script>
+	<script class="log" id="Q4-log" type="application/json"> 
+		[ 
+		]
 	</script>
 
 	</div>
@@ -104,6 +120,10 @@ This quiz helps us understand how helpful EarlyAccess has been for understanding
 		[ 	{ "ansid":"Q5A1", "answer": "Have low vision", "feedback": "Incorrect.", "result": ""  } ,	{ "ansid":"Q5A2", "answer": "Are blind", "feedback": "Incorrect.", "result": ""  } ,	{ "ansid":"Q5A3", "answer": "Have limited dexterity or are using a small handheld device", "feedback": "That's right!", "result": "correct"  } ,	{ "ansid":"Q5A4", "answer": "Have a colour vision deficiency", "feedback": "Incorrect.", "result": ""  } 
 	]
 	</script>
+	<script class="log" id="Q5-log" type="application/json"> 
+		[ 
+		]
+	</script>
 
 	</div>
 	</div>
@@ -122,6 +142,10 @@ This quiz helps us understand how helpful EarlyAccess has been for understanding
 		<script id="Q6-answers" type="application/json"> 
 		[ 	{ "ansid":"Q6A1", "answer": "Have low vision", "feedback": "Incorrect.", "result": ""  } ,	{ "ansid":"Q6A2", "answer": "Are blind", "feedback": "That's right!", "result": "correct"  } ,	{ "ansid":"Q6A3", "answer": "Have limited dexterity or are using a small handheld device", "feedback": "Incorrect.", "result": ""  } ,	{ "ansid":"Q6A4", "answer": "Have a colour vision deficiency", "feedback": "Incorrect.", "result": ""  } 
 	]
+	</script>
+	<script class="log" id="Q6-log" type="application/json"> 
+		[ 
+		]
 	</script>
 
 	</div>
@@ -142,6 +166,10 @@ This quiz helps us understand how helpful EarlyAccess has been for understanding
 		[ 	{ "ansid":"Q7A1", "answer": "Have low vision", "feedback": "Incorrect.", "result": ""  } ,	{ "ansid":"Q7A2", "answer": "Are blind", "feedback": "Incorrect.", "result": ""  } ,	{ "ansid":"Q7A3", "answer": "Have limited dexterity or are using a small handheld device", "feedback": "Incorrect.", "result": ""  } ,	{ "ansid":"Q7A4", "answer": "Have a colour vision deficiency", "feedback": "That's right!", "result": "correct"  } 
 	]
 	</script>
+	<script class="log" id="Q7-log" type="application/json"> 
+		[ 
+		]
+	</script>
 
 	</div>
 	</div>
@@ -160,6 +188,10 @@ This quiz helps us understand how helpful EarlyAccess has been for understanding
 		<script id="Q8-answers" type="application/json"> 
 		[ 	{ "ansid":"Q8A1", "answer": "Have low vision", "feedback": "That's right!", "result": "correct"  } ,	{ "ansid":"Q8A2", "answer": "Are blind", "feedback": "Incorrect.", "result": ""  } ,	{ "ansid":"Q8A3", "answer": "Have limited dexterity or are using a small handheld device", "feedback": "Incorrect.", "result": ""  } ,	{ "ansid":"Q8A4", "answer": "Have a colour vision deficiency", "feedback": "Incorrect.", "result": ""  } 
 	]
+	</script>
+	<script class="log" id="Q8-log" type="application/json"> 
+		[ 
+		]
 	</script>
 
 	</div>

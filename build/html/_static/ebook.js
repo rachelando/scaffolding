@@ -11,6 +11,8 @@ for (x in eBookdata)
 }
 
 console.log("eBook Starting....");
+
+/*
 // Create a client instance
 //client = new Paho.MQTT.Client("192.168.87.29", 1884, "/", "");
 client = new Paho.MQTT.Client("127.0.0.1", 1884, "/", "");
@@ -91,6 +93,7 @@ function onMessageArrived(message) {
   }
 
 }
+*/
 
 function checkans(qid)
 {
@@ -121,6 +124,7 @@ function checkans(qid)
 
 function sendfitb(ansid)
 {
+  /*
   var evidence = {
 		qid: ansid, 
 		qtype: "fitb",
@@ -140,6 +144,7 @@ function sendfitb(ansid)
   message.destinationName = eBookdata.EBtopic;
   client.send(message);
   console.log("sendfitb: "+msgJSON);
+  */
 }
 
 function sendlik(cid, componentid)
@@ -153,12 +158,16 @@ function sendlik(cid, componentid)
 	console.log("sendlik "+ansid);
 	if (document.getElementById(ansid).checked)
 	{
+    // RACHEL
+    // alert(answers[ans]) // e.g. 4 (indexed from 1 so 1,2,3,4,5)
+    // alert(componentid)
 		console.log("sendlik answer "+ansid)
 		value = ans; // 0 to 4
 		break;
 	}
   }
 
+  /*
   var evidence = {
 		qid: cid, 
 		componentid: componentid,
@@ -178,6 +187,51 @@ function sendlik(cid, componentid)
   message.destinationName = eBookdata.EBtopic;
   client.send(message);
   console.log("sendlik: "+msgJSON);
+  */
+}
+
+function sendlikseven(cid, componentid)
+{
+  var value = "error";
+  var answers = ["1","2","3","4","5","6","7"];
+
+  for (let ans in answers)
+  {
+	ansid = cid+"A"+answers[ans];
+	console.log("sendlik "+ansid);
+	if (document.getElementById(ansid).checked)
+	{
+    // RACHEL
+    // alert(answers[ans]) // e.g. 4 (indexed from 1 so 1,2,3,4,5,6,7)
+    // alert(componentid) // target-size
+
+		console.log("sendlik answer "+ansid)
+		value = ans; // 0 to 6
+		break;
+	}
+  }
+
+  /*
+  var evidence = {
+		qid: cid, 
+		componentid: componentid,
+		qtype: "likert",
+		value: value
+		};
+  var msg = {
+                login: localStorage.getItem("EBlogin"),
+                ebook: "B2A",
+		cmd: "tell",
+		qtype: "likert",
+                component: document.getElementById(cid).getAttribute("data-component"),
+                evidence: JSON.stringify(evidence)
+            };
+  var msgJSON = JSON.stringify(msg);
+  message = new Paho.MQTT.Message(msgJSON);
+  message.destinationName = eBookdata.EBtopic;
+  client.send(message);
+  console.log("sendlik: "+msgJSON);
+  */
 }
 
 
@@ -185,9 +239,26 @@ function sendmcq(qid)
 {
         var ansid = qid+"-answers";
         var ansval = document.getElementById(qid).value;
-        var ansobj = JSON.parse(document.getElementById(ansid).innerHTML);
+        var ansobjTag = document.getElementById(ansid);
+        var ansobj = JSON.parse(ansobjTag.textContent);
 
 
+        // RACHEL test - works
+        const testJson = {
+          "test1": "test1value",
+          "test2": 1
+        };
+        ansobj.push(testJson);
+        console.log(ansobj);
+        // TODO: update json
+        const updatedAnsobj = JSON.stringify(ansobj);
+        console.log(updatedAnsobj);
+        ansobjTag.textContent = updatedAnsobj;
+        console.log(ansobjTag);
+
+        // RACHEL json log variables
+        result = '';
+        givenAns = '';
 
         for (ans in ansobj)
         {
@@ -197,8 +268,14 @@ function sendmcq(qid)
 		//alert(ansid+" : "+checked);
                 if (checked) 
                 {
-                        document.getElementById(fbackid).innerHTML = " : "+ansobj[ans].feedback;
-			sendmcqmsg(qid, ansid, ansobj[ans].feedback);
+    // RACHEL
+    result = ansobj[ans].result; // 'correct' if correct, blank if incorrect
+    givenAns = ansobj[ans].answer // '<given answer>'
+    saveMcq(qid, ansid, givenAns, result);
+
+    document.getElementById(fbackid).innerHTML = " : "+ansobj[ans].feedback;
+    // sendmcqmsg(qid, ansid, ansobj[ans].feedback);
+    break;
                 }
 		else
                 {
@@ -207,8 +284,36 @@ function sendmcq(qid)
         }
 }
 
+// RACHEL save MCQ result in json object in the html file
+function saveMcq(qid, ansid, givenAns, result) {
+  // Record json log data
+  if (result == '') {
+    result = 'incorrect'
+  }
+  const logJsonData = {
+    DateTime: Date(),
+    Activity: "MCQ",
+    Section: document.getElementById(qid).dataset.component,
+    QuestionID: qid,
+    GivenAnswer: givenAns,
+    Result: result
+  }
+  // Get json log object and add data
+  var logTag = document.getElementById(qid+'-log');
+  console.log(logTag);
+  var logJson = JSON.parse(logTag.textContent);
+  logJson.push(logJsonData);
+  console.log(logJson);
+  // Update json
+  const updatedLogJson = JSON.stringify(logJson);
+  console.log(updatedLogJson);
+  logTag.textContent = updatedLogJson;
+  console.log(logTag);
+}
+
 function sendmcqmsg(qid, ansid, feedback)
 {
+  /*
   var evidence = {
 		qid: qid, 
 		qtype: "mcq",
@@ -229,10 +334,12 @@ function sendmcqmsg(qid, ansid, feedback)
   message.destinationName = eBookdata.EBtopic;
   client.send(message);
   console.log("sendmcq: "+msgJSON);
+  */
 }
 
 function dolog(component, evidence)
 {
+  /*
   console.log("dolog: "+document.baseURI);
   var msg = {
 		login: localStorage.getItem("EBlogin"),
@@ -245,10 +352,11 @@ function dolog(component, evidence)
   message = new Paho.MQTT.Message(msgJSON);
   message.destinationName = eBookdata.EBtopic;
   client.send(message);
+  */
 }
 
 function checkid()
 {
-  console.log("clientid: "+client.clientId);
+  // console.log("clientid: "+client.clientId);
 }
 

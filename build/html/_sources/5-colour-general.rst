@@ -38,6 +38,10 @@ Relying only on colour means that users who aren't able to distinguish well betw
 		[ 	{ "ansid":"Q1A1", "answer": "True", "feedback": "Incorrect. Colour should NOT be the only means of showing information.", "result": ""  } ,	{ "ansid":"Q1A2", "answer": "False", "feedback": "That's right! Colour should NOT be the only means of showing information.", "result": "correct"  } 
 	]
 	</script>
+	<script class="log" id="Q1-log" type="application/json"> 
+		[ 
+		]
+	</script>
 
 	</div>
 	</div>
@@ -58,6 +62,10 @@ Relying only on colour means that users who aren't able to distinguish well betw
    Could explain it to a friend
    <input type="button" value="Submit" onclick="sendlik('C2','colour-general')"><br>
    </form>
+   <script class="log" id="C2-log" type="application/json"> 
+		[ 
+		]
+	</script>
    </div>
    </div>
 

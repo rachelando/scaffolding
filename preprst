@@ -175,6 +175,10 @@ def do_mcq(erstfile, line):
 	qformat3 = '''
 	]
 	</script>
+	<script class="log" id="%(qid)s-log" type="application/json"> 
+		[ 
+		]
+	</script>
 
 	</div>
 	</div>
@@ -263,7 +267,41 @@ def do_likert(erstfile, line):
 
 	cid = "C"+str(qnum)
 	qnum += 1
-	likertfmt = """
+	# Change class for Adee task
+	likertfmt = ""
+	css_class = "admonition caution"
+	admonition_title = "Knowledge self-rating"
+	if "Adee" in likertq:
+		css_class = "admonition-adee-task-likert admonition"
+		admonition_title = "Adee task rating"
+		likertfmt = """
+   <div class="%(css_class)s"><br>
+   <div class="likert">
+   <p class="admonition-title">%(admonition_title)s</p>
+   %(likertq)s
+   <form id = "%(cid)s" data-component="%(attribute)s">
+   %(lowlik)s
+   <input type="radio" name="%(cid)s" id="%(cid)sA1">
+   <input type="radio" name="%(cid)s" id="%(cid)sA2">
+   <input type="radio" name="%(cid)s" id="%(cid)sA3">
+   <input type="radio" name="%(cid)s" id="%(cid)sA4">
+   <input type="radio" name="%(cid)s" id="%(cid)sA5">
+   <input type="radio" name="%(cid)s" id="%(cid)sA6">
+   <input type="radio" name="%(cid)s" id="%(cid)sA7">
+   %(highlik)s
+   <input type="button" value="Submit" onclick="sendlikseven('%(cid)s','%(attribute)s')"><br>
+   </form>
+   <script class="log" id="%(cid)s-log" type="application/json"> 
+		[ 
+		]
+	</script>
+   </div>
+   </div>
+
+"""
+	# Original 5-point likert scale
+	else:
+		likertfmt = """
    <div class="%(css_class)s"><br>
    <div class="likert">
    <p class="admonition-title">%(admonition_title)s</p>
@@ -278,6 +316,10 @@ def do_likert(erstfile, line):
    %(highlik)s
    <input type="button" value="Submit" onclick="sendlik('%(cid)s','%(attribute)s')"><br>
    </form>
+   <script class="log" id="%(cid)s-log" type="application/json"> 
+		[ 
+		]
+	</script>
    </div>
    </div>
 
