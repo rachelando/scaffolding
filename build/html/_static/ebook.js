@@ -171,14 +171,26 @@ function sendlik(cid, componentid)
   for (let ans in answers)
   {
 	ansid = cid+"A"+answers[ans];
-	console.log("sendlik "+ansid);
+	//console.log("sendlik "+ansid);
 	if (document.getElementById(ansid).checked)
 	{
     // RACHEL
     // alert(answers[ans]) // e.g. 4 (indexed from 1 so 1,2,3,4,5)
     // alert(componentid)
-		console.log("sendlik answer "+ansid)
+		//console.log("sendlik answer "+ansid)
 		value = ans; // 0 to 4
+
+    // RACHEL Create log json data
+    const logJsonData = {
+      DateTime: Date(),
+    Activity: "Adee-SEQ",
+      Section: componentid,
+      QuestionID: cid,
+      GivenAnswer: answers[ans],
+      Result: ''
+    };
+    saveLog(logJsonData);
+
 		break;
 	}
   }
@@ -214,24 +226,20 @@ function sendlikseven(cid, componentid)
   for (let ans in answers)
   {
 	ansid = cid+"A"+answers[ans];
-	console.log("sendlik "+ansid);
+	//console.log("sendlik "+ansid);
 	if (document.getElementById(ansid).checked)
 	{
-    // RACHEL
-    // alert(answers[ans]) // e.g. 4 (indexed from 1 so 1,2,3,4,5,6,7)
-    // alert(componentid) // target-size
-
-		console.log("sendlik answer "+ansid)
+		//console.log("sendlik answer "+ansid)
 		value = ans; // 0 to 6
 
-    // Create log json data
+    // RACHEL Create log json data
     const logJsonData = {
       DateTime: Date(),
-      Activity: "MCQ",
-      Section: document.getElementById(qid).dataset.component,
-      QuestionID: qid,
-      GivenAnswer: givenAns,
-      Result: result
+      Activity: "Self-rating",
+      Section: componentid,
+      QuestionID: cid,
+      GivenAnswer: answers[ans],
+      Result: ''
     };
     saveLog(logJsonData);
 
