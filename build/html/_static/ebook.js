@@ -95,6 +95,22 @@ function onMessageArrived(message) {
 }
 */
 
+// RACHEL send logged data to server
+async function saveLog(logJsonData) {
+  // Post json to simple server
+  try {
+    const response = await fetch('http://localhost:3000', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify(logJsonData)
+    });
+    const fetchResult = await response.json();
+    console.log(fetchResult);
+  } catch (err) {
+    console.error(err);
+  }
+}
+
 function checkans(qid)
 {
         var ansid = qid+"-answers";
@@ -207,6 +223,18 @@ function sendlikseven(cid, componentid)
 
 		console.log("sendlik answer "+ansid)
 		value = ans; // 0 to 6
+
+    // Create log json data
+    const logJsonData = {
+      DateTime: Date(),
+      Activity: "MCQ",
+      Section: document.getElementById(qid).dataset.component,
+      QuestionID: qid,
+      GivenAnswer: givenAns,
+      Result: result
+    };
+    saveLog(logJsonData);
+
 		break;
 	}
   }
@@ -258,7 +286,20 @@ function sendmcq(qid)
     // RACHEL
     result = ansobj[ans].result; // 'correct' if correct, blank if incorrect
     givenAns = ansobj[ans].answer // '<given answer>'
-    // saveMcq(qid, ansid, givenAns, result);
+    // Record json log data
+    if (result == '') {
+      result = 'incorrect'
+    }
+    const dateOptions = {}
+    const logJsonData = {
+      DateTime: Date(),
+      Activity: "MCQ",
+      Section: document.getElementById(qid).dataset.component,
+      QuestionID: qid,
+      GivenAnswer: givenAns,
+      Result: result
+    }
+    saveLog(logJsonData);
 
     document.getElementById(fbackid).innerHTML = " : "+ansobj[ans].feedback;
     // sendmcqmsg(qid, ansid, ansobj[ans].feedback);
@@ -269,33 +310,6 @@ function sendmcq(qid)
                         document.getElementById(fbackid).innerHTML = " ";
                 }
         }
-}
-
-// RACHEL save MCQ result in json object in the html file
-function saveMcq(qid, ansid, givenAns, result) {
-  // Record json log data
-  if (result == '') {
-    result = 'incorrect'
-  }
-  const logJsonData = {
-    DateTime: Date(),
-    Activity: "MCQ",
-    Section: document.getElementById(qid).dataset.component,
-    QuestionID: qid,
-    GivenAnswer: givenAns,
-    Result: result
-  }
-  // Get json log object and add data
-  var logTag = document.getElementById(qid+'-log');
-  console.log(logTag);
-  var logJson = JSON.parse(logTag.textContent);
-  logJson.push(logJsonData);
-  console.log(logJson);
-  // Update json
-  const updatedLogJson = JSON.stringify(logJson);
-  console.log(updatedLogJson);
-  logTag.textContent = updatedLogJson;
-  console.log(logTag);
 }
 
 function sendmcqmsg(qid, ansid, feedback)
