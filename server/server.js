@@ -69,7 +69,7 @@ app.post('/olm', function(req, res, next) {
 });
 
 app.get('/', function(req, res, next) {
-    res.send("<p>Server is ready for post requests at http://localhost:3000</p>");
+    res.send("<p>Server is ready for log post requests at http://localhost:3000 and OLM get and post requests at /olm</p>");
 });
 
 app.listen(port, function() {

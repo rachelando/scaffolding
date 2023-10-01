@@ -111,8 +111,18 @@ async function saveLog(logJsonData) {
   }
 }
 
+window.onload = async function () {
+  try {
+    const response = await fetch('http://localhost:3000/olm');
+    const olmData = await response.json();
+    updateNav(olmData);
+  } catch (err) {
+    console.error(err);
+  }
+}
+
 // RACHEL Update nav items given in json format
-window.onload = function (data) {
+function updateNav(data) {
   // Sample test data
   const testData = {
     "target-size": {
