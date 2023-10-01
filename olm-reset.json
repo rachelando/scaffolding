@@ -1,71 +1,71 @@
 {
   "accessibility-intro": {
-    "self-rating": "",
+    "self-rating": "not-started",
     "mcq": {
-      "Q1": "",
-      "Q2": ""
+      "Q1": "not-started",
+      "Q2": "not-started"
     }
   },
   "wcag": {
-    "self-rating": "",
+    "self-rating": "not-started",
     "mcq": {
-      "Q1": "",
-      "Q2": ""
+      "Q1": "not-started",
+      "Q2": "not-started"
     }
   },
   "in-practice": {
-    "self-rating": "",
+    "self-rating": "not-started",
     "mcq": {
-      "Q1": ""
+      "Q1": "not-started"
     }
   },
   "target-size": {
-    "self-rating": "",
+    "self-rating": "not-started",
     "mcq": {
-      "Q1": "",
-      "Q2": "",
-      "Q3": ""
+      "Q1": "not-started",
+      "Q2": "not-started",
+      "Q3": "not-started"
     }
   },
   "alt-text": {
-    "self-rating": "",
+    "self-rating": "not-started",
     "mcq": {
-      "Q1": ""
+      "Q1": "not-started"
     }
   },
   "colour-general": {
-    "self-rating": "",
+    "self-rating": "not-started",
     "mcq": {
-      "Q1": ""
+      "Q1": "not-started"
     }
   },
   "cvd": {
-    "self-rating": "",
+    "self-rating": "not-started",
     "mcq": {
-      "Q1": "",
-      "Q2": "",
-      "Q3": ""
+      "Q1": "not-started",
+      "Q2": "not-started",
+      "Q3": "not-started"
     }
   },
   "colour-contrast": {
-    "self-rating": "",
+    "self-rating": "not-started",
     "mcq": {
-      "Q1": "",
-      "Q2": "",
-      "Q3": "",
-      "Q4": ""
+      "Q1": "not-started",
+      "Q2": "not-started",
+      "Q3": "not-started",
+      "Q4": "not-started"
     }
   },
   "quiz": {
     "mcq": {
-      "Q1": "",
-      "Q2": "",
-      "Q3": "",
-      "Q4": "",
-      "Q5": "",
-      "Q6": "",
-      "Q7": "",
-      "Q8": ""
+      "Q1": "not-started",
+      "Q2": "not-started",
+      "Q3": "not-started",
+      "Q4": "not-started",
+      "Q5": "not-started",
+      "Q6": "not-started",
+      "Q7": "not-started",
+      "Q8": "not-started"
     }
   }
 }

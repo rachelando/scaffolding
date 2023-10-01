@@ -4,6 +4,8 @@ const bodyParser = require('body-parser');
 const json2csv = require('json2csv').parse;
 const fs = require('fs');
 
+var OLMModel = require("./olmmodel");
+
 const port = 3000;
 
 var app = express();
@@ -51,7 +53,19 @@ app.post('/', function(req, res, next) {
     res.send({msg: "Data received!"});
 });
 
+/** 
+ * Sends the current complete state of the OLM
+*/
+app.get('/olm', function(req, res, next) {
+    res.json(OLMModel.getFullOLM());
+});
 
+/** 
+ * Receives updates to the OLM. Usually incomplete
+*/
+app.post('/olm', function(req, res, next) {
+
+});
 
 app.get('/', function(req, res, next) {
     res.send("<p>Server is ready for post requests at http://localhost:3000</p>");
