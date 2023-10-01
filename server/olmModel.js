@@ -60,5 +60,45 @@ module.exports = {
             retOlmObj[heading] = headingObj;
         }
         return retOlmObj;
+    },
+
+    updateOLM: function(data) {
+        // Sample test data structures
+        const dataMcq = {
+            "component": "target-size",
+            "type": "mcq",
+            "value": "incorrect",
+            "question": "Q1"
+        };
+        const dataRating = {
+            "component": "target-size",
+            "type": "self-rating",
+            "value": 5,
+            "question": ""
+        };
+        // data = dataRating;
+
+        // Read OLM and update object
+        // Incomplete data-checking done too
+        var olmObj = JSON.parse(fs.readFileSync(olmFileName, 'utf8'));
+        if (!(data["component"] in olmObj)) {
+            return "Invalid component";
+        }
+        if (data["type"] == "self-rating") {
+            olmObj[data["component"]]["self-rating"] = data["value"];
+        } else if (data["type"] == "mcq") {
+            if (data["value"] == "correct") {
+                olmObj[data["component"]]["mcq"][data["question"]] = true;
+            } else if (data["value"] == "incorrect") {
+                olmObj[data["component"]]["mcq"][data["question"]] = false;
+            } else {
+                return "Invalid mcq value";
+            }
+        } else {
+            return "Invalid type";
+        }
+        // Write change to file
+        fs.writeFileSync(olmFileName, JSON.stringify(olmObj, null, "\t"));
+        return "OLM updated!";
     }
 };

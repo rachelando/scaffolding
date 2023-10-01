@@ -113,7 +113,8 @@ async function saveLog(logJsonData) {
 
 // RACHEL Update nav items given in json format
 window.onload = function (data) {
-  data = {
+  // Sample test data
+  const testData = {
     "target-size": {
       "full-name": "Touch target size",
       "self-rating": "3️⃣",
@@ -123,7 +124,8 @@ window.onload = function (data) {
       "full-name": "Alternative (alt) text",
       "mcq": "✅",
     }
-  }
+  };
+  // data = testData;
 
   navTags = document.getElementsByClassName("toctree-l1");
   for (let navTag of navTags) {

@@ -61,10 +61,11 @@ app.get('/olm', function(req, res, next) {
 });
 
 /** 
- * Receives updates to the OLM. Usually incomplete
+ * Receives an update to the OLM
 */
 app.post('/olm', function(req, res, next) {
-
+    var updateResult = OLMModel.updateOLM(req.body);
+    res.send({msg: updateResult});
 });
 
 app.get('/', function(req, res, next) {
