@@ -95,22 +95,27 @@ function onMessageArrived(message) {
 }
 */
 
-// RACHEL send logged data to server
-async function saveLog(logJsonData) {
-  // Post json to simple server
+// RACHEL Send data to server
+async function sendData(jsonData, path) {
   try {
-    const response = await fetch('http://localhost:3000', {
+    const response = await fetch('http://localhost:3000' + path, {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
-      body: JSON.stringify(logJsonData)
+      body: JSON.stringify(jsonData)
     });
     const fetchResult = await response.json();
     console.log(fetchResult);
+    // Update nav if OLM update
+    if (path == '/olm') {
+      updateNav(fetchResult);
+    }
+    return fetchResult;
   } catch (err) {
     console.error(err);
   }
 }
 
+// RACHEL Get OLM data and update nav menu
 window.onload = async function () {
   try {
     const response = await fetch('http://localhost:3000/olm');
@@ -136,6 +141,7 @@ function updateNav(data) {
     }
   };
   // data = testData;
+  console.log(data);
 
   navTags = document.getElementsByClassName("toctree-l1");
   for (let navTag of navTags) {
@@ -143,6 +149,8 @@ function updateNav(data) {
     for (let heading in data) {
       // Find which heading
       var fullHeadingName = data[heading]["full-name"];
+      // console.log(heading);
+      // console.log(fullHeadingName);
       if (currentNavTitle.includes(fullHeadingName)) {
         var newNavTitle = "";
         // Self-rating
@@ -163,6 +171,7 @@ function updateNav(data) {
           }
         }
         // Update nav title
+        console.log(newNavTitle);
         navTag.firstChild.textContent = newNavTitle;
       }
     }
@@ -235,16 +244,23 @@ function sendlik(cid, componentid)
 		//console.log("sendlik answer "+ansid)
 		value = ans; // 0 to 4
 
+    // RACHEL update OLM
+    sendData({
+      "component": componentid,
+      "type": "self-rating",
+      "value": parseInt(answers[ans])
+    }, '/olm');
+
     // RACHEL Create log json data
     const logJsonData = {
       DateTime: Date(),
-    Activity: "Adee-SEQ",
+      Activity: "Self-rating",
       Section: componentid,
       QuestionID: cid,
       GivenAnswer: answers[ans],
       Result: ''
     };
-    saveLog(logJsonData);
+    sendData(logJsonData, '/log');
 
 		break;
 	}
@@ -290,13 +306,13 @@ function sendlikseven(cid, componentid)
     // RACHEL Create log json data
     const logJsonData = {
       DateTime: Date(),
-      Activity: "Self-rating",
+      Activity: "Adee-SEQ",
       Section: componentid,
       QuestionID: cid,
       GivenAnswer: answers[ans],
       Result: ''
     };
-    saveLog(logJsonData);
+    sendData(logJsonData, '/log');
 
 		break;
 	}
@@ -333,11 +349,6 @@ function sendmcq(qid)
         var ansobjTag = document.getElementById(ansid);
         var ansobj = JSON.parse(ansobjTag.textContent);
 
-
-        // RACHEL json log variables
-        result = '';
-        givenAns = '';
-
         for (ans in ansobj)
         {
 		ansid = ansobj[ans].ansid;
@@ -346,23 +357,33 @@ function sendmcq(qid)
 		//alert(ansid+" : "+checked);
                 if (checked) 
                 {
-    // RACHEL
-    result = ansobj[ans].result; // 'correct' if correct, blank if incorrect
-    givenAns = ansobj[ans].answer // '<given answer>'
-    // Record json log data
+    
+    // RACHEL Set variables
+    var result = ansobj[ans].result; // 'correct' if correct, blank if incorrect
+    var givenAns = ansobj[ans].answer // '<given answer>'
     if (result == '') {
       result = 'incorrect'
     }
-    const dateOptions = {}
+    const componentid = document.getElementById(qid).dataset.component;
+
+    // RACHEL update OLM
+    sendData({
+      "component": componentid,
+      "type": "mcq",
+      "value": result,
+      "question": qid
+    }, '/olm');
+
+    // RACHEL send log data to server
     const logJsonData = {
       DateTime: Date(),
       Activity: "MCQ",
-      Section: document.getElementById(qid).dataset.component,
+      Section: componentid,
       QuestionID: qid,
       GivenAnswer: givenAns,
       Result: result
     }
-    saveLog(logJsonData);
+    sendData(logJsonData, '/log');
 
     document.getElementById(fbackid).innerHTML = " : "+ansobj[ans].feedback;
     // sendmcqmsg(qid, ansid, ansobj[ans].feedback);

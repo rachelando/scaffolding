@@ -1,4 +1,5 @@
 const fs = require('fs');
+const { head } = require('./server');
 
 const olmFileName = "../olm.json";
 
@@ -74,31 +75,47 @@ module.exports = {
             "component": "target-size",
             "type": "self-rating",
             "value": 5,
-            "question": ""
         };
         // data = dataRating;
+
+        var retNavJson = {};
 
         // Read OLM and update object
         // Incomplete data-checking done too
         var olmObj = JSON.parse(fs.readFileSync(olmFileName, 'utf8'));
-        if (!(data["component"] in olmObj)) {
-            return "Invalid component";
+        const component = data["component"];
+        if (!(component in olmObj)) {
+            return {error: "Invalid component"};
         }
+        // Self-rating
         if (data["type"] == "self-rating") {
-            olmObj[data["component"]]["self-rating"] = data["value"];
-        } else if (data["type"] == "mcq") {
+            olmObj[component]["self-rating"] = data["value"];
+            // Set values to return
+            retNavJson[component] = {
+                "full-name": headingFullNameDict[component],
+                "self-rating": ratingDict[data["value"]],
+            };
+        }
+        // MCQ
+        else if (data["type"] == "mcq") {
             if (data["value"] == "correct") {
-                olmObj[data["component"]]["mcq"][data["question"]] = true;
+                olmObj[component]["mcq"][data["question"]] = true;
             } else if (data["value"] == "incorrect") {
-                olmObj[data["component"]]["mcq"][data["question"]] = false;
+                olmObj[component]["mcq"][data["question"]] = false;
             } else {
-                return "Invalid mcq value";
+                return {error: "Invalid mcq value"};
             }
+            // Set values to return
+            retNavJson[component] = {
+                "full-name": headingFullNameDict[component],
+                "mcq": getMcqOverall(olmObj[component]["mcq"])
+            };
         } else {
-            return "Invalid type";
+            return {error: "Invalid type"};
         }
         // Write change to file
         fs.writeFileSync(olmFileName, JSON.stringify(olmObj, null, "\t"));
-        return "OLM updated!";
+        // Return nav update in json format
+        return retNavJson;
     }
 };

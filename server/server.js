@@ -25,7 +25,7 @@ app.use(function(req, res, next) {
 /** 
  * Receives log data and saves it to a local CSV file
 */
-app.post('/', function(req, res, next) {
+app.post('/log', function(req, res, next) {
     const data = req.body; // log json data
     console.log(data);
 
@@ -43,7 +43,6 @@ app.post('/', function(req, res, next) {
             // JSON to CSV with headers
             csv = json2csv(data, {fields}) + "\r\n";
         }
-        console.log(csv);
         // Append to csv file, create file if doesn't exist
         fs.appendFile(filename, csv, function(err) {
             if (err) { console.log(err) };
@@ -64,12 +63,13 @@ app.get('/olm', function(req, res, next) {
  * Receives an update to the OLM
 */
 app.post('/olm', function(req, res, next) {
+    console.log(req.body);
     var updateResult = OLMModel.updateOLM(req.body);
-    res.send({msg: updateResult});
+    res.json(updateResult);
 });
 
 app.get('/', function(req, res, next) {
-    res.send("<p>Server is ready for log post requests at http://localhost:3000 and OLM get and post requests at /olm</p>");
+    res.send("<p>Server is ready for log post requests at http://localhost:3000/log and OLM get and post requests at http://localhost:3000/olm</p>");
 });
 
 app.listen(port, function() {

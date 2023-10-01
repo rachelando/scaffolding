@@ -50,8 +50,8 @@
 	"colour-contrast": {
 		"self-rating": "not-started",
 		"mcq": {
-			"Q1": "not-started",
-			"Q2": "not-started",
+			"Q1": true,
+			"Q2": true,
 			"Q3": "not-started",
 			"Q4": "not-started"
 		}
