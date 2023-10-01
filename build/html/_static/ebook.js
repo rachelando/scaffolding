@@ -128,7 +128,7 @@ window.onload = async function () {
 
 // RACHEL Update nav items given in json format
 function updateNav(data) {
-  // Sample test data
+  // Sample test data MUST HAVE ALL FIELDS
   const testData = {
     "target-size": {
       "full-name": "Touch target size",
@@ -137,11 +137,11 @@ function updateNav(data) {
     },
     "alt-text": {
       "full-name": "Alternative (alt) text",
-      "mcq": "✅",
+      "self-rating": "3️⃣",
+      "mcq": "✅"
     }
   };
   // data = testData;
-  console.log(data);
 
   navTags = document.getElementsByClassName("toctree-l1");
   for (let navTag of navTags) {
@@ -152,24 +152,7 @@ function updateNav(data) {
       // console.log(heading);
       // console.log(fullHeadingName);
       if (currentNavTitle.includes(fullHeadingName)) {
-        var newNavTitle = "";
-        // Self-rating
-        if ("self-rating" in data[heading]) {
-          if (currentNavTitle[0] != fullHeadingName[0]) { // rating already set
-            newNavTitle = data[heading]["self-rating"] + currentNavTitle.slice(1); // leave 1 whitespace
-          } else { // rating not set yet
-            newNavTitle = data[heading]["self-rating"] + " " + currentNavTitle;
-          }
-          currentNavTitle = newNavTitle; // update current title
-        }
-        // MCQ
-        if ("mcq" in data[heading]) {
-          if (currentNavTitle.slice(-1) != fullHeadingName.slice(-1)) { // if rating already set
-            newNavTitle = currentNavTitle.slice(0, currentNavTitle.length - 1) + data[heading]["mcq"]; // leave 1 whitespace
-          } else {
-            newNavTitle = currentNavTitle + " " + data[heading]["mcq"];
-          }
-        }
+        var newNavTitle = data[heading]["self-rating"] +" "+ data[heading]["full-name"] +" "+ data[heading]["mcq"];
         // Update nav title
         console.log(newNavTitle);
         navTag.firstChild.textContent = newNavTitle;

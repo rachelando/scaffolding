@@ -94,6 +94,7 @@ module.exports = {
             retNavJson[component] = {
                 "full-name": headingFullNameDict[component],
                 "self-rating": ratingDict[data["value"]],
+                "mcq": getMcqOverall(olmObj[component]["mcq"])
             };
         }
         // MCQ
@@ -108,6 +109,7 @@ module.exports = {
             // Set values to return
             retNavJson[component] = {
                 "full-name": headingFullNameDict[component],
+                "self-rating": ratingDict[olmObj[component]["self-rating"]],
                 "mcq": getMcqOverall(olmObj[component]["mcq"])
             };
         } else {
