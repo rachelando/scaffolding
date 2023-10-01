@@ -6,11 +6,11 @@
    </script>
 
 
-2️⃣ Colour contrast 🟧
+Colour contrast
 ::::::::::::::::::::::::::::::::
 
 -------------------------------------
-Colour contrast and its importance ✅
+Colour contrast and its importance
 -------------------------------------
 
 Put simply, colour contrast is how different one colour is from another colour.

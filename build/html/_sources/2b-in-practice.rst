@@ -6,7 +6,7 @@
    </script>
 
 
-2️⃣ Accessibility in practice
+Accessibility in practice
 ::::::::::::::::::::::::::::::::
 
 ------------------------

@@ -20,6 +20,9 @@ app.use(function(req, res, next) {
     next();
 });
 
+/** 
+ * Receives log data and saves it to a local CSV file
+*/
 app.post('/', function(req, res, next) {
     const data = req.body; // log json data
     console.log(data);
@@ -48,6 +51,8 @@ app.post('/', function(req, res, next) {
     res.send({msg: "Data received!"});
 });
 
+
+
 app.get('/', function(req, res, next) {
     res.send("<p>Server is ready for post requests at http://localhost:3000</p>");
 });
@@ -55,3 +60,5 @@ app.get('/', function(req, res, next) {
 app.listen(port, function() {
     console.log("Server is listening on port 3000!");
 });
+
+module.exports = app;

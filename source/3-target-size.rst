@@ -21,7 +21,7 @@ Target size refers to **how large or small buttons or other clickable/touchable 
    :align: center
 
 ---------------------------------
-Touch target size in the WCAG ✅
+Touch target size in the WCAG
 ---------------------------------
 
 The following is from WCAG 2.1 Success Criterion 2.5.5: Target Size (Level AAA).
@@ -74,7 +74,7 @@ Please read the following WCAG excerpt and then answer the following questions.
 	</div>
 
 --------------------------------------
-Why does touch target size matter? ✅
+Why does touch target size matter?
 --------------------------------------
 
 Here is another excerpt from WCAG 2.1 Success Criterion 2.5.5: Target Size (Level AAA).

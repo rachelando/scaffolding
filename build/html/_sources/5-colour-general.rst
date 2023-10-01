@@ -6,7 +6,7 @@
    </script>
 
 
-1️⃣ Designing with colour
+Designing with colour
 ::::::::::::::::::::::::::::::::
 
 We saw that alt text is particularly important for blind users.

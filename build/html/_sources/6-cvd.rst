@@ -6,7 +6,7 @@
    </script>
 
 
-5️⃣ Colour vision deficiency ❓
+Colour vision deficiency
 ::::::::::::::::::::::::::::::::
 
 ---------------------------------------
@@ -20,7 +20,7 @@ Around 1 in 12 men and 1 in 200 women in Australia have CVD [#]_.
 The cause of colour blindness is usually genetic although some diseases or drugs can also be causes.
 
 ---------------
-Types of CVD ❓
+Types of CVD
 ---------------
 
 There are **different types** of CVD.

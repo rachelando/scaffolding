@@ -6,7 +6,7 @@
    </script>
 
 
-4️⃣ Accessibility introduction
+Accessibility introduction
 ::::::::::::::::::::::::::::::::
 
 ----------------------

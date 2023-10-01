@@ -111,44 +111,51 @@ async function saveLog(logJsonData) {
   }
 }
 
-// RACHEL Update a nav item
-// Type: either "rating" or "mcq"
-// WORKS keeps it in emoji even though given an int though
-window.onload = function (navTitle, symbol, type) {
-  navTitle = "Touch target size"; // TODO remove
-  symbol = "✅"; // TODO remove
-  type = "mcq"; // TODO remove
-
-  navTags = document.getElementsByClassName("toctree-l1");
-  // console.log(navTags);
-  for (let navTag of navTags) {
-    // console.log(navTag);
-    // console.log(navTag.firstChild.textContent);
-    var currentNavTitle = navTag.firstChild.textContent;
-    if (currentNavTitle.includes(navTitle)) {
-      console.log("Matches!");
-      var newNavTitle = '';
-      if (type == "rating") {
-        if (currentNavTitle[0] != navTitle[0]) { // rating already set
-          newNavTitle = symbol + currentNavTitle.slice(1); // leave 1 whitespace
-        } else { // rating not set yet
-          newNavTitle = symbol + " " + currentNavTitle;
-        }
-      } else if (type == "mcq") {
-        if (currentNavTitle.slice(-1) != navTitle.slice(-1)) { // if rating already set
-          newNavTitle = currentNavTitle.slice(0, currentNavTitle.length - 1) + symbol; // leave 1 whitespace
-        } else {
-          newNavTitle = currentNavTitle + " " + symbol;
-        }
-      }
-      // TODO Update nav title
-      navTag.firstChild.textContent = newNavTitle;
+// RACHEL Update nav items given in json format
+window.onload = function (data) {
+  data = {
+    "target-size": {
+      "full-name": "Touch target size",
+      "self-rating": "3️⃣",
+      "mcq": "🟧"
+    },
+    "alt-text": {
+      "full-name": "Alternative (alt) text",
+      "mcq": "✅",
     }
   }
 
+  navTags = document.getElementsByClassName("toctree-l1");
+  for (let navTag of navTags) {
+    var currentNavTitle = navTag.firstChild.textContent;
+    for (let heading in data) {
+      // Find which heading
+      var fullHeadingName = data[heading]["full-name"];
+      if (currentNavTitle.includes(fullHeadingName)) {
+        var newNavTitle = "";
+        // Self-rating
+        if ("self-rating" in data[heading]) {
+          if (currentNavTitle[0] != fullHeadingName[0]) { // rating already set
+            newNavTitle = data[heading]["self-rating"] + currentNavTitle.slice(1); // leave 1 whitespace
+          } else { // rating not set yet
+            newNavTitle = data[heading]["self-rating"] + " " + currentNavTitle;
+          }
+          currentNavTitle = newNavTitle; // update current title
+        }
+        // MCQ
+        if ("mcq" in data[heading]) {
+          if (currentNavTitle.slice(-1) != fullHeadingName.slice(-1)) { // if rating already set
+            newNavTitle = currentNavTitle.slice(0, currentNavTitle.length - 1) + data[heading]["mcq"]; // leave 1 whitespace
+          } else {
+            newNavTitle = currentNavTitle + " " + data[heading]["mcq"];
+          }
+        }
+        // Update nav title
+        navTag.firstChild.textContent = newNavTitle;
+      }
+    }
+  }
 }
-
-
 
 function checkans(qid)
 {
