@@ -6,7 +6,7 @@
    </script>
 
 
-1️⃣ Touch target size ✅
+Touch target size
 ::::::::::::::::::::::::::::::::
 
 --------------------------

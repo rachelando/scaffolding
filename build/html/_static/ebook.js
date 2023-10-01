@@ -111,6 +111,45 @@ async function saveLog(logJsonData) {
   }
 }
 
+// RACHEL Update a nav item
+// Type: either "rating" or "mcq"
+// WORKS keeps it in emoji even though given an int though
+window.onload = function (navTitle, symbol, type) {
+  navTitle = "Touch target size"; // TODO remove
+  symbol = "✅"; // TODO remove
+  type = "mcq"; // TODO remove
+
+  navTags = document.getElementsByClassName("toctree-l1");
+  // console.log(navTags);
+  for (let navTag of navTags) {
+    // console.log(navTag);
+    // console.log(navTag.firstChild.textContent);
+    var currentNavTitle = navTag.firstChild.textContent;
+    if (currentNavTitle.includes(navTitle)) {
+      console.log("Matches!");
+      var newNavTitle = '';
+      if (type == "rating") {
+        if (currentNavTitle[0] != navTitle[0]) { // rating already set
+          newNavTitle = symbol + currentNavTitle.slice(1); // leave 1 whitespace
+        } else { // rating not set yet
+          newNavTitle = symbol + " " + currentNavTitle;
+        }
+      } else if (type == "mcq") {
+        if (currentNavTitle.slice(-1) != navTitle.slice(-1)) { // if rating already set
+          newNavTitle = currentNavTitle.slice(0, currentNavTitle.length - 1) + symbol; // leave 1 whitespace
+        } else {
+          newNavTitle = currentNavTitle + " " + symbol;
+        }
+      }
+      // TODO Update nav title
+      navTag.firstChild.textContent = newNavTitle;
+    }
+  }
+
+}
+
+
+
 function checkans(qid)
 {
         var ansid = qid+"-answers";
@@ -174,9 +213,6 @@ function sendlik(cid, componentid)
 	//console.log("sendlik "+ansid);
 	if (document.getElementById(ansid).checked)
 	{
-    // RACHEL
-    // alert(answers[ans]) // e.g. 4 (indexed from 1 so 1,2,3,4,5)
-    // alert(componentid)
 		//console.log("sendlik answer "+ansid)
 		value = ans; // 0 to 4
 

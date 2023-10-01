@@ -1,0 +1,71 @@
+{
+  "accessibility-intro": {
+    "self-rating": "",
+    "mcq": {
+      "Q1": "",
+      "Q2": ""
+    }
+  },
+  "wcag": {
+    "self-rating": "",
+    "mcq": {
+      "Q1": "",
+      "Q2": ""
+    }
+  },
+  "in-practice": {
+    "self-rating": "",
+    "mcq": {
+      "Q1": ""
+    }
+  },
+  "target-size": {
+    "self-rating": "",
+    "mcq": {
+      "Q1": "",
+      "Q2": "",
+      "Q3": ""
+    }
+  },
+  "alt-text": {
+    "self-rating": "",
+    "mcq": {
+      "Q1": ""
+    }
+  },
+  "colour-general": {
+    "self-rating": "",
+    "mcq": {
+      "Q1": ""
+    }
+  },
+  "cvd": {
+    "self-rating": "",
+    "mcq": {
+      "Q1": "",
+      "Q2": "",
+      "Q3": ""
+    }
+  },
+  "colour-contrast": {
+    "self-rating": "",
+    "mcq": {
+      "Q1": "",
+      "Q2": "",
+      "Q3": "",
+      "Q4": ""
+    }
+  },
+  "quiz": {
+    "mcq": {
+      "Q1": "",
+      "Q2": "",
+      "Q3": "",
+      "Q4": "",
+      "Q5": "",
+      "Q6": "",
+      "Q7": "",
+      "Q8": ""
+    }
+  }
+}
