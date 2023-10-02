@@ -109,5 +109,22 @@ Adee task 5
 .. likert::colour-contrast:Rate the difficulty of Adee task 5
    Extremely difficult:Extremely easy
 
+-----------
+Adee task 6
+-----------
+
+.. admonition:: Adee task 6
+
+     Check the colour contrast of a button.
+
+     1. In task 6, select the two columns with labels "Jan" and "Feb"
+     2. Open the Adee plugin to "Contrast Checker tool"
+     3. Check the contrast of the columns
+     4. Do you think the chart should be improved? Please explain your answer
+     5. Close the plugin
+
+.. likert::colour-contrast:Rate the difficulty of Adee task 6
+   Extremely difficult:Extremely easy
+
 .. likert::colour-contrast:How well do you understand colour contrast?
    Never heard of it:Could explain it to a friend

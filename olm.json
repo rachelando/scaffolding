@@ -1,71 +1,71 @@
 {
 	"accessibility-intro": {
-		"self-rating": "not-started",
-		"mcq": {
-			"Q1": "not-started",
-			"Q2": "not-started"
-		}
+	  "self-rating": "not-started",
+	  "mcq": {
+		"Q1": "not-started",
+		"Q2": "not-started"
+	  }
 	},
 	"wcag": {
-		"self-rating": "not-started",
-		"mcq": {
-			"Q1": "not-started",
-			"Q2": "not-started"
-		}
+	  "self-rating": "not-started",
+	  "mcq": {
+		"Q1": "not-started",
+		"Q2": "not-started"
+	  }
 	},
 	"in-practice": {
-		"self-rating": "not-started",
-		"mcq": {
-			"Q1": "not-started"
-		}
+	  "self-rating": "not-started",
+	  "mcq": {
+		"Q1": "not-started"
+	  }
 	},
 	"target-size": {
-		"self-rating": 5,
-		"mcq": {
-			"Q1": true,
-			"Q2": true,
-			"Q3": true
-		}
+	  "self-rating": "not-started",
+	  "mcq": {
+		"Q1": "not-started",
+		"Q2": "not-started",
+		"Q3": "not-started"
+	  }
 	},
 	"alt-text": {
-		"self-rating": "not-started",
-		"mcq": {
-			"Q1": "not-started"
-		}
+	  "self-rating": "not-started",
+	  "mcq": {
+		"Q1": "not-started"
+	  }
 	},
 	"colour-general": {
-		"self-rating": "not-started",
-		"mcq": {
-			"Q1": "not-started"
-		}
+	  "self-rating": "not-started",
+	  "mcq": {
+		"Q1": "not-started"
+	  }
 	},
 	"cvd": {
-		"self-rating": "not-started",
-		"mcq": {
-			"Q1": "not-started",
-			"Q2": "not-started",
-			"Q3": "not-started"
-		}
+	  "self-rating": "not-started",
+	  "mcq": {
+		"Q1": "not-started",
+		"Q2": "not-started",
+		"Q3": "not-started"
+	  }
 	},
 	"colour-contrast": {
-		"self-rating": "not-started",
-		"mcq": {
-			"Q1": "not-started",
-			"Q2": "not-started",
-			"Q3": "not-started",
-			"Q4": "not-started"
-		}
+	  "self-rating": "not-started",
+	  "mcq": {
+		"Q1": "not-started",
+		"Q2": "not-started",
+		"Q3": "not-started",
+		"Q4": "not-started"
+	  }
 	},
 	"quiz": {
-		"mcq": {
-			"Q1": "not-started",
-			"Q2": "not-started",
-			"Q3": "not-started",
-			"Q4": "not-started",
-			"Q5": "not-started",
-			"Q6": "not-started",
-			"Q7": "not-started",
-			"Q8": "not-started"
-		}
+	  "mcq": {
+		"Q1": "not-started",
+		"Q2": "not-started",
+		"Q3": "not-started",
+		"Q4": "not-started",
+		"Q5": "not-started",
+		"Q6": "not-started",
+		"Q7": "not-started",
+		"Q8": "not-started"
+	  }
 	}
-}
+  }

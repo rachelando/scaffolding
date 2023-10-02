@@ -190,21 +190,57 @@ Adee task 5
    </div>
 
 
+-----------
+Adee task 6
+-----------
+
+.. admonition:: Adee task 6
+
+     Check the colour contrast of a button.
+
+     1. In task 6, select the two columns with labels "Jan" and "Feb"
+     2. Open the Adee plugin to "Contrast Checker tool"
+     3. Check the contrast of the columns
+     4. Do you think the chart should be improved? Please explain your answer
+     5. Close the plugin
+
+.. raw:: html
+
+   <div class="admonition-adee-task-likert admonition"><br>
+   <div class="likert">
+   <p class="admonition-title">Adee task rating</p>
+   Rate the difficulty of Adee task 6
+   <form id = "C6" data-component="colour-contrast">
+      Extremely difficult
+   <input type="radio" name="C6" id="C6A1">
+   <input type="radio" name="C6" id="C6A2">
+   <input type="radio" name="C6" id="C6A3">
+   <input type="radio" name="C6" id="C6A4">
+   <input type="radio" name="C6" id="C6A5">
+   <input type="radio" name="C6" id="C6A6">
+   <input type="radio" name="C6" id="C6A7">
+   Extremely easy
+   <input type="button" value="Submit" onclick="sendlikseven('C6','colour-contrast')"><br>
+   </form>
+   </div>
+   </div>
+
+
 .. raw:: html
 
    <div class="admonition caution"><br>
    <div class="likert">
    <p class="admonition-title">Knowledge self-rating</p>
    How well do you understand colour contrast?
-   <form id = "C6" data-component="colour-contrast">
+   <form id = "C7" data-component="colour-contrast">
       Never heard of it
-   <input type="radio" name="C6" id="C6A1">
-   <input type="radio" name="C6" id="C6A2">
-   <input type="radio" name="C6" id="C6A3">
-   <input type="radio" name="C6" id="C6A4">
-   <input type="radio" name="C6" id="C6A5">
+   <input type="radio" name="C7" id="C7A1">
+   <input type="radio" name="C7" id="C7A2">
+   <input type="radio" name="C7" id="C7A3">
+   <input type="radio" name="C7" id="C7A4">
+   <input type="radio" name="C7" id="C7A5">
    Could explain it to a friend
-   <input type="button" value="Submit" onclick="sendlik('C6','colour-contrast')"><br>
+   <input type="button" value="Submit" onclick="sendlik('C7','colour-contrast')"><br>
    </form>
    </div>
    </div>

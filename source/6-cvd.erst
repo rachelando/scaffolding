@@ -108,8 +108,8 @@ Adee task 4
 
      1. Select the chart image under Task 4
      2. Open the Adee plugin to "Colorblind Simulator tool"
-     3. Check the chart image's colour against the "Tritanopia" colour blind type
-     4. Explain how a designer should improve the chart based on the simulation results
+     3. Check the chart image's colour against the "Deuteranopia" colour blind type
+     4. Do you think the chart should be improved? Please explain your answer
      5. Close the plugin
 
 .. likert::cvd:Rate the difficulty of Adee task 4
