@@ -1,5 +1,4 @@
 const fs = require('fs');
-const { head } = require('./server');
 
 const olmFileName = "../olm.json";
 
@@ -16,7 +15,7 @@ const headingFullNameDict = {
 };
 
 const ratingDict = {
-    "not-started": "#️⃣",
+    "not-started": "❓",
     1: "1️⃣",
     2: "2️⃣",
     3: "3️⃣",

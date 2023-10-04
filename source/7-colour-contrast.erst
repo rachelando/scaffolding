@@ -19,9 +19,8 @@ Colour contrast is particularly important for text and other essential elements.
 
 .. mcq:colour-contrast:Which of these colour pairings has higher colour contrast?
      :Image 1:Incorrect.
-     correct:Image 2:That's right!
+     correct:Image 2:That's right! 🎉
 
-Why do we need to ensure sufficient colour contrast? Examples of poor contrast; who it helps
 Having good colour contrast ensures that people with **low vision** are able to see elements clearly. 
 It also helps when viewing a screen in bright sunlight. 
 This is a good example of accessibility helping everyone, not just people with disabilities. 
@@ -52,18 +51,18 @@ Read the following WCAG excerpt *Success Criterion 1.4.4 Contrast (Enhanced) (Le
 From the two excerpts, please answer the following questions:
 
 .. mcq:colour-contrast:From the WCAG, 3:1 is the minimum colour ratio requirement for:
-     correct:Large text (level AA):That's right!
+     correct:Large text (level AA):That's right! 🎉
      :Normal text (level AAA):Incorrect.
      :Normal text (level AA) and large text (level AAA):Incorrect.
 
 .. mcq:colour-contrast:From the WCAG, 4.5:1 is the minimum colour ratio requirement for:
      :Large text (level AA):Incorrect.
      :Normal text (level AAA):Incorrect.
-     correct:Normal text (level AA) and large text (level AAA):That's right!
+     correct:Normal text (level AA) and large text (level AAA):That's right! 🎉
 
 .. mcq:colour-contrast:From the WCAG, 7:1 is the minimum colour ratio requirement for:
      :Large text (level AA):Incorrect.
-     correct:Normal text (level AAA):That's right!
+     correct:Normal text (level AAA):That's right! 🎉
      :Normal text (level AA) and large text (level AAA):Incorrect.
 
 Important non-text information such as **graphics** have the same WCAG contrast requirements as large text.
@@ -92,6 +91,10 @@ Colour contrast in Adee
 Adee allows you to modify either of the two selected colours on the spot and immediately see if the contrast standards are met. 
 Selecting the "Apply" button saves the changes in Adee to the actual Figma object. 
 
+.. Tip:: Don't forget colour contrast must be between TWO colours. 
+     Unlike Adee's other functionalities, two elements must be selected in Figma. 
+     Either click and drag over both elements or whilst holding shift, click one then the other. 
+
 -----------
 Adee task 5
 -----------
@@ -107,7 +110,7 @@ Adee task 5
      5. Close the plugin
 
 .. likert::colour-contrast:Rate the difficulty of Adee task 5
-   Extremely difficult:Extremely easy
+   Extremely difficult 1:7 Extremely easy
 
 -----------
 Adee task 6
@@ -115,16 +118,16 @@ Adee task 6
 
 .. admonition:: Adee task 6
 
-     Check the colour contrast of a button.
+     Check the colour contrast of two columns in a chart. 
 
      1. In task 6, select the two columns with labels "Jan" and "Feb"
      2. Open the Adee plugin to "Contrast Checker tool"
      3. Check the contrast of the columns
-     4. Do you think the chart should be improved? Please explain your answer
+     4. Changing the colours changes the data the chart is displaying. Can you think of any other way to improve the chart?
      5. Close the plugin
 
 .. likert::colour-contrast:Rate the difficulty of Adee task 6
-   Extremely difficult:Extremely easy
+   Extremely difficult 1:7 Extremely easy
 
 .. likert::colour-contrast:How well do you understand colour contrast?
-   Never heard of it:Could explain it to a friend
+   Never heard of it 1️⃣:5️⃣ Could explain it to a friend

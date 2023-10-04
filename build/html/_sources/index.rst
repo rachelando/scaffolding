@@ -53,6 +53,12 @@ Welcome to EarlyAccess
    :titlesonly:
    :caption: Self-ratings key:
 
+   ❓ Not started <0b-olm.rst>
+
+.. toctree::
+   :maxdepth: 1
+   :titlesonly:
+
    1️⃣ Never heard of it <0b-olm.rst>
 
 .. toctree::

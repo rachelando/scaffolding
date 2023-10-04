@@ -1,7 +1,7 @@
 
 .. page::scaffolding:target-size
 
-Touch target size
+2️⃣ Touch target size ✅
 ::::::::::::::::::::::::::::::::
 
 --------------------------
@@ -23,24 +23,13 @@ The following is from WCAG 2.1 Success Criterion 2.5.5: Target Size (Level AAA).
 The WCAG can be difficult to understand but we will work through it to understand it and how to apply it. 
 Please read the following WCAG excerpt and then answer the following questions. 
 
-    The size of the target for pointer inputs is at least 44 by 44 CSS pixels except when:
-    
-    :Equivalent: The target is available through an equivalent link or control on the same page that is at least 44 by 44 CSS pixels;
-    :Inline: The target is in a sentence or block of text;
-    :User Agent Control: The size of the target is determined by the user agent and is not modified by the author;
-    :Essential: A particular presentation of the target is essential to the information being conveyed.
+    The size of the target for pointer inputs is at least 44 by 44 CSS pixels except when...
 
 .. mcq:target-size:Generally, what is the minimum target size from the WCAG?
      :At least 44 mm in height:Incorrect.
      :At least 44 CSS pixels in width:Incorrect.
      :44 by 44 mm:Incorrect.
-     correct:44 by 44 CSS pixels.:That's right!
-
-.. mcq:target-size:The headings Equivalent, Inline, User Agent Control and Essential refer to properties that pointer targets...
-     :... must have to fulfil WCAG target size requirements.:Incorrect.
-     :... should not ever have to fulfil WCAG target size requirements.:Incorrect.
-     correct:... have when they don't need to fulfil WCAG target size requirements.:That's right!
-     :... must have at least one of to fulfil WCAG target size requirements.:Incorrect.
+     correct:44 by 44 CSS pixels.:That's right! 🎉
 
 --------------------------------------
 Why does touch target size matter?
@@ -56,13 +45,13 @@ Please read it then answer the following questions.
      :Some devices have small screens:That's true but there is a more correct answer.
      :Some users have limited dexterity:That's true but there is a more correct answer.
      :Larger targets help users who find mice hard to use:That's true but there is a more correct answer.
-     correct:All of the above:That's right!
+     correct:All of the above:That's right! 🎉
 
 -------------------------------
 Different target size standards
 -------------------------------
 
-As well as the WCAG, there are other important standards for touch target size. 
+As well as the WCAG, there are **other important standards** for touch target size. 
 Apple and Android both have guidelines for developers as well as the Nielsen group who provide guidance on user experience. 
 However these standards are all slightly different and in different units which makes it difficult to check if all of them are fulfilled. 
 
@@ -71,9 +60,8 @@ However these standards are all slightly different and in different units which 
 :Nielsen: 1 x 1 cm
 :WCAG: 44 x 44 CSS pixels
 
-Adee simplifies these by converting the standards to the same unit, px. 
-Adee also helps designers check whether the standards are fulfilled all at one glance. 
-This makes it far easier and quicker for designers to check all of these guidelines at once. 
+Adee simplifies these by converting the standards to the **same unit**, px. 
+Adee also helps designers check whether all the standards are fulfilled **all at one glance**. 
 
 .. image:: Images/target-size-tables.png
    :alt: Target size standards tables from the Adee interface
@@ -82,7 +70,7 @@ This makes it far easier and quicker for designers to check all of these guideli
 
 Above is a screenshot from the Adee interface. 
 The upper table shows the size of the selected target in pixels and whether it meets each of the 4 accessibility standards for the device type selected. 
-The lower table shows the minimum height and width needed for the button depending on the device type selected. 
+The lower table shows the minimum height and width needed for the button depending on the device type selected (covered below). 
 
 -----------
 Device size
@@ -109,7 +97,7 @@ Adee task 1
      5. Close the plugin
 
 .. likert::target-size:Rate the difficulty of Adee task 1
-   Extremely difficult:Extremely easy
+   Extremely difficult 1:7 Extremely easy
 
 .. likert::target-size:How well do you understand target size?
-   Never heard of it:Could explain it to a friend
+   Never heard of it 1️⃣:5️⃣ Could explain it to a friend

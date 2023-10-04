@@ -20,7 +20,7 @@ Relying only on colour means that users who aren't able to distinguish well betw
 
 .. mcq:colour-general:It is best for accessibility to just use colour to show information.
      :True:Incorrect. Colour should NOT be the only means of showing information.
-     correct:False:That's right! Colour should NOT be the only means of showing information.
+     correct:False:That's right! 🎉 Colour should NOT be the only means of showing information.
 
 .. likert::colour-general:How well do you understand general principles about colour and accessibility?
-   Never heard of it:Could explain it to a friend
+   Never heard of it 1️⃣:5️⃣ Could explain it to a friend

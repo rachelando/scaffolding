@@ -6,7 +6,7 @@
    </script>
 
 
-Accessibility guidelines
+Accessibility guidelines 2️⃣ ❓
 ::::::::::::::::::::::::::::::::
 
 ------------------------------
@@ -27,11 +27,11 @@ WAI is part of the World Wide Web Consortium (W3C) which provides universal stan
 		  <p class="admonition-title">MCQ</p>
                 <p>Which of the below is the most widely used and accepted set of accessibility guidelines?</p>
 		<form name=Q1 id="Q1" data-component="wcag">
-		<input type="checkbox" id="Q1A1" value=""><label for="Q1A1">World Wide Web Consortium (W3C)</label> <span id="Q1A1-feedback"> </span><br> 		<input type="checkbox" id="Q1A2" value=""><label for="Q1A2">Web Accessibility Initiative (WAI)</label> <span id="Q1A2-feedback"> </span><br> 		<input type="checkbox" id="Q1A3" value="correct"><label for="Q1A3">Web Content Accessibility Guidelines (WCAG)</label> <span id="Q1A3-feedback"> </span><br> 
+		<input type="radio" name="Q1" id="Q1A1">	<label for="Q1A1">World Wide Web Consortium (W3C)</label> <span id="Q1A1-feedback"> </span><br> 		<input type="radio" name="Q1" id="Q1A2">	<label for="Q1A2">Web Accessibility Initiative (WAI)</label> <span id="Q1A2-feedback"> </span><br> 		<input type="radio" name="Q1" id="Q1A3">	<label for="Q1A3">Web Content Accessibility Guidelines (WCAG)</label> <span id="Q1A3-feedback"> </span><br> 
                 <input type="button" value="Check" onclick="sendmcq('Q1')"><br>
 		</form>
 		<script id="Q1-answers" type="application/json"> 
-		[ 	{ "ansid":"Q1A1", "answer": "World Wide Web Consortium (W3C)", "feedback": "Incorrect.", "result": ""  } ,	{ "ansid":"Q1A2", "answer": "Web Accessibility Initiative (WAI)", "feedback": "Incorrect.", "result": ""  } ,	{ "ansid":"Q1A3", "answer": "Web Content Accessibility Guidelines (WCAG)", "feedback": "That's right!", "result": "correct"  } 
+		[ 	{ "ansid":"Q1A1", "answer": "World Wide Web Consortium (W3C)", "feedback": "Incorrect.", "result": ""  } ,	{ "ansid":"Q1A2", "answer": "Web Accessibility Initiative (WAI)", "feedback": "Incorrect.", "result": ""  } ,	{ "ansid":"Q1A3", "answer": "Web Content Accessibility Guidelines (WCAG)", "feedback": "That's right! 🎉", "result": "correct"  } 
 	]
 	</script>
 
@@ -63,11 +63,11 @@ Read the following excerpt from the WAI:
 		  <p class="admonition-title">MCQ</p>
                 <p>Which of the statements below is true about WCAG AA and AAA levels?</p>
 		<form name=Q2 id="Q2" data-component="wcag">
-		<input type="checkbox" id="Q2A1" value=""><label for="Q2A1">Level A is highest, then AA, then AAA</label> <span id="Q2A1-feedback"> </span><br> 		<input type="checkbox" id="Q2A2" value=""><label for="Q2A2">If level AAA is met, some level AA requirements have not been met</label> <span id="Q2A2-feedback"> </span><br> 		<input type="checkbox" id="Q2A3" value="correct"><label for="Q2A3">It is generally good to aim for level AA and even better to aim for level AAA</label> <span id="Q2A3-feedback"> </span><br> 		<input type="checkbox" id="Q2A4" value=""><label for="Q2A4">All websites are required to follow AAA requirements</label> <span id="Q2A4-feedback"> </span><br> 
+		<input type="radio" name="Q2" id="Q2A1">	<label for="Q2A1">Level A is highest, then AA, then AAA</label> <span id="Q2A1-feedback"> </span><br> 		<input type="radio" name="Q2" id="Q2A2">	<label for="Q2A2">If level AAA is met, some level AA requirements have not been met</label> <span id="Q2A2-feedback"> </span><br> 		<input type="radio" name="Q2" id="Q2A3">	<label for="Q2A3">It is generally good to aim for level AA and even better to aim for level AAA</label> <span id="Q2A3-feedback"> </span><br> 		<input type="radio" name="Q2" id="Q2A4">	<label for="Q2A4">All websites are required to follow AAA requirements</label> <span id="Q2A4-feedback"> </span><br> 
                 <input type="button" value="Check" onclick="sendmcq('Q2')"><br>
 		</form>
 		<script id="Q2-answers" type="application/json"> 
-		[ 	{ "ansid":"Q2A1", "answer": "Level A is highest, then AA, then AAA", "feedback": "Incorrect.", "result": ""  } ,	{ "ansid":"Q2A2", "answer": "If level AAA is met, some level AA requirements have not been met", "feedback": "Incorrect.", "result": ""  } ,	{ "ansid":"Q2A3", "answer": "It is generally good to aim for level AA and even better to aim for level AAA", "feedback": "That's right!", "result": "correct"  } ,	{ "ansid":"Q2A4", "answer": "All websites are required to follow AAA requirements", "feedback": "Incorrect.", "result": ""  } 
+		[ 	{ "ansid":"Q2A1", "answer": "Level A is highest, then AA, then AAA", "feedback": "Incorrect.", "result": ""  } ,	{ "ansid":"Q2A2", "answer": "If level AAA is met, some level AA requirements have not been met", "feedback": "Incorrect.", "result": ""  } ,	{ "ansid":"Q2A3", "answer": "It is generally good to aim for level AA and even better to aim for level AAA", "feedback": "That's right! 🎉", "result": "correct"  } ,	{ "ansid":"Q2A4", "answer": "All websites are required to follow AAA requirements", "feedback": "Incorrect.", "result": ""  } 
 	]
 	</script>
 
@@ -81,14 +81,15 @@ Read the following excerpt from the WAI:
    <p class="admonition-title">Knowledge self-rating</p>
    How well do you understand the WCAG?
    <form id = "C3" data-component="wcag">
-      Never heard of it
+      Never heard of it 1️⃣
    <input type="radio" name="C3" id="C3A1">
    <input type="radio" name="C3" id="C3A2">
    <input type="radio" name="C3" id="C3A3">
    <input type="radio" name="C3" id="C3A4">
    <input type="radio" name="C3" id="C3A5">
-   Could explain it to a friend
+   5️⃣ Could explain it to a friend
    <input type="button" value="Submit" onclick="sendlik('C3','wcag')"><br>
+   <p class="likert-feedback" id="C3-feedback"></p>
    </form>
    </div>
    </div>

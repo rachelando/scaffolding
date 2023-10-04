@@ -39,8 +39,8 @@ From the below screenshot, please answer the following questions:
    :width: 8cm
    :align: center
 
-.. mcq:design-practices:Are the above images informative or decorative?
-     correct:1 is informative, 2 is decorative:That's right!
+.. mcq:alt-text:Are the above images informative or decorative?
+     correct:1 is informative, 2 is decorative:That's right! 🎉
      :1 is decorative, 2 is informative:Incorrect.
 
 -----------
@@ -60,7 +60,7 @@ Adee task 2
      7. Close the plugin
 
 .. likert::alt-text:Rate the difficulty of Adee task 2
-   Extremely difficult:Extremely easy
+   Extremely difficult 1:7 Extremely easy
 
 -------------------------
 Alt text can be difficult
@@ -78,8 +78,7 @@ Above is a simple chart [#]_.
 Appropriate alt text is: "Moving: 125 percent; Exercise: zero percent; Standing: 58 percent." 
 
 However, charts can be much more complicated than this to describe in alt text. 
-Generally, include a short description in the alt text with high level information about the chart, similar to a chart heading. 
-Then include a longer description with: 
+It is best to include: 
 
 - the type of chart, 
 
@@ -87,7 +86,9 @@ Then include a longer description with:
 
 - trends and implications comparable to those available from the chart
 
-Where possible, include this longer description in the shorter alt text. 
+Sometimes this cannot fit in 125 characters in the alt text. 
+In these cases, alt text should have high level information about the chart, similar to a chart heading. 
+The full description should also be linked to the chart but outside of the alt text. 
 Also where possible and practical, include a table with the actual data. 
 
 -----------
@@ -107,9 +108,9 @@ Adee task 3
      7. Close the plugin
 
 .. likert::alt-text:Rate the difficulty of Adee task 3
-   Extremely difficult:Extremely easy
+   Extremely difficult 1:7 Extremely easy
 
 .. likert::alt-text:How well do you understand alt text?
-   Never heard of it:Could explain it to a friend
+   Never heard of it 1️⃣:5️⃣ Could explain it to a friend
 
 .. [#] `Apple (2023) <https://developer.apple.com/design/human-interface-guidelines/accessibility#Content-descriptions>`_

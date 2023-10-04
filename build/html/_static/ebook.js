@@ -128,7 +128,7 @@ window.onload = async function () {
 
 // RACHEL Update nav items given in json format
 function updateNav(data) {
-  // Sample test data MUST HAVE ALL FIELDS
+  // Sample test data MUST HAVE ALL FIELDS if appropriate
   const testData = {
     "target-size": {
       "full-name": "Touch target size",
@@ -152,7 +152,15 @@ function updateNav(data) {
       // console.log(heading);
       // console.log(fullHeadingName);
       if (currentNavTitle.includes(fullHeadingName)) {
-        var newNavTitle = data[heading]["self-rating"] +" "+ data[heading]["full-name"] +" "+ data[heading]["mcq"];
+        var newNavTitle = data[heading]["full-name"];
+        if ("self-rating" in data[heading]) {
+          newNavTitle += (" " + data[heading]["self-rating"]);
+        }
+        if ("mcq" in data[heading]) {
+          newNavTitle += " " + data[heading]["mcq"];
+        }
+        // newNavTitle = data[heading]["self-rating"] +" "+ data[heading]["full-name"] +" "+ data[heading]["mcq"]; // either side
+        // newNavTitle = data[heading]["full-name"] +" "+ data[heading]["self-rating"] +" "+ data[heading]["mcq"]; // after, no checking
         // Update nav title
         console.log(newNavTitle);
         navTag.firstChild.textContent = newNavTitle;
@@ -218,6 +226,9 @@ function sendlik(cid, componentid)
   var value = "error";
   var answers = ["1","2","3","4","5"];
 
+  // RACHEL add feedback
+    document.getElementById(cid + "-feedback").innerText = "Submitted!";
+
   for (let ans in answers)
   {
 	ansid = cid+"A"+answers[ans];
@@ -276,6 +287,9 @@ function sendlikseven(cid, componentid)
 {
   var value = "error";
   var answers = ["1","2","3","4","5","6","7"];
+
+  // RACHEL add feedback
+  document.getElementById(cid + "-feedback").innerText = "Submitted!";
 
   for (let ans in answers)
   {

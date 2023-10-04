@@ -36,37 +36,34 @@ Below shows how people with different types of colour blindness would perceive t
 From left to right, the corresponding CVD types are: deuteranopia, protoanopia, tritanopia, and achromatopsia. 
 We will learn more about each of these and more shortly. 
 
-.. mcq:cvd:Have a look at the "Colorblind Simulator" function of Adee. Not including "Normal", how many types of CVD/colour blindness can you choose from in Adee?
+.. image:: Images/adee-cvd-types.png
+   :alt: Screenshot of Adee's CVD types
+   :width: 7cm
+   :align: center
+
+.. mcq:cvd:Above is a screenshot from the "Colorblind Simulator" function of Adee. Not including "Normal", how many types of CVD/colour blindness can you choose from in Adee?
      :4 (2 pairs):Incorrect.
-     correct:8 (4 pairs):That's right!
+     correct:8 (4 pairs):That's right! 🎉
      :9 (3 groups of 3):Incorrect.
      :10 (5 pairs):Incorrect.
 
-From this number, there are 4 types of CVD that are **relatively mild**:
+The table below shows a summary of these different types. 
 
-:Deuteranomaly:
-    Type of **red-green** colour vision deficiency.
-    **Most common** form of CVD.
-:Protanomaly:
-    Another type of **red-green** colour vision deficiency. 
-:Tritanomaly:
-    Type of **blue-yellow** colour vision deficiency. 
-    Less common than the above two red-green CVD types. 
-:Achromatomaly:
-    Some deficiency in **all colours**. 
-    Rarest type of CVD. 
+.. csv-table:: CVD types
+    :header: "Type", "Affected colours", "Deficiency","Prevalence"
 
-You might notice that the remaining 4 types are related to each of these milder forms. 
-The remaining 4 types have the suffix "-opia" or "-opsia" instead of "-omaly". 
-These remaining types are complete deficiencies. 
-So, people with deuteranopia and protoanopia have complete red-green colour blindness so they cannot tell the difference between those colours at all. 
-People with tritanopia have complete blue-yellow colour blindness so they cannot tell the difference between blue and green, purple and red, and yellow and pink. 
-People with achromatopsia/monochromacy are unable to see any colour at all. 
-Achromatopsia is extremely rare. 
+    "Deuteranopia", "Red-green", "Complete", "Rare"
+    "Deuteranomaly", "Red-green", "Partial", "Most common"
+    "Protoanopia", "Red-green", "Complete", "Rare"
+    "Protanomaly", "Red-green", "Partial", "Second most common"
+    "Tritanopia", "Blue-yellow", "Complete", "Rare"
+    "Tritanomaly", "Blue-yellow", "Partial", "Rare"
+    "Achromatopsia", "All colours", "Complete", "Extremely rare"
+    "Achromatomaly", "All colours", "Partial", "Very rare"
 
 .. mcq:cvd:To test a web design for the most common type of colour blindness, I would test for...
      :Tritanomaly, a type of red-green colour blindness.:Incorrect, tritanomaly is a type of blue-yellow colour blindness and it's not most common.
-     correct:Deuteranomaly, a type of red-green colour blindness.:That's right!
+     correct:Deuteranomaly, a type of red-green colour blindness.:That's right! 🎉
      :Tritanomaly, a type of blue-yellow colour blindness.:Incorrect, tritanomaly is a type of blue-yellow colour blindness but it's not most common.
      :Deuteranomaly, a type of blue-yellow colour blindness.:Incorrect, deuteranomaly is most common but it's not a type of blue-yellow colour blindness.
 
@@ -94,7 +91,7 @@ Below is an improved version of the same chart.
    :align: center
 
 .. mcq:cvd:How has this second pie chart been improved in terms of CVD accessibility?
-     correct:Labels and spacing as additional cues:That's right!
+     correct:Labels and spacing as additional cues:That's right! 🎉
      :Spacing and patterns as additional cues:Incorrect.
      :Labels and patterns as additional cues:Incorrect.
 
@@ -108,15 +105,15 @@ Adee task 4
 
      1. Select the chart image under Task 4
      2. Open the Adee plugin to "Colorblind Simulator tool"
-     3. Check the chart image's colour against the "Deuteranopia" colour blind type
-     4. Do you think the chart should be improved? Please explain your answer
+     3. Check the chart image's colour against the "Tritanopia" colour blind type
+     4. Based on this result, do you think the chart's colours should be improved? Please explain your answer
      5. Close the plugin
 
 .. likert::cvd:Rate the difficulty of Adee task 4
-   Extremely difficult:Extremely easy
+   Extremely difficult 1:7 Extremely easy
 
 .. likert::cvd:How well do you understand colour vision deficiency?
-   Never heard of it:Could explain it to a friend
+   Never heard of it 1️⃣:5️⃣ Could explain it to a friend
 
 .. [#] Simunovic, M. Colour vision deficiency. (2010). *Eye*. 24, 747–755. `<https://doi.org/10.1038/eye.2009.251>`_
 .. [#] `Crux Collaborative (2018) <https://cruxcollaborative.com/insights/understanding-color-blindness-guide-to-accessible-design>`_

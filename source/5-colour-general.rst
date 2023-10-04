@@ -31,11 +31,11 @@ Relying only on colour means that users who aren't able to distinguish well betw
 		  <p class="admonition-title">MCQ</p>
                 <p>It is best for accessibility to just use colour to show information.</p>
 		<form name=Q1 id="Q1" data-component="colour-general">
-		<input type="checkbox" id="Q1A1" value=""><label for="Q1A1">True</label> <span id="Q1A1-feedback"> </span><br> 		<input type="checkbox" id="Q1A2" value="correct"><label for="Q1A2">False</label> <span id="Q1A2-feedback"> </span><br> 
+		<input type="radio" name="Q1" id="Q1A1">	<label for="Q1A1">True</label> <span id="Q1A1-feedback"> </span><br> 		<input type="radio" name="Q1" id="Q1A2">	<label for="Q1A2">False</label> <span id="Q1A2-feedback"> </span><br> 
                 <input type="button" value="Check" onclick="sendmcq('Q1')"><br>
 		</form>
 		<script id="Q1-answers" type="application/json"> 
-		[ 	{ "ansid":"Q1A1", "answer": "True", "feedback": "Incorrect. Colour should NOT be the only means of showing information.", "result": ""  } ,	{ "ansid":"Q1A2", "answer": "False", "feedback": "That's right! Colour should NOT be the only means of showing information.", "result": "correct"  } 
+		[ 	{ "ansid":"Q1A1", "answer": "True", "feedback": "Incorrect. Colour should NOT be the only means of showing information.", "result": ""  } ,	{ "ansid":"Q1A2", "answer": "False", "feedback": "That's right! 🎉 Colour should NOT be the only means of showing information.", "result": "correct"  } 
 	]
 	</script>
 
@@ -49,14 +49,15 @@ Relying only on colour means that users who aren't able to distinguish well betw
    <p class="admonition-title">Knowledge self-rating</p>
    How well do you understand general principles about colour and accessibility?
    <form id = "C2" data-component="colour-general">
-      Never heard of it
+      Never heard of it 1️⃣
    <input type="radio" name="C2" id="C2A1">
    <input type="radio" name="C2" id="C2A2">
    <input type="radio" name="C2" id="C2A3">
    <input type="radio" name="C2" id="C2A4">
    <input type="radio" name="C2" id="C2A5">
-   Could explain it to a friend
+   5️⃣ Could explain it to a friend
    <input type="button" value="Submit" onclick="sendlik('C2','colour-general')"><br>
+   <p class="likert-feedback" id="C2-feedback"></p>
    </form>
    </div>
    </div>

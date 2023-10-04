@@ -51,12 +51,12 @@ From the below screenshot, please answer the following questions:
           <div class="mcq">
 		  <p class="admonition-title">MCQ</p>
                 <p>Are the above images informative or decorative?</p>
-		<form name=Q1 id="Q1" data-component="design-practices">
-		<input type="checkbox" id="Q1A1" value="correct"><label for="Q1A1">1 is informative, 2 is decorative</label> <span id="Q1A1-feedback"> </span><br> 		<input type="checkbox" id="Q1A2" value=""><label for="Q1A2">1 is decorative, 2 is informative</label> <span id="Q1A2-feedback"> </span><br> 
+		<form name=Q1 id="Q1" data-component="alt-text">
+		<input type="radio" name="Q1" id="Q1A1">	<label for="Q1A1">1 is informative, 2 is decorative</label> <span id="Q1A1-feedback"> </span><br> 		<input type="radio" name="Q1" id="Q1A2">	<label for="Q1A2">1 is decorative, 2 is informative</label> <span id="Q1A2-feedback"> </span><br> 
                 <input type="button" value="Check" onclick="sendmcq('Q1')"><br>
 		</form>
 		<script id="Q1-answers" type="application/json"> 
-		[ 	{ "ansid":"Q1A1", "answer": "1 is informative, 2 is decorative", "feedback": "That's right!", "result": "correct"  } ,	{ "ansid":"Q1A2", "answer": "1 is decorative, 2 is informative", "feedback": "Incorrect.", "result": ""  } 
+		[ 	{ "ansid":"Q1A1", "answer": "1 is informative, 2 is decorative", "feedback": "That's right! 🎉", "result": "correct"  } ,	{ "ansid":"Q1A2", "answer": "1 is decorative, 2 is informative", "feedback": "Incorrect.", "result": ""  } 
 	]
 	</script>
 
@@ -86,7 +86,7 @@ Adee task 2
    <p class="admonition-title">Adee task rating</p>
    Rate the difficulty of Adee task 2
    <form id = "C2" data-component="alt-text">
-      Extremely difficult
+      Extremely difficult 1
    <input type="radio" name="C2" id="C2A1">
    <input type="radio" name="C2" id="C2A2">
    <input type="radio" name="C2" id="C2A3">
@@ -94,8 +94,9 @@ Adee task 2
    <input type="radio" name="C2" id="C2A5">
    <input type="radio" name="C2" id="C2A6">
    <input type="radio" name="C2" id="C2A7">
-   Extremely easy
+   7 Extremely easy
    <input type="button" value="Submit" onclick="sendlikseven('C2','alt-text')"><br>
+   <p id="C2-feedback"></p>
    </form>
    </div>
    </div>
@@ -117,8 +118,7 @@ Above is a simple chart [#]_.
 Appropriate alt text is: "Moving: 125 percent; Exercise: zero percent; Standing: 58 percent."
 
 However, charts can be much more complicated than this to describe in alt text.
-Generally, include a short description in the alt text with high level information about the chart, similar to a chart heading.
-Then include a longer description with:
+It is best to include:
 
 - the type of chart,
 
@@ -126,7 +126,9 @@ Then include a longer description with:
 
 - trends and implications comparable to those available from the chart
 
-Where possible, include this longer description in the shorter alt text.
+Sometimes this cannot fit in 125 characters in the alt text.
+In these cases, alt text should have high level information about the chart, similar to a chart heading.
+The full description should also be linked to the chart but outside of the alt text.
 Also where possible and practical, include a table with the actual data.
 
 -----------
@@ -152,7 +154,7 @@ Adee task 3
    <p class="admonition-title">Adee task rating</p>
    Rate the difficulty of Adee task 3
    <form id = "C3" data-component="alt-text">
-      Extremely difficult
+      Extremely difficult 1
    <input type="radio" name="C3" id="C3A1">
    <input type="radio" name="C3" id="C3A2">
    <input type="radio" name="C3" id="C3A3">
@@ -160,8 +162,9 @@ Adee task 3
    <input type="radio" name="C3" id="C3A5">
    <input type="radio" name="C3" id="C3A6">
    <input type="radio" name="C3" id="C3A7">
-   Extremely easy
+   7 Extremely easy
    <input type="button" value="Submit" onclick="sendlikseven('C3','alt-text')"><br>
+   <p id="C3-feedback"></p>
    </form>
    </div>
    </div>
@@ -174,14 +177,15 @@ Adee task 3
    <p class="admonition-title">Knowledge self-rating</p>
    How well do you understand alt text?
    <form id = "C4" data-component="alt-text">
-      Never heard of it
+      Never heard of it 1️⃣
    <input type="radio" name="C4" id="C4A1">
    <input type="radio" name="C4" id="C4A2">
    <input type="radio" name="C4" id="C4A3">
    <input type="radio" name="C4" id="C4A4">
    <input type="radio" name="C4" id="C4A5">
-   Could explain it to a friend
+   5️⃣ Could explain it to a friend
    <input type="button" value="Submit" onclick="sendlik('C4','alt-text')"><br>
+   <p class="likert-feedback" id="C4-feedback"></p>
    </form>
    </div>
    </div>

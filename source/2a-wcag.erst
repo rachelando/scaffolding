@@ -1,7 +1,7 @@
 
 .. page::scaffolding:wcag
 
-Accessibility guidelines
+Accessibility guidelines 2️⃣ ❓
 ::::::::::::::::::::::::::::::::
 
 ------------------------------
@@ -17,7 +17,7 @@ WAI is part of the World Wide Web Consortium (W3C) which provides universal stan
 .. mcq:wcag:Which of the below is the most widely used and accepted set of accessibility guidelines?
      :World Wide Web Consortium (W3C):Incorrect.
      :Web Accessibility Initiative (WAI):Incorrect.
-     correct:Web Content Accessibility Guidelines (WCAG):That's right!
+     correct:Web Content Accessibility Guidelines (WCAG):That's right! 🎉
 
 Each guideline from WCAG has **criteria** that can be tested to determine whether a web design meets the guideline or not.
 For example, the Success Criterion 1.4.1 Use of Color is achieved if *“Color is not used as the only visual means of conveying information, indicating an
@@ -39,8 +39,8 @@ Read the following excerpt from the WAI:
 .. mcq:wcag:Which of the statements below is true about WCAG AA and AAA levels?
      :Level A is highest, then AA, then AAA:Incorrect.
      :If level AAA is met, some level AA requirements have not been met:Incorrect.
-     correct:It is generally good to aim for level AA and even better to aim for level AAA:That's right!
+     correct:It is generally good to aim for level AA and even better to aim for level AAA:That's right! 🎉
      :All websites are required to follow AAA requirements:Incorrect.
 
 .. likert::wcag:How well do you understand the WCAG?
-   Never heard of it:Could explain it to a friend
+   Never heard of it 1️⃣:5️⃣ Could explain it to a friend

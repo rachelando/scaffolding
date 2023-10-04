@@ -165,7 +165,8 @@ def do_mcq(erstfile, line):
                 <p>%(question)s</p>
 		<form name=%(qid)s id="%(qid)s" data-component="%(compname)s">
 '''
-	ansformat = '''\t\t<input type="checkbox" id="%(ansid)s" value="%(correct)s"><label for="%(ansid)s">%(answer)s</label> <span id="%(ansid)s-feedback"> </span><br> '''
+	# ansformat = '''\t\t<input type="checkbox" id="%(ansid)s" value="%(correct)s"><label for="%(ansid)s">%(answer)s</label> <span id="%(ansid)s-feedback"> </span><br> '''
+	ansformat = '''\t\t<input type="radio" name="%(qid)s" id="%(ansid)s">\t<label for="%(ansid)s">%(answer)s</label> <span id="%(ansid)s-feedback"> </span><br> '''
 	qformat2 = '''
                 <input type="button" value="Check" onclick="sendmcq('%(qid)s')"><br>
 		</form>
@@ -184,7 +185,7 @@ def do_mcq(erstfile, line):
 	rstfile.write (qformat%dict(question=question, compname=compname, qid=qid))
 
 	for answ in answers:
-		rstfile.write(ansformat%dict(correct=answ[1], answer=answ[2], ansid=answ[0]))
+		rstfile.write(ansformat%dict(correct=answ[1], answer=answ[2], ansid=answ[0], qid=qid))
 
 	rstfile.write (qformat2%dict(qid=qid))
 
@@ -286,6 +287,7 @@ def do_likert(erstfile, line):
    <input type="radio" name="%(cid)s" id="%(cid)sA7">
    %(highlik)s
    <input type="button" value="Submit" onclick="sendlikseven('%(cid)s','%(attribute)s')"><br>
+   <p id="%(cid)s-feedback"></p>
    </form>
    </div>
    </div>
@@ -307,6 +309,7 @@ def do_likert(erstfile, line):
    <input type="radio" name="%(cid)s" id="%(cid)sA5">
    %(highlik)s
    <input type="button" value="Submit" onclick="sendlik('%(cid)s','%(attribute)s')"><br>
+   <p class="likert-feedback" id="%(cid)s-feedback"></p>
    </form>
    </div>
    </div>

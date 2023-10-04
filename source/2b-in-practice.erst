@@ -1,8 +1,8 @@
 
 .. page::scaffolding:in-practice
 
-Accessibility in practice
-::::::::::::::::::::::::::::::::
+Accessibility in practice 2️⃣ ✅
+:::::::::::::::::::::::::::::::::
 
 ------------------------
 Current design practices
@@ -26,10 +26,10 @@ They use design tools such as **Figma**, which is the tool that you will use sho
 
 Designs are then sent on to developers who write the actual code for the website based on the designs. 
 
-.. mcq:in-practice:Which of the below statements is NOT true about web design?
+.. mcq:in-practice:Which of the below statements is <b>NOT</b> true about web design?
      :Currently, most websites have accessibility problems:Incorrect. That IS true about web design.
      :Fixing accessibility problems early saves money and time:Incorrect. That IS true about web design.
-     correct:Ideally, accessibility should be incorporated after the design phase:That's right! It should be incorporated DURING the design phase.
+     correct:Ideally, accessibility should be incorporated after the design phase:That's right! 🎉 It should be incorporated DURING the design phase.
      :Accessibility is not considered enough due to deadlines and a lack of resources:Incorrect. That IS true about web design.
 
 ---------------------------------
@@ -37,9 +37,9 @@ Accessible design tools like Adee
 ---------------------------------
 
 .. image:: Images/Adee-logo.png
-   :alt: Adee logo
-   :width: 4cm
-   :align: center
+    :alt: Adee logo
+    :width: 4cm
+    :align: center
 
 Accessibility experts recommend that accessibility support is **incorporated into the tools that web designers use daily**. 
 There are many requirements for designers to consider while designing including the design brief itself, aesthetics, company branding, marketing requirements, and many more. 
@@ -51,7 +51,30 @@ One such accessibility tool is **Adee** which you will also use shortly.
 Adee also makes it easy for designers to report how well they are following accessibility guidelines. 
 The "Generate" button in Adee generates a report that can be shown to managers or colleagues. 
 
+-------------
+Starting Adee
+-------------
+
+.. admonition:: Starting Adee
+
+    Starting Adee in Figma. 
+
+    1. Open Figma resources from the top bar with the icon matching the image below. Alternatively, the keyboard shortcut for Figma resources is Shift + i
+
+    .. image:: Images/figma-plug-ins.png
+        :alt: Figma menu bar with resources icon indicated
+        :width: 10cm
+        :align: center
+
+    2. Go to the "plugins" tab 
+    3. Search for "Adee"
+    4. Hover over "Adee Comprehensive Accessibility Tool" and click "Run"
+    5. Here you will see Adee's 4 functionalities. Choose one to click and start Adee
+    6. Close the plugin
+    
+    We will come back to Adee soon. 
+
 .. likert::in-practice:How well do you understand accessibility in design practice?
-   Never heard of it:Could explain it to a friend
+   Never heard of it 1️⃣:5️⃣ Could explain it to a friend
 
 .. [#] `WebAIM (2023) <https://webaim.org/projects/million/>`_

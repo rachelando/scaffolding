@@ -30,24 +30,23 @@ Colour contrast is particularly important for text and other essential elements.
 		  <p class="admonition-title">MCQ</p>
                 <p>Which of these colour pairings has higher colour contrast?</p>
 		<form name=Q1 id="Q1" data-component="colour-contrast">
-		<input type="checkbox" id="Q1A1" value=""><label for="Q1A1">Image 1</label> <span id="Q1A1-feedback"> </span><br> 		<input type="checkbox" id="Q1A2" value="correct"><label for="Q1A2">Image 2</label> <span id="Q1A2-feedback"> </span><br> 
+		<input type="radio" name="Q1" id="Q1A1">	<label for="Q1A1">Image 1</label> <span id="Q1A1-feedback"> </span><br> 		<input type="radio" name="Q1" id="Q1A2">	<label for="Q1A2">Image 2</label> <span id="Q1A2-feedback"> </span><br> 
                 <input type="button" value="Check" onclick="sendmcq('Q1')"><br>
 		</form>
 		<script id="Q1-answers" type="application/json"> 
-		[ 	{ "ansid":"Q1A1", "answer": "Image 1", "feedback": "Incorrect.", "result": ""  } ,	{ "ansid":"Q1A2", "answer": "Image 2", "feedback": "That's right!", "result": "correct"  } 
+		[ 	{ "ansid":"Q1A1", "answer": "Image 1", "feedback": "Incorrect.", "result": ""  } ,	{ "ansid":"Q1A2", "answer": "Image 2", "feedback": "That's right! 🎉", "result": "correct"  } 
 	]
 	</script>
 
 	</div>
 	</div>
 
-Why do we need to ensure sufficient colour contrast? Examples of poor contrast; who it helps
 Having good colour contrast ensures that people with **low vision** are able to see elements clearly.
 It also helps when viewing a screen in bright sunlight.
 This is a good example of accessibility helping everyone, not just people with disabilities.
 
 -----------------------------
-Colour ratios and the WCAG ❓
+Colour ratios and the WCAG
 -----------------------------
 
 What are the WCAG guidelines on colour contrast?
@@ -79,11 +78,11 @@ From the two excerpts, please answer the following questions:
 		  <p class="admonition-title">MCQ</p>
                 <p>From the WCAG, 3:1 is the minimum colour ratio requirement for:</p>
 		<form name=Q2 id="Q2" data-component="colour-contrast">
-		<input type="checkbox" id="Q2A1" value="correct"><label for="Q2A1">Large text (level AA)</label> <span id="Q2A1-feedback"> </span><br> 		<input type="checkbox" id="Q2A2" value=""><label for="Q2A2">Normal text (level AAA)</label> <span id="Q2A2-feedback"> </span><br> 		<input type="checkbox" id="Q2A3" value=""><label for="Q2A3">Normal text (level AA) and large text (level AAA)</label> <span id="Q2A3-feedback"> </span><br> 
+		<input type="radio" name="Q2" id="Q2A1">	<label for="Q2A1">Large text (level AA)</label> <span id="Q2A1-feedback"> </span><br> 		<input type="radio" name="Q2" id="Q2A2">	<label for="Q2A2">Normal text (level AAA)</label> <span id="Q2A2-feedback"> </span><br> 		<input type="radio" name="Q2" id="Q2A3">	<label for="Q2A3">Normal text (level AA) and large text (level AAA)</label> <span id="Q2A3-feedback"> </span><br> 
                 <input type="button" value="Check" onclick="sendmcq('Q2')"><br>
 		</form>
 		<script id="Q2-answers" type="application/json"> 
-		[ 	{ "ansid":"Q2A1", "answer": "Large text (level AA)", "feedback": "That's right!", "result": "correct"  } ,	{ "ansid":"Q2A2", "answer": "Normal text (level AAA)", "feedback": "Incorrect.", "result": ""  } ,	{ "ansid":"Q2A3", "answer": "Normal text (level AA) and large text (level AAA)", "feedback": "Incorrect.", "result": ""  } 
+		[ 	{ "ansid":"Q2A1", "answer": "Large text (level AA)", "feedback": "That's right! 🎉", "result": "correct"  } ,	{ "ansid":"Q2A2", "answer": "Normal text (level AAA)", "feedback": "Incorrect.", "result": ""  } ,	{ "ansid":"Q2A3", "answer": "Normal text (level AA) and large text (level AAA)", "feedback": "Incorrect.", "result": ""  } 
 	]
 	</script>
 
@@ -98,11 +97,11 @@ From the two excerpts, please answer the following questions:
 		  <p class="admonition-title">MCQ</p>
                 <p>From the WCAG, 4.5:1 is the minimum colour ratio requirement for:</p>
 		<form name=Q3 id="Q3" data-component="colour-contrast">
-		<input type="checkbox" id="Q3A1" value=""><label for="Q3A1">Large text (level AA)</label> <span id="Q3A1-feedback"> </span><br> 		<input type="checkbox" id="Q3A2" value=""><label for="Q3A2">Normal text (level AAA)</label> <span id="Q3A2-feedback"> </span><br> 		<input type="checkbox" id="Q3A3" value="correct"><label for="Q3A3">Normal text (level AA) and large text (level AAA)</label> <span id="Q3A3-feedback"> </span><br> 
+		<input type="radio" name="Q3" id="Q3A1">	<label for="Q3A1">Large text (level AA)</label> <span id="Q3A1-feedback"> </span><br> 		<input type="radio" name="Q3" id="Q3A2">	<label for="Q3A2">Normal text (level AAA)</label> <span id="Q3A2-feedback"> </span><br> 		<input type="radio" name="Q3" id="Q3A3">	<label for="Q3A3">Normal text (level AA) and large text (level AAA)</label> <span id="Q3A3-feedback"> </span><br> 
                 <input type="button" value="Check" onclick="sendmcq('Q3')"><br>
 		</form>
 		<script id="Q3-answers" type="application/json"> 
-		[ 	{ "ansid":"Q3A1", "answer": "Large text (level AA)", "feedback": "Incorrect.", "result": ""  } ,	{ "ansid":"Q3A2", "answer": "Normal text (level AAA)", "feedback": "Incorrect.", "result": ""  } ,	{ "ansid":"Q3A3", "answer": "Normal text (level AA) and large text (level AAA)", "feedback": "That's right!", "result": "correct"  } 
+		[ 	{ "ansid":"Q3A1", "answer": "Large text (level AA)", "feedback": "Incorrect.", "result": ""  } ,	{ "ansid":"Q3A2", "answer": "Normal text (level AAA)", "feedback": "Incorrect.", "result": ""  } ,	{ "ansid":"Q3A3", "answer": "Normal text (level AA) and large text (level AAA)", "feedback": "That's right! 🎉", "result": "correct"  } 
 	]
 	</script>
 
@@ -117,11 +116,11 @@ From the two excerpts, please answer the following questions:
 		  <p class="admonition-title">MCQ</p>
                 <p>From the WCAG, 7:1 is the minimum colour ratio requirement for:</p>
 		<form name=Q4 id="Q4" data-component="colour-contrast">
-		<input type="checkbox" id="Q4A1" value=""><label for="Q4A1">Large text (level AA)</label> <span id="Q4A1-feedback"> </span><br> 		<input type="checkbox" id="Q4A2" value="correct"><label for="Q4A2">Normal text (level AAA)</label> <span id="Q4A2-feedback"> </span><br> 		<input type="checkbox" id="Q4A3" value=""><label for="Q4A3">Normal text (level AA) and large text (level AAA)</label> <span id="Q4A3-feedback"> </span><br> 
+		<input type="radio" name="Q4" id="Q4A1">	<label for="Q4A1">Large text (level AA)</label> <span id="Q4A1-feedback"> </span><br> 		<input type="radio" name="Q4" id="Q4A2">	<label for="Q4A2">Normal text (level AAA)</label> <span id="Q4A2-feedback"> </span><br> 		<input type="radio" name="Q4" id="Q4A3">	<label for="Q4A3">Normal text (level AA) and large text (level AAA)</label> <span id="Q4A3-feedback"> </span><br> 
                 <input type="button" value="Check" onclick="sendmcq('Q4')"><br>
 		</form>
 		<script id="Q4-answers" type="application/json"> 
-		[ 	{ "ansid":"Q4A1", "answer": "Large text (level AA)", "feedback": "Incorrect.", "result": ""  } ,	{ "ansid":"Q4A2", "answer": "Normal text (level AAA)", "feedback": "That's right!", "result": "correct"  } ,	{ "ansid":"Q4A3", "answer": "Normal text (level AA) and large text (level AAA)", "feedback": "Incorrect.", "result": ""  } 
+		[ 	{ "ansid":"Q4A1", "answer": "Large text (level AA)", "feedback": "Incorrect.", "result": ""  } ,	{ "ansid":"Q4A2", "answer": "Normal text (level AAA)", "feedback": "That's right! 🎉", "result": "correct"  } ,	{ "ansid":"Q4A3", "answer": "Normal text (level AA) and large text (level AAA)", "feedback": "Incorrect.", "result": ""  } 
 	]
 	</script>
 
@@ -154,6 +153,10 @@ Colour contrast in Adee
 Adee allows you to modify either of the two selected colours on the spot and immediately see if the contrast standards are met.
 Selecting the "Apply" button saves the changes in Adee to the actual Figma object.
 
+.. Tip:: Don't forget colour contrast must be between TWO colours.
+     Unlike Adee's other functionalities, two elements must be selected in Figma.
+     Either click and drag over both elements or whilst holding shift, click one then the other.
+
 -----------
 Adee task 5
 -----------
@@ -175,7 +178,7 @@ Adee task 5
    <p class="admonition-title">Adee task rating</p>
    Rate the difficulty of Adee task 5
    <form id = "C5" data-component="colour-contrast">
-      Extremely difficult
+      Extremely difficult 1
    <input type="radio" name="C5" id="C5A1">
    <input type="radio" name="C5" id="C5A2">
    <input type="radio" name="C5" id="C5A3">
@@ -183,8 +186,9 @@ Adee task 5
    <input type="radio" name="C5" id="C5A5">
    <input type="radio" name="C5" id="C5A6">
    <input type="radio" name="C5" id="C5A7">
-   Extremely easy
+   7 Extremely easy
    <input type="button" value="Submit" onclick="sendlikseven('C5','colour-contrast')"><br>
+   <p id="C5-feedback"></p>
    </form>
    </div>
    </div>
@@ -196,12 +200,12 @@ Adee task 6
 
 .. admonition:: Adee task 6
 
-     Check the colour contrast of a button.
+     Check the colour contrast of two columns in a chart.
 
      1. In task 6, select the two columns with labels "Jan" and "Feb"
      2. Open the Adee plugin to "Contrast Checker tool"
      3. Check the contrast of the columns
-     4. Do you think the chart should be improved? Please explain your answer
+     4. Changing the colours changes the data the chart is displaying. Can you think of any other way to improve the chart?
      5. Close the plugin
 
 .. raw:: html
@@ -211,7 +215,7 @@ Adee task 6
    <p class="admonition-title">Adee task rating</p>
    Rate the difficulty of Adee task 6
    <form id = "C6" data-component="colour-contrast">
-      Extremely difficult
+      Extremely difficult 1
    <input type="radio" name="C6" id="C6A1">
    <input type="radio" name="C6" id="C6A2">
    <input type="radio" name="C6" id="C6A3">
@@ -219,8 +223,9 @@ Adee task 6
    <input type="radio" name="C6" id="C6A5">
    <input type="radio" name="C6" id="C6A6">
    <input type="radio" name="C6" id="C6A7">
-   Extremely easy
+   7 Extremely easy
    <input type="button" value="Submit" onclick="sendlikseven('C6','colour-contrast')"><br>
+   <p id="C6-feedback"></p>
    </form>
    </div>
    </div>
@@ -233,14 +238,15 @@ Adee task 6
    <p class="admonition-title">Knowledge self-rating</p>
    How well do you understand colour contrast?
    <form id = "C7" data-component="colour-contrast">
-      Never heard of it
+      Never heard of it 1️⃣
    <input type="radio" name="C7" id="C7A1">
    <input type="radio" name="C7" id="C7A2">
    <input type="radio" name="C7" id="C7A3">
    <input type="radio" name="C7" id="C7A4">
    <input type="radio" name="C7" id="C7A5">
-   Could explain it to a friend
+   5️⃣ Could explain it to a friend
    <input type="button" value="Submit" onclick="sendlik('C7','colour-contrast')"><br>
+   <p class="likert-feedback" id="C7-feedback"></p>
    </form>
    </div>
    </div>

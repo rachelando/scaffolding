@@ -128,10 +128,10 @@
 <li class="toctree-l1"><a class="reference internal" href="0b-olm.html">Showing your progress</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Knowledge self-ratings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="0d-think-aloud.html">Thinking aloud</a></li>
-<li class="toctree-l1"><a class="reference internal" href="1-accessibility.html">Accessibility introduction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2a-wcag.html">Accessibility guidelines</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2b-in-practice.html">Accessibility in practice</a></li>
-<li class="toctree-l1"><a class="reference internal" href="3-target-size.html">Touch target size</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1-accessibility.html">Accessibility introduction ❓ ❓</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2a-wcag.html">Accessibility guidelines 2️⃣ ❓</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2b-in-practice.html">Accessibility in practice 2️⃣ ✅</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3-target-size.html">2️⃣ Touch target size ✅</a></li>
 <li class="toctree-l1"><a class="reference internal" href="4-alt-text.html">Alternative (alt) text</a></li>
 <li class="toctree-l1"><a class="reference internal" href="5-colour-general.html">Designing with colour</a></li>
 <li class="toctree-l1"><a class="reference internal" href="6-cvd.html">Colour vision deficiency</a></li>
@@ -152,6 +152,9 @@
 <li class="toctree-l1"><a class="reference internal" href="0b-olm.html">✅ Full marks</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Self-ratings key:</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="0b-olm.html">❓ Not started</a></li>
+</ul>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="0b-olm.html">1️⃣ Never heard of it</a></li>
 </ul>
@@ -319,23 +322,24 @@ document.write(`
 </script><section id="knowledge-self-ratings">
 <h1>Knowledge self-ratings<a class="headerlink" href="#knowledge-self-ratings" title="Permalink to this heading"><span>#</span></a></h1>
 <p>Please fill out the all the ratings below.
-This is only used to gauge your understanding of accessibility and it’s not at all a test so please answer as honestly as possible.</p>
+This is only used to gauge your understanding of accessibility and it’s not at all a test so please answer as honestly as possible.
+Don’t forget to submit each of your answers.</p>
 <blockquote>
 <div><p>Confidence self-ratings:</p>
 <dl class="field-list simple">
-<dt class="field-odd">1<span class="colon">:</span></dt>
+<dt class="field-odd">1️⃣<span class="colon">:</span></dt>
 <dd class="field-odd"><p>Never heard of it</p>
 </dd>
-<dt class="field-even">2<span class="colon">:</span></dt>
+<dt class="field-even">2️⃣<span class="colon">:</span></dt>
 <dd class="field-even"><p>Know very little</p>
 </dd>
-<dt class="field-odd">3<span class="colon">:</span></dt>
+<dt class="field-odd">3️⃣<span class="colon">:</span></dt>
 <dd class="field-odd"><p>Know a fair amount</p>
 </dd>
-<dt class="field-even">4<span class="colon">:</span></dt>
+<dt class="field-even">4️⃣<span class="colon">:</span></dt>
 <dd class="field-even"><p>Know/understand quite well</p>
 </dd>
-<dt class="field-odd">5<span class="colon">:</span></dt>
+<dt class="field-odd">5️⃣<span class="colon">:</span></dt>
 <dd class="field-odd"><p>Could explain it to a friend</p>
 </dd>
 </dl>
@@ -343,121 +347,133 @@ This is only used to gauge your understanding of accessibility and it’s not at
 <div class="admonition caution"><br>
 <div class="likert">
 <p class="admonition-title">Knowledge self-rating</p>
-1. How well do you understand what accessibility is and why it's important?
+1. How well do you understand the basics of what accessibility is and why it's important?
 <form id = "C1" data-component="accessibility-intro">
-   Never heard of it
+   Never heard of it 1️⃣
 <input type="radio" name="C1" id="C1A1">
 <input type="radio" name="C1" id="C1A2">
 <input type="radio" name="C1" id="C1A3">
 <input type="radio" name="C1" id="C1A4">
 <input type="radio" name="C1" id="C1A5">
-Could explain it to a friend
+5️⃣ Could explain it to a friend
 <input type="button" value="Submit" onclick="sendlik('C1','accessibility-intro')"><br>
+<p class="likert-feedback" id="C1-feedback"></p>
 </form>
 </div>
-</div><div class="admonition caution"><br>
+</div><div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Did you notice the self-rating symbol change on the left menu after you pressed submit?</p>
+</div>
+<div class="admonition caution"><br>
 <div class="likert">
 <p class="admonition-title">Knowledge self-rating</p>
-How well do you understand the WCAG?
+2. How well do you understand the WCAG?
 <form id = "C2" data-component="wcag">
-   Never heard of it
+   Never heard of it 1️⃣
 <input type="radio" name="C2" id="C2A1">
 <input type="radio" name="C2" id="C2A2">
 <input type="radio" name="C2" id="C2A3">
 <input type="radio" name="C2" id="C2A4">
 <input type="radio" name="C2" id="C2A5">
-Could explain it to a friend
+5️⃣ Could explain it to a friend
 <input type="button" value="Submit" onclick="sendlik('C2','wcag')"><br>
+<p class="likert-feedback" id="C2-feedback"></p>
 </form>
 </div>
 </div><div class="admonition caution"><br>
 <div class="likert">
 <p class="admonition-title">Knowledge self-rating</p>
-2. How well do you understand accessibility in design practice?
+3. How well do you understand accessibility in design practice?
 <form id = "C3" data-component="in-practice">
-   Never heard of it
+   Never heard of it 1️⃣
 <input type="radio" name="C3" id="C3A1">
 <input type="radio" name="C3" id="C3A2">
 <input type="radio" name="C3" id="C3A3">
 <input type="radio" name="C3" id="C3A4">
 <input type="radio" name="C3" id="C3A5">
-Could explain it to a friend
+5️⃣ Could explain it to a friend
 <input type="button" value="Submit" onclick="sendlik('C3','in-practice')"><br>
+<p class="likert-feedback" id="C3-feedback"></p>
 </form>
 </div>
 </div><div class="admonition caution"><br>
 <div class="likert">
 <p class="admonition-title">Knowledge self-rating</p>
-3. How well do you understand target size?
+4. How well do you understand target size?
 <form id = "C4" data-component="target-size">
-   Never heard of it
+   Never heard of it 1️⃣
 <input type="radio" name="C4" id="C4A1">
 <input type="radio" name="C4" id="C4A2">
 <input type="radio" name="C4" id="C4A3">
 <input type="radio" name="C4" id="C4A4">
 <input type="radio" name="C4" id="C4A5">
-Could explain it to a friend
+5️⃣ Could explain it to a friend
 <input type="button" value="Submit" onclick="sendlik('C4','target-size')"><br>
+<p class="likert-feedback" id="C4-feedback"></p>
 </form>
 </div>
 </div><div class="admonition caution"><br>
 <div class="likert">
 <p class="admonition-title">Knowledge self-rating</p>
-4. How well do you understand alt text?
+5. How well do you understand alt text?
 <form id = "C5" data-component="alt-text">
-   Never heard of it
+   Never heard of it 1️⃣
 <input type="radio" name="C5" id="C5A1">
 <input type="radio" name="C5" id="C5A2">
 <input type="radio" name="C5" id="C5A3">
 <input type="radio" name="C5" id="C5A4">
 <input type="radio" name="C5" id="C5A5">
-Could explain it to a friend
+5️⃣ Could explain it to a friend
 <input type="button" value="Submit" onclick="sendlik('C5','alt-text')"><br>
+<p class="likert-feedback" id="C5-feedback"></p>
 </form>
 </div>
 </div><div class="admonition caution"><br>
 <div class="likert">
 <p class="admonition-title">Knowledge self-rating</p>
-5. How well do you understand general principles about colour and accessibility?
+6. How well do you understand general principles about colour and accessibility?
 <form id = "C6" data-component="colour-general">
-   Never heard of it
+   Never heard of it 1️⃣
 <input type="radio" name="C6" id="C6A1">
 <input type="radio" name="C6" id="C6A2">
 <input type="radio" name="C6" id="C6A3">
 <input type="radio" name="C6" id="C6A4">
 <input type="radio" name="C6" id="C6A5">
-Could explain it to a friend
+5️⃣ Could explain it to a friend
 <input type="button" value="Submit" onclick="sendlik('C6','colour-general')"><br>
+<p class="likert-feedback" id="C6-feedback"></p>
 </form>
 </div>
 </div><div class="admonition caution"><br>
 <div class="likert">
 <p class="admonition-title">Knowledge self-rating</p>
-6. How well do you understand colour vision deficiency?
+7. How well do you understand colour vision deficiency?
 <form id = "C7" data-component="cvd">
-   Never heard of it
+   Never heard of it 1️⃣
 <input type="radio" name="C7" id="C7A1">
 <input type="radio" name="C7" id="C7A2">
 <input type="radio" name="C7" id="C7A3">
 <input type="radio" name="C7" id="C7A4">
 <input type="radio" name="C7" id="C7A5">
-Could explain it to a friend
+5️⃣ Could explain it to a friend
 <input type="button" value="Submit" onclick="sendlik('C7','cvd')"><br>
+<p class="likert-feedback" id="C7-feedback"></p>
 </form>
 </div>
 </div><div class="admonition caution"><br>
 <div class="likert">
 <p class="admonition-title">Knowledge self-rating</p>
-7. How well do you understand colour contrast?
+8. How well do you understand colour contrast?
 <form id = "C8" data-component="colour-contrast">
-   Never heard of it
+   Never heard of it 1️⃣
 <input type="radio" name="C8" id="C8A1">
 <input type="radio" name="C8" id="C8A2">
 <input type="radio" name="C8" id="C8A3">
 <input type="radio" name="C8" id="C8A4">
 <input type="radio" name="C8" id="C8A5">
-Could explain it to a friend
+5️⃣ Could explain it to a friend
 <input type="button" value="Submit" onclick="sendlik('C8','colour-contrast')"><br>
+<p class="likert-feedback" id="C8-feedback"></p>
 </form>
 </div>
 </div></section>
