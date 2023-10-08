@@ -45,6 +45,13 @@ Having good colour contrast ensures that people with **low vision** are able to 
 It also helps when viewing a screen in bright sunlight.
 This is a good example of accessibility helping everyone, not just people with disabilities.
 
+The W3C video below further shows the importance of good colour contrast.
+
+.. raw:: html
+
+      <div>   <iframe align="left" width="500" height="281" src="https://www.youtube.com/embed/Hui87z2Vx8o" frameborder="0"  allowfullscreen></iframe>
+ </div><br> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+
 -----------------------------
 Colour ratios and the WCAG
 -----------------------------

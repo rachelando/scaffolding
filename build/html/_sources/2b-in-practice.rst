@@ -56,7 +56,7 @@ Accessible design tools like Adee
 
 .. image:: Images/Adee-logo.png
     :alt: Adee logo
-    :width: 4cm
+    :width: 3cm
     :align: center
 
 Accessibility support should be **incorporated into the tools that web designers use daily**.
@@ -92,6 +92,16 @@ Starting Adee
 
     We will come back to Adee soon.
 
+--------------------
+Ability-based design
+--------------------
+
+While designing for accessibility it is better not to have in mind, "What disability does a person have?" but rather, **"What can a person do?"**
+This is known as **ability-based design** [#]_.
+In ability-based design, computer systems are made to fit whoever uses them, rather than the other way round.
+Shifting our thinking away from disability to *ability* helps us see the **wide range** of abilities, needs and preferences we get to design for.
+Only designing with a user like yourself in mind ultimately means your design won't be helpful for many people.
+
 .. raw:: html
 
    <div class="admonition caution"><br>
@@ -114,3 +124,4 @@ Starting Adee
 
 
 .. [#] `WebAIM (2023) <https://webaim.org/projects/million/>`_
+.. [#] `Wobbrock, Kane, Gajos, Harada, & Froehlich. 2011. Ability-Based Design: Concept, Principles and Examples. ACM Trans. Access. Comput. <https://doi.org/10.1145/1952383.1952384>`_
