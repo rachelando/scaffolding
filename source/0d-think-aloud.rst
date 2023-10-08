@@ -13,7 +13,7 @@ In this study we aim to understand your experience using EarlyAccess and the Ade
 We ask you to use EarlyAccess and Adee while **continuously thinking out loud**.
 That is, simply verbalising your thoughts as you read through each section, answer questions AND while using Adee in Figma.
 
-Here is an example of thinking aloud:
+Please watch this example of thinking aloud:
 
 .. raw:: html
 

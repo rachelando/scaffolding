@@ -13,7 +13,7 @@ Colour contrast
 Colour contrast and its importance
 -------------------------------------
 
-Put simply, colour contrast is how different one colour is from another colour.
+Put simply, colour contrast is **how different one colour is from another colour**.
 Measuring colour contrast requires **2 colours** to be compared against each other.
 Colour contrast is particularly important for text and other essential elements.
 
@@ -49,10 +49,9 @@ This is a good example of accessibility helping everyone, not just people with d
 Colour ratios and the WCAG
 -----------------------------
 
-What are the WCAG guidelines on colour contrast?
 Recommendations from the WCAG for colour contrast differ for AA and AAA levels.
 Remember that AAA level requirements are stricter than AA level requirements.
-Read the following WCAG excerpt *Success Criterion 1.4.3 Contrast (Minimum) (Level AA)*:
+Read the following excerpt from WCAG *Success Criterion 1.4.3 Contrast (Minimum) (Level AA)*:
 
     The visual presentation of text and images of text has a contrast ratio of at least 4.5:1, except for the following:
 
@@ -67,8 +66,6 @@ Read the following WCAG excerpt *Success Criterion 1.4.4 Contrast (Enhanced) (Le
     :Large Text: Large-scale text and images of large-scale text have a contrast ratio of at least 4.5:1;
 
     ...
-
-From the two excerpts, please answer the following questions:
 
 .. raw:: html
 
@@ -130,9 +127,11 @@ From the two excerpts, please answer the following questions:
 Important non-text information such as **graphics** have the same WCAG contrast requirements as large text.
 That is, graphics should have a contrast ratio of 3:1 for level AA and 4.5:1 for level AAA.
 
------------------------------------
-Colour contrast vs colour blindness
------------------------------------
+----------------------------------------------
+Colour contrast vs colour blindness (optional)
+----------------------------------------------
+
+.. Note:: This subsection is optional. Feel free to skip to the `next subheading <#colour-contrast-in-adee>`_.
 
 It is easy to get confused between colour blindness and colour contrast since they are both related to colour.
 But it's important to remember colour blindness is related to the **hues** of colours (e.g., red, yellow) and colour contrast is related to the **luminance** (or brightness of colours).
@@ -158,14 +157,14 @@ Selecting the "Apply" button saves the changes in Adee to the actual Figma objec
      Either click and drag over both elements or whilst holding shift, click one then the other.
 
 -----------
-Adee task 5
+Adee task 6
 -----------
 
-.. admonition:: Adee task 5
+.. admonition:: Adee task 6
 
      Check the colour contrast of a button.
 
-     1. Select the text and its background in task 5
+     1. Select the text and its background in task 6
      2. Open the Adee plugin to "Contrast Checker tool"
      3. Check the contrast of the button text and its background
      4. Adjust the colours to meet AAA level standards
@@ -176,7 +175,7 @@ Adee task 5
    <div class="admonition-adee-task-likert admonition"><br>
    <div class="likert">
    <p class="admonition-title">Adee task rating</p>
-   Rate the difficulty of Adee task 5
+   Rate the difficulty of Adee task 6
    <form id = "C5" data-component="colour-contrast">
       Extremely difficult 1
    <input type="radio" name="C5" id="C5A1">
@@ -195,25 +194,22 @@ Adee task 5
 
 
 -----------
-Adee task 6
+Adee task 7
 -----------
 
-.. admonition:: Adee task 6
+.. admonition:: Adee task 7
 
-     Check the colour contrast of two columns in a chart.
+     Check the colour contrast in a chart.
 
-     1. In task 6, select the two columns with labels "Jan" and "Feb"
-     2. Open the Adee plugin to "Contrast Checker tool"
-     3. Check the contrast of the columns
-     4. Changing the colours changes the data the chart is displaying. Can you think of any other way to improve the chart?
-     5. Close the plugin
+     Suppose you want to determine if the colour contrast between the two colours used in the bar graph under task 7 meet AA level standards.
+     How would you do that?
 
 .. raw:: html
 
    <div class="admonition-adee-task-likert admonition"><br>
    <div class="likert">
    <p class="admonition-title">Adee task rating</p>
-   Rate the difficulty of Adee task 6
+   Rate the difficulty of Adee task 7
    <form id = "C6" data-component="colour-contrast">
       Extremely difficult 1
    <input type="radio" name="C6" id="C6A1">

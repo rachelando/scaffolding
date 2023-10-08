@@ -27,24 +27,24 @@ There are **different types** of CVD.
 Have a look at the following image.
 
 .. image:: Images/normal-vision.jpeg
-   :alt: Several silver bowls filled with powders of different bright colours
-   :width: 10cm
-   :align: center
+    :alt: Several silver bowls filled with powders of different bright colours
+    :width: 10cm
+    :align: center
 
 Below shows how people with different types of colour blindness would perceive the same image.
 
 .. image:: Images/colour-blindness.png
-   :alt: Four CVD types' perception of several silver bowls filled with powders of different bright colours
-   :width: 20cm
-   :align: center
+    :alt: Four CVD types' perception of several silver bowls filled with powders of different bright colours
+    :width: 20cm
+    :align: center
 
 From left to right, the corresponding CVD types are: deuteranopia, protoanopia, tritanopia, and achromatopsia.
 We will learn more about each of these and more shortly.
 
 .. image:: Images/adee-cvd-types.png
-   :alt: Screenshot of Adee's CVD types
-   :width: 7cm
-   :align: center
+    :alt: Screenshot of Adee's CVD types
+    :width: 7cm
+    :align: center
 
 .. raw:: html
 
@@ -98,9 +98,11 @@ The table below shows a summary of these different types.
 	</div>
 	</div>
 
------------------
-CVD in web design
------------------
+----------------------------
+CVD in web design (optional)
+----------------------------
+
+.. Note:: This subsection is optional. Feel free to skip to the `next subheading <#adee-task-4>`_.
 
 As mentioned previously, it's important to not only use colour to communicate key information.
 Otherwise people with CVD miss this information.
@@ -108,18 +110,18 @@ An example [#]_ of this is below.
 Notice how people with deuteranopia would find it difficult to use the key and only see 4 categories in the chart rather than 6.
 
 .. image:: Images/poor-colour.png
-   :alt: Fictional pie chart showcasing poor accessible design for people with CVD
-   :width: 15cm
-   :align: center
+    :alt: Fictional pie chart showcasing poor accessible design for people with CVD
+    :width: 15cm
+    :align: center
 
 But this doesn't mean that colour must be avoided entirely.
 Instead, use other indicators as well as colour such as spacing, borders, patterns, and labels.
 Below is an improved version of the same chart.
 
 .. image:: Images/good-colour.png
-   :alt: Fictional pie chart showcasing good accessible design for people with CVD
-   :width: 15cm
-   :align: center
+    :alt: Fictional pie chart showcasing good accessible design for people with CVD
+    :width: 15cm
+    :align: center
 
 .. raw:: html
 
@@ -146,13 +148,13 @@ Adee task 4
 
 .. admonition:: Adee task 4
 
-     Check the accessibility of a chart for colour vision deficiency.
+    Check the accessibility of a chart for colour vision deficiency.
 
-     1. Select the chart image under Task 4
-     2. Open the Adee plugin to "Colorblind Simulator tool"
-     3. Check the chart image's colour against the "Tritanopia" colour blind type
-     4. Based on this result, do you think the chart's colours should be improved? Please explain your answer
-     5. Close the plugin
+    1. Select the chart image under Task 4
+    2. Open the Adee plugin to "Colorblind Simulator tool"
+    3. Check the chart image's colour against the "Protanopia" colour blind type
+    4. Based on this result, do you think the chart's colours should be improved? Please explain your answer
+    5. Close the plugin
 
 .. raw:: html
 
@@ -177,22 +179,56 @@ Adee task 4
    </div>
 
 
+-----------
+Adee task 5
+-----------
+
+.. admonition:: Adee task 5
+
+    Check the accessibility of a chart for colour vision deficiency.
+
+    Suppose you want to check if the graph under task 5 is accessible for people with Tritanopia.
+    How would you do that?
+
+.. raw:: html
+
+   <div class="admonition-adee-task-likert admonition"><br>
+   <div class="likert">
+   <p class="admonition-title">Adee task rating</p>
+   Rate the difficulty of Adee task 5
+   <form id = "C5" data-component="cvd">
+      Extremely difficult 1
+   <input type="radio" name="C5" id="C5A1">
+   <input type="radio" name="C5" id="C5A2">
+   <input type="radio" name="C5" id="C5A3">
+   <input type="radio" name="C5" id="C5A4">
+   <input type="radio" name="C5" id="C5A5">
+   <input type="radio" name="C5" id="C5A6">
+   <input type="radio" name="C5" id="C5A7">
+   7 Extremely easy
+   <input type="button" value="Submit" onclick="sendlikseven('C5','cvd')"><br>
+   <p id="C5-feedback"></p>
+   </form>
+   </div>
+   </div>
+
+
 .. raw:: html
 
    <div class="admonition caution"><br>
    <div class="likert">
    <p class="admonition-title">Knowledge self-rating</p>
    How well do you understand colour vision deficiency?
-   <form id = "C5" data-component="cvd">
+   <form id = "C6" data-component="cvd">
       Never heard of it 1️⃣
-   <input type="radio" name="C5" id="C5A1">
-   <input type="radio" name="C5" id="C5A2">
-   <input type="radio" name="C5" id="C5A3">
-   <input type="radio" name="C5" id="C5A4">
-   <input type="radio" name="C5" id="C5A5">
+   <input type="radio" name="C6" id="C6A1">
+   <input type="radio" name="C6" id="C6A2">
+   <input type="radio" name="C6" id="C6A3">
+   <input type="radio" name="C6" id="C6A4">
+   <input type="radio" name="C6" id="C6A5">
    5️⃣ Could explain it to a friend
-   <input type="button" value="Submit" onclick="sendlik('C5','cvd')"><br>
-   <p class="likert-feedback" id="C5-feedback"></p>
+   <input type="button" value="Submit" onclick="sendlik('C6','cvd')"><br>
+   <p class="likert-feedback" id="C6-feedback"></p>
    </form>
    </div>
    </div>

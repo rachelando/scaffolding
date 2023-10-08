@@ -128,10 +128,10 @@
 <li class="toctree-l1"><a class="reference internal" href="0b-olm.html">Showing your progress</a></li>
 <li class="toctree-l1"><a class="reference internal" href="0c-initial-ratings.html">Knowledge self-ratings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="0d-think-aloud.html">Thinking aloud</a></li>
-<li class="toctree-l1"><a class="reference internal" href="1-accessibility.html">Accessibility introduction ❓ ❓</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2a-wcag.html">Accessibility guidelines 2️⃣ ❓</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2b-in-practice.html">Accessibility in practice 2️⃣ ✅</a></li>
-<li class="toctree-l1"><a class="reference internal" href="3-target-size.html">2️⃣ Touch target size ✅</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1-accessibility.html">Accessibility introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2a-wcag.html">Accessibility guidelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2b-in-practice.html">Accessibility in practice</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3-target-size.html">Touch target size</a></li>
 <li class="toctree-l1"><a class="reference internal" href="4-alt-text.html">Alternative (alt) text</a></li>
 <li class="toctree-l1"><a class="reference internal" href="5-colour-general.html">Designing with colour</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Colour vision deficiency</a></li>
@@ -317,8 +317,9 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-colour-vision-deficiency-cvd">What is colour vision deficiency (CVD)?</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-cvd">Types of CVD</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cvd-in-web-design">CVD in web design</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cvd-in-web-design-optional">CVD in web design (optional)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#adee-task-4">Adee task 4</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#adee-task-5">Adee task 5</a></li>
 </ul>
             </nav>
         </div>
@@ -434,8 +435,12 @@ We will learn more about each of these and more shortly.</p>
 
 </div>
 </div></section>
-<section id="cvd-in-web-design">
-<h2>CVD in web design<a class="headerlink" href="#cvd-in-web-design" title="Permalink to this heading"><span>#</span></a></h2>
+<section id="cvd-in-web-design-optional">
+<h2>CVD in web design (optional)<a class="headerlink" href="#cvd-in-web-design-optional" title="Permalink to this heading"><span>#</span></a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This subsection is optional. Feel free to skip to the <a class="reference external" href="#adee-task-4">next subheading</a>.</p>
+</div>
 <p>As mentioned previously, it’s important to not only use colour to communicate key information.
 Otherwise people with CVD miss this information.
 An example <a class="footnote-reference brackets" href="#id4" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a> of this is below.
@@ -468,7 +473,7 @@ Below is an improved version of the same chart.</p>
 <ol class="arabic simple">
 <li><p>Select the chart image under Task 4</p></li>
 <li><p>Open the Adee plugin to “Colorblind Simulator tool”</p></li>
-<li><p>Check the chart image’s colour against the “Tritanopia” colour blind type</p></li>
+<li><p>Check the chart image’s colour against the “Protanopia” colour blind type</p></li>
 <li><p>Based on this result, do you think the chart’s colours should be improved? Please explain your answer</p></li>
 <li><p>Close the plugin</p></li>
 </ol>
@@ -491,20 +496,47 @@ Rate the difficulty of Adee task 4
 <p id="C4-feedback"></p>
 </form>
 </div>
-</div><div class="admonition caution"><br>
+</div></section>
+<section id="adee-task-5">
+<h2>Adee task 5<a class="headerlink" href="#adee-task-5" title="Permalink to this heading"><span>#</span></a></h2>
+<div class="admonition-adee-task-5 admonition">
+<p class="admonition-title">Adee task 5</p>
+<p>Check the accessibility of a chart for colour vision deficiency.</p>
+<p>Suppose you want to check if the graph under task 5 is accessible for people with Tritanopia.
+How would you do that?</p>
+</div>
+<div class="admonition-adee-task-likert admonition"><br>
 <div class="likert">
-<p class="admonition-title">Knowledge self-rating</p>
-How well do you understand colour vision deficiency?
+<p class="admonition-title">Adee task rating</p>
+Rate the difficulty of Adee task 5
 <form id = "C5" data-component="cvd">
-   Never heard of it 1️⃣
+   Extremely difficult 1
 <input type="radio" name="C5" id="C5A1">
 <input type="radio" name="C5" id="C5A2">
 <input type="radio" name="C5" id="C5A3">
 <input type="radio" name="C5" id="C5A4">
 <input type="radio" name="C5" id="C5A5">
+<input type="radio" name="C5" id="C5A6">
+<input type="radio" name="C5" id="C5A7">
+7 Extremely easy
+<input type="button" value="Submit" onclick="sendlikseven('C5','cvd')"><br>
+<p id="C5-feedback"></p>
+</form>
+</div>
+</div><div class="admonition caution"><br>
+<div class="likert">
+<p class="admonition-title">Knowledge self-rating</p>
+How well do you understand colour vision deficiency?
+<form id = "C6" data-component="cvd">
+   Never heard of it 1️⃣
+<input type="radio" name="C6" id="C6A1">
+<input type="radio" name="C6" id="C6A2">
+<input type="radio" name="C6" id="C6A3">
+<input type="radio" name="C6" id="C6A4">
+<input type="radio" name="C6" id="C6A5">
 5️⃣ Could explain it to a friend
-<input type="button" value="Submit" onclick="sendlik('C5','cvd')"><br>
-<p class="likert-feedback" id="C5-feedback"></p>
+<input type="button" value="Submit" onclick="sendlik('C6','cvd')"><br>
+<p class="likert-feedback" id="C6-feedback"></p>
 </form>
 </div>
 </div><aside class="footnote-list brackets">
@@ -570,8 +602,9 @@ How well do you understand colour vision deficiency?
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-colour-vision-deficiency-cvd">What is colour vision deficiency (CVD)?</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-cvd">Types of CVD</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cvd-in-web-design">CVD in web design</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cvd-in-web-design-optional">CVD in web design (optional)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#adee-task-4">Adee task 4</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#adee-task-5">Adee task 5</a></li>
 </ul>
   </nav></div>
 

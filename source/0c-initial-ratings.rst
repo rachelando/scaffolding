@@ -11,7 +11,6 @@ Knowledge self-ratings
 
 Please fill out the all the ratings below.
 This is only used to gauge your understanding of accessibility and it's not at all a test so please answer as honestly as possible.
-Don't forget to submit each of your answers.
 
     Confidence self-ratings:
 
@@ -20,6 +19,8 @@ Don't forget to submit each of your answers.
     :3️⃣: Know a fair amount
     :4️⃣: Know/understand quite well
     :5️⃣: Could explain it to a friend
+
+.. Attention:: Don't forget to submit each of your answers.
 
 .. raw:: html
 
@@ -133,7 +134,7 @@ Don't forget to submit each of your answers.
    <div class="admonition caution"><br>
    <div class="likert">
    <p class="admonition-title">Knowledge self-rating</p>
-   6. How well do you understand general principles about colour and accessibility?
+   6. How well do you understand basic general principles about colour and accessibility?
    <form id = "C6" data-component="colour-general">
       Never heard of it 1️⃣
    <input type="radio" name="C6" id="C6A1">

@@ -1,7 +1,7 @@
 
 .. page::scaffolding:accessibility-intro
 
-Accessibility introduction ❓ ❓
+Accessibility introduction
 ::::::::::::::::::::::::::::::::::
 
 ----------------------
@@ -9,7 +9,6 @@ What is accessibility?
 ----------------------
 
 Web accessibility means that websites, tools, and technologies are designed and developed **so that people with disabilities can use them** [#]_. 
-This includes questions like, "How would someone with blindness or low vision understand the content of this webpage?" or "Is this button large enough for someone with low motor skills to be able to click it easily?"
 
 .. mcq:accessibility-intro:Which of these user groups is <b>NOT</b> related to accessibility?
      :People with low vision:Incorrect, that IS related to accessibility.
@@ -41,7 +40,7 @@ Accessibility also drives innovation and minimises legal risks. Therefore, acces
      :Accessibility also helps other user groups:Incorrect, that IS a motivation.
      :Accessibility has a good business case:Incorrect, that IS a motivation.
      :Accessibility helps everyone:Incorrect, that IS a motivation.
-     correct:Accessibility requires no extra effort for designers:That's right! 🎉 That is NOT a motivation.
+     correct:Accessibility requires no extra effort for designers:That's right! 🎉 That is not true so it is NOT a motivation.
 
 .. likert::accessibility-intro:How well do you understand the basics of what accessibility is and why it's important?
    Never heard of it 1️⃣:5️⃣ Could explain it to a friend

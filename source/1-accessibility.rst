@@ -6,7 +6,7 @@
    </script>
 
 
-Accessibility introduction ❓ ❓
+Accessibility introduction
 ::::::::::::::::::::::::::::::::::
 
 ----------------------
@@ -14,7 +14,6 @@ What is accessibility?
 ----------------------
 
 Web accessibility means that websites, tools, and technologies are designed and developed **so that people with disabilities can use them** [#]_.
-This includes questions like, "How would someone with blindness or low vision understand the content of this webpage?" or "Is this button large enough for someone with low motor skills to be able to click it easily?"
 
 .. raw:: html
 
@@ -67,7 +66,7 @@ Accessibility also drives innovation and minimises legal risks. Therefore, acces
                 <input type="button" value="Check" onclick="sendmcq('Q2')"><br>
 		</form>
 		<script id="Q2-answers" type="application/json"> 
-		[ 	{ "ansid":"Q2A1", "answer": "Accessibility also helps other user groups", "feedback": "Incorrect, that IS a motivation.", "result": ""  } ,	{ "ansid":"Q2A2", "answer": "Accessibility has a good business case", "feedback": "Incorrect, that IS a motivation.", "result": ""  } ,	{ "ansid":"Q2A3", "answer": "Accessibility helps everyone", "feedback": "Incorrect, that IS a motivation.", "result": ""  } ,	{ "ansid":"Q2A4", "answer": "Accessibility requires no extra effort for designers", "feedback": "That's right! 🎉 That is NOT a motivation.", "result": "correct"  } 
+		[ 	{ "ansid":"Q2A1", "answer": "Accessibility also helps other user groups", "feedback": "Incorrect, that IS a motivation.", "result": ""  } ,	{ "ansid":"Q2A2", "answer": "Accessibility has a good business case", "feedback": "Incorrect, that IS a motivation.", "result": ""  } ,	{ "ansid":"Q2A3", "answer": "Accessibility helps everyone", "feedback": "Incorrect, that IS a motivation.", "result": ""  } ,	{ "ansid":"Q2A4", "answer": "Accessibility requires no extra effort for designers", "feedback": "That's right! 🎉 That is not true so it is NOT a motivation.", "result": "correct"  } 
 	]
 	</script>
 

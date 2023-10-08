@@ -6,7 +6,6 @@ Knowledge self-ratings
 
 Please fill out the all the ratings below. 
 This is only used to gauge your understanding of accessibility and it's not at all a test so please answer as honestly as possible. 
-Don't forget to submit each of your answers. 
 
     Confidence self-ratings:
 
@@ -15,6 +14,8 @@ Don't forget to submit each of your answers.
     :3️⃣: Know a fair amount
     :4️⃣: Know/understand quite well
     :5️⃣: Could explain it to a friend
+
+.. Attention:: Don't forget to submit each of your answers. 
 
 .. likert::accessibility-intro:1. How well do you understand the basics of what accessibility is and why it's important?
    Never heard of it 1️⃣:5️⃣ Could explain it to a friend
@@ -33,7 +34,7 @@ Don't forget to submit each of your answers.
 .. likert::alt-text:5. How well do you understand alt text?
    Never heard of it 1️⃣:5️⃣ Could explain it to a friend
 
-.. likert::colour-general:6. How well do you understand general principles about colour and accessibility?
+.. likert::colour-general:6. How well do you understand basic general principles about colour and accessibility?
    Never heard of it 1️⃣:5️⃣ Could explain it to a friend
 
 .. likert::cvd:7. How well do you understand colour vision deficiency?

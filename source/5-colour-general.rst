@@ -10,14 +10,14 @@ Designing with colour
 ::::::::::::::::::::::::::::::::
 
 We saw that alt text is particularly important for blind users.
-What about users who are able to see but aren't able to distinguish between colours easily?
-Such users with low vision and colour blindness are impacted by designers' **use of colour**.
+What about users who can see but have low vision or colour blindness?
+These users are impacted by designers' **use of colour**.
 
-Users with low vision are impacted by **colour contrast** while users with colour blindness are impacted by **colour hues**.
-There will be more on this later.
+Users with **low vision** are impacted by **colour contrast** while users with **colour blindness** are impacted by **colour hues**.
+The next two modules cover both of these.
 
-Colour is complicated and difficult to get right in terms of accessibility.
-There are many factors to consider in terms of colour itself (hue, brightness, saturation) as well as user groups (low vision, different types of colour blindness).
+Colour is **complicated and difficult to get right** in terms of accessibility.
+There are many factors to consider in terms of colour itself (hue, brightness, saturation) as well as different user groups (low vision, different types of colour blindness).
 Designers have additional branding and design requirements that they must meet.
 
 Therefore, a good general approach is that colour should *not* be the only visual means of distinguishing or conveying information.
@@ -47,7 +47,7 @@ Relying only on colour means that users who aren't able to distinguish well betw
    <div class="admonition caution"><br>
    <div class="likert">
    <p class="admonition-title">Knowledge self-rating</p>
-   How well do you understand general principles about colour and accessibility?
+   How well do you understand basic general principles about colour and accessibility?
    <form id = "C2" data-component="colour-general">
       Never heard of it 1️⃣
    <input type="radio" name="C2" id="C2A1">

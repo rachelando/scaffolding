@@ -6,7 +6,7 @@
    </script>
 
 
-Accessibility guidelines 2️⃣ ❓
+Accessibility guidelines
 ::::::::::::::::::::::::::::::::
 
 ------------------------------
@@ -15,7 +15,6 @@ Accessibility guidelines: WCAG
 
 But how exactly do we decide if a website is accessible or not?
 The **WCAG 2.1** provides the most widely used accessibility guidelines.
-A crucial part of understanding web accessibility is broadly understanding the WCAG.
 WCAG stands for Web Content Accessibility Guidelines and are developed by the Web Accessibility Initiative (WAI).
 WAI is part of the World Wide Web Consortium (W3C) which provides universal standards for the web.
 
@@ -41,8 +40,8 @@ WAI is part of the World Wide Web Consortium (W3C) which provides universal stan
 Each guideline from WCAG has **criteria** that can be tested to determine whether a web design meets the guideline or not.
 For example, the Success Criterion 1.4.1 Use of Color is achieved if *“Color is not used as the only visual means of conveying information, indicating an
 action, prompting a response, or distinguishing a visual element”*.
-While meeting the WCAG criteria will prevent the vast majority of accessibility issues, the WCAG is not completely comprehensive.
-Rather, it provides a **minimum** for designers to meet and exceed and also provides many accessibility principles that can be applied across situations.
+While meeting the WCAG criteria will prevent most accessibility issues, the WCAG is not completely comprehensive.
+Rather, it provides a **minimum** for designers to meet and exceed.
 
 There are **different levels** of the WCAG.
 Read the following excerpt from the WAI:

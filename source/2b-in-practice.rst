@@ -6,7 +6,7 @@
    </script>
 
 
-Accessibility in practice 2️⃣ ✅
+Accessibility in practice
 :::::::::::::::::::::::::::::::::
 
 ------------------------
@@ -16,7 +16,8 @@ Current design practices
 Despite the availability of guidelines and resources on accessibility, **accessibility is not prioritised highly enough in practice**.
 In fact, of the top one million home pages, 96.3% had WCAG failures [#]_.
 One of the key reasons for this is that accessibility is **not incorporated early enough into the web design process**.
-Deadlines and a lack of resources mean that accessibility is often only lightly considered at the end of the process or not considered at all.
+Deadlines and a lack of resources mean that accessibility is often only lightly considered at the end of the process or not at all.
+
 By incorporating accessibility from the very beginning of web design:
 
 - the needs of people with disabilities are continually considered,
@@ -25,10 +26,9 @@ By incorporating accessibility from the very beginning of web design:
 
 - better accessibility is good for everyone.
 
-So what exactly is involved in the early stages of web design?
+So what is involved in the early stages of web design?
 Web designers create a draft version of the website that is not fully functional, called a prototype.
 They use design tools such as **Figma**, which is the tool that you will use shortly.
-
 Designs are then sent on to developers who write the actual code for the website based on the designs.
 
 .. raw:: html
@@ -59,11 +59,11 @@ Accessible design tools like Adee
     :width: 4cm
     :align: center
 
-Accessibility experts recommend that accessibility support is **incorporated into the tools that web designers use daily**.
+Accessibility support should be **incorporated into the tools that web designers use daily**.
 There are many requirements for designers to consider while designing including the design brief itself, aesthetics, company branding, marketing requirements, and many more.
 And accessibility is another crucial requirement to juggle.
-However, having in-built accessibility support in design tools helps with this.
-It helps designers to easily integrate accessibility and have access to feedback and resources without having to leave the tool and manually check WCAG requirements.
+However, in-built accessibility support in design tools helps designers to easily integrate accessibility.
+They can access to feedback and resources without having to leave the design tool and manually check WCAG requirements.
 One such accessibility tool is **Adee** which you will also use shortly.
 
 Adee also makes it easy for designers to report how well they are following accessibility guidelines.

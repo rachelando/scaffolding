@@ -1,7 +1,7 @@
 
 .. page::scaffolding:target-size
 
-2️⃣ Touch target size ✅
+Touch target size
 ::::::::::::::::::::::::::::::::
 
 --------------------------
@@ -15,15 +15,15 @@ Target size refers to **how large or small buttons or other clickable/touchable 
    :width: 18cm
    :align: center
 
+.. Note:: This is our first module about one of Adee's 4 functionalities. You will use this knowledge in action with Adee shortly. 
+
 ---------------------------------
 Touch target size in the WCAG
 ---------------------------------
 
-The following is from WCAG 2.1 Success Criterion 2.5.5: Target Size (Level AAA). 
-The WCAG can be difficult to understand but we will work through it to understand it and how to apply it. 
-Please read the following WCAG excerpt and then answer the following questions. 
+The following excerpt is from WCAG 2.1 Success Criterion 2.5.5: Target Size (Level AAA). 
 
-    The size of the target for pointer inputs is at least 44 by 44 CSS pixels except when...
+    The size of the target for pointer inputs is at least 44 by 44 CSS pixels...
 
 .. mcq:target-size:Generally, what is the minimum target size from the WCAG?
      :At least 44 mm in height:Incorrect.
@@ -31,12 +31,13 @@ Please read the following WCAG excerpt and then answer the following questions.
      :44 by 44 mm:Incorrect.
      correct:44 by 44 CSS pixels.:That's right! 🎉
 
---------------------------------------
-Why does touch target size matter?
---------------------------------------
+---------------------------------------------
+Why does touch target size matter? (optional)
+---------------------------------------------
+
+.. Note:: This subsection is optional. Feel free to skip to the `next subheading <#different-target-size-standards>`_.
 
 Here is another excerpt from WCAG 2.1 Success Criterion 2.5.5: Target Size (Level AAA). 
-Please read it then answer the following questions. 
 
     The intent of this success criteria is to ensure that target sizes are large enough for users to easily activate them, even if the user is accessing content on a small handheld touch screen device, has limited dexterity, or has trouble activating small targets for other reasons. 
     For instance, mice and similar pointing devices can be hard to use for these users, and a larger target will help them activate the target.
@@ -51,9 +52,8 @@ Please read it then answer the following questions.
 Different target size standards
 -------------------------------
 
-As well as the WCAG, there are **other important standards** for touch target size. 
-Apple and Android both have guidelines for developers as well as the Nielsen group who provide guidance on user experience. 
-However these standards are all slightly different and in different units which makes it difficult to check if all of them are fulfilled. 
+As well as the WCAG, there are **other important standards** for touch target size including Apple, Android and the Nielsen group.
+However, these standards are all slightly different and in different units which makes it difficult to check if all of them are fulfilled. 
 
 :Apple: 44 x 44 pt
 :Android: 48 x 48 dp
@@ -65,7 +65,7 @@ Adee also helps designers check whether all the standards are fulfilled **all at
 
 .. image:: Images/target-size-tables.png
    :alt: Target size standards tables from the Adee interface
-   :width: 10cm
+   :width: 9cm
    :align: center
 
 Above is a screenshot from the Adee interface. 
@@ -77,14 +77,16 @@ Device size
 -----------
 
 Minimum touch target size **depends on the device** displaying the interface. 
-Adee automatically calculates the minimum touch size depending on which device you select. 
+Adee **automatically calculates** the minimum touch size depending on which device you select. 
 It is important to check that a design fulfils the required standards for a range of devices. 
-
-.. Tip:: For elements to be shown in Adee, they must be selected in Figma. Either click or drag-select over elements to select them in Figma.
 
 -----------
 Adee task 1
 -----------
+
+Now we will put all our new knowledge about touch target size into practice with Adee... 
+
+.. Tip:: For elements to be shown in Adee, they must be selected in Figma. Either click or drag-select over elements to select them in Figma.
 
 .. admonition:: Adee task 1
 
