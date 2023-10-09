@@ -1,6 +1,6 @@
 # Accessibility Scaffolding
 
-To view the scaffolding, open **build/html/index.html** in a browser.
+To view the scaffolding, open **build/html/0a-intro.html** in a browser.
 
 To render all pages, run: `bash doall`.
 
