@@ -7,5 +7,5 @@ To render all pages, run: `bash doall`.
 To log activities and run the OLM, navigate to the directory **server**, and run `node server.js`.
 The server uses http://localhost:3000.
 
-- Logged data is locally saved in **ScaffoldingLoggedData.csv**. 
+- Logged data is saved locally in **ScaffoldingLoggedData.csv**. 
 - The OLM is saved locally in **olm.json**.
