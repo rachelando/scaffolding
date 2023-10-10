@@ -15,8 +15,6 @@ A **screen reader** is an assistive technology that reads text aloud (or uses br
 But how are images and other non-text content communicated? 
 This brings us to alternative text, or **alt text** for short. 
 For images to be accessible, the website must also contain a **short text description of the image** (up to 125 characters) that can be read by screen readers. 
-Alt text is also displayed if images fail to load and helps search engines accurately understand image content. 
-This is another example of accessibility being good for everyone. 
 
 The W3C video below further shows the importance of alt text. 
 

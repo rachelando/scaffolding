@@ -42,8 +42,6 @@ Colour contrast is particularly important for text and other essential elements.
 	</div>
 
 Having good colour contrast ensures that people with **low vision** are able to see elements clearly.
-It also helps when viewing a screen in bright sunlight.
-This is a good example of accessibility helping everyone, not just people with disabilities.
 
 The W3C video below further shows the importance of good colour contrast.
 
