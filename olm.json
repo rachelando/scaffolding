@@ -23,8 +23,7 @@
 		"self-rating": "not-started",
 		"mcq": {
 			"Q1": "not-started",
-			"Q2": "not-started",
-			"Q3": "not-started"
+			"Q2": "not-started"
 		}
 	},
 	"alt-text": {
@@ -58,7 +57,7 @@
 	},
 	"quiz": {
 		"mcq": {
-			"Q1": false,
+			"Q1": "not-started",
 			"Q2": "not-started",
 			"Q3": "not-started",
 			"Q4": "not-started",
