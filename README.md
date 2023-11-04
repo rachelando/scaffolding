@@ -24,4 +24,4 @@ In **olm-presets/olm-sample.json**, self-ratings and MCQs are set to sample valu
 - **build/html/_static/ebook.js** facilitates dynamic content: MCQs, topic self-ratings, and Adee SEQs. This was primarily written by Professor Bob Kummerfeld and was extended to use APIs defined in the Node.js server for EarlyAccess.
 - **source/conf.py** is the Sphinx configuration file. Here, the Book theme was configured for use for EarlyAccess. 
 
-EarlyAccess makes use of the [Book theme](https://sphinx-themes.org/sample-sites/sphinx-book-theme/) from [sphinx-themes.org].
+EarlyAccess makes use of the [Book theme](https://sphinx-themes.org/sample-sites/sphinx-book-theme/) from [sphinx-themes.org](sphinx-themes.org).
