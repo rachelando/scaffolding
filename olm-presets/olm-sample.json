@@ -7,10 +7,10 @@
 		}
 	},
 	"wcag": {
-		"self-rating": 4,
+		"self-rating": 3,
 		"mcq": {
 			"Q1": true,
-			"Q2": true
+			"Q2": false
 		}
 	},
 	"in-practice": {
@@ -20,10 +20,10 @@
 		}
 	},
 	"target-size": {
-		"self-rating": 3,
+		"self-rating": 4,
 		"mcq": {
 			"Q1": true,
-			"Q2": "not-started"
+			"Q2": true
 		}
 	},
 	"alt-text": {
@@ -33,21 +33,21 @@
 		}
 	},
 	"colour-general": {
-		"self-rating": 5,
+		"self-rating": 2,
 		"mcq": {
-			"Q1": true
+			"Q1": false
 		}
 	},
 	"cvd": {
-		"self-rating": 3,
+		"self-rating": 1,
 		"mcq": {
 			"Q1": true,
-			"Q2": true,
+			"Q2": "not-started",
 			"Q3": "not-started"
 		}
 	},
 	"colour-contrast": {
-		"self-rating": 2,
+		"self-rating": 1,
 		"mcq": {
 			"Q1": "not-started",
 			"Q2": "not-started",
